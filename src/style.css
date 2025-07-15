@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Heavy";
+  src: url("/src/assets/fonts/Mont-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("/src/assets/fonts/Mont-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Black";
+  src: url("/src/assets/fonts/Mont-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("/src/assets/fonts/Mont-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@theme {
+  --font-mont-heavy: "Heavy", sans-serif;
+  --font-mont-bold: "Bold", sans-serif;
+  --font-mont-black: "Black", sans-serif;
+  --font-mont-regular: "Regular", sans-serif;
+  --font-public-sans: "PublicSans", sans-serif;
+  --font-public-sans-light: "PublicSans", sans-serif;
+  --font-public-sans-regular: "PublicSans", sans-serif;
+  --font-public-sans-medium: "PublicSans", sans-serif;
+  --font-public-sans-semibold: "PublicSans", sans-serif;
+  --font-public-sans-bold: "PublicSans", sans-serif;
+  --font-public-sans-black: "PublicSans", sans-serif;
+
+  --color-primary: #2628d8;
+  --color-secondary: #d3de4e;
+  --color-tertiary: #00213f;
+  --color-quaternary: #9391ad;
+  --color-background: #f0f2f2;
+  --color-background-dark: #1e1f2a;
+}
+
+@layer base {
+  /* body {
+    background-color: #2628d8;
+    background-image: url('/src/assets/backgrounds/background-blue.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-blend-mode: multiply;
+  } */
+}
+
+/* Componentes personalizados */
+@layer components {
+  .bg-noise-white {
+    background-color: #f0f2f2;
+    background-image: url("/src/assets/backgrounds/background-white.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-blend-mode: multiply;
+  }
+
+  .bg-noise-blue {
+    background-color: #2628d8;
+    background-image: url("/src/assets/backgrounds/background-blue.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-blend-mode: multiply;
+  }
+
+  .btn {
+    @apply px-6 py-4 uppercase transition-colors cursor-pointer font-mont-bold leading-none w-full;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+
+  .btn-primary:hover {
+    @apply bg-secondary text-tertiary;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary  text-white;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-white text-tertiary;
+  }
+
+  .btn-teriary {
+    @apply bg-white text-tertiary;
+  }
+
+  .btn-teriary:hover {
+    @apply bg-secondary text-tertiary;
+  }
+
+  .btn:active {
+    @apply shadow-none;
+  }
+}
