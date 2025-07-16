@@ -14,7 +14,12 @@ const routes = [
     path: '/nosotros',
     name: 'About',
     component: AboutView
-  }
+  },
+  {
+    path:'/servicios',
+    name: 'Services',
+    component: () => import('../pages/ServicesView.vue')
+  },
 ]
 
 const router = createRouter({
