@@ -5,11 +5,11 @@
 
             <ul class="hidden lg:flex gap-8">
                 <li>
-                    <router-link to="/home"
+                    <router-link to="/"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">INICIO</router-link>
                 </li>
                 <li>
-                    <router-link to="/about"
+                    <router-link to="/nosotros"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">NOSOTROS</router-link>
                 </li>
                 <li>

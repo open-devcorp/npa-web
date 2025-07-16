@@ -1,0 +1,176 @@
+<template>
+  <div
+    ref="cardRef"
+    :class="[
+      'group text-white p-8 w-full min-h-[340px] flex flex-col justify-between transition-all duration-200 ease-out',
+      backgroundColor,
+      isVisible
+        ? [animationClass, 'opacity-100 pointer-events-auto']
+        : ['opacity-0 pointer-events-none'],
+    ]"
+  >
+    <div>
+      <div class="mb-4">
+        <span
+          :class="[
+            'inline-block rounded-full p-2 transition-transform duration-150 ease-out group-hover:rotate-12 group-hover:-translate-y-1',
+            iconBackgroundColor,
+          ]"
+        >
+          <img
+            :src="iconPath"
+            alt="icon"
+            class="w-12 h-12 object-contain transition-transform duration-150 ease-out group-hover:scale-110"
+          />
+        </span>
+      </div>
+      <h3
+        class="font-mont-heavy text-4xl mb-2 transition-transform duration-150 ease-out group-hover:-translate-y-1"
+      >
+        {{ title }}
+      </h3>
+      <hr class="mb-4 bg-[#B8B8B8]" />
+      <p
+        class="font-public-sans-regular text-justify transition-transform duration-150 ease-out group-hover:-translate-y-1"
+      >
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+export default {
+  name: 'CardAbout',
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    backgroundColor: {
+      type: String,
+      default: 'bg-tertiary'
+    },
+    iconBackgroundColor: {
+      type: String,
+      default: 'bg-secondary'
+    },
+    iconColor: {
+      type: String,
+      default: 'text-tertiary' // ya no se usa pero se puede dejar
+    },
+    iconPath: {
+      type: String,
+      default: ''
+    },
+    animationClass: {
+      type: String,
+      default: ''
+    },
+    cardIndex: {
+      type: Number,
+      default: 0
+    }
+  },
+  setup(props) {
+    const cardRef = ref()
+    const isVisible = ref(false)
+    let observer = null
+    let hasUserScrolled = false
+    let hasAnimated = false
+
+    function getAnimationKeyframes() {
+      const direction = props.cardIndex % 3
+      let startTransform = ''
+
+      switch (direction) {
+        case 0:
+          startTransform = 'translateX(-150px) scale(0.8)'
+          break
+        case 1:
+          startTransform = 'translateY(150px) scale(0.8)'
+          break
+        case 2:
+          startTransform = 'translateX(150px) scale(0.8)'
+          break
+      }
+
+      return [
+        {
+          opacity: 0,
+          transform: startTransform,
+        },
+        {
+          opacity: 1,
+          transform: 'translateX(0) translateY(0) scale(1)',
+        },
+      ]
+    }
+
+    function playWebAnimation() {
+      if (!cardRef.value) return
+      const keyframes = getAnimationKeyframes()
+      cardRef.value.animate(keyframes, {
+        duration: 600,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        fill: 'forwards',
+      })
+    }
+
+    function checkAndAnimate() {
+      if (!cardRef.value || hasAnimated || !hasUserScrolled) return
+      const rect = cardRef.value.getBoundingClientRect()
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        isVisible.value = true
+        playWebAnimation()
+        hasAnimated = true
+        if (observer) observer.unobserve(cardRef.value)
+      }
+    }
+
+    function onScroll() {
+      hasUserScrolled = true
+      checkAndAnimate()
+    }
+
+    onMounted(() => {
+      window.addEventListener('scroll', onScroll, { passive: true })
+      if (cardRef.value) {
+        observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && !hasAnimated && hasUserScrolled) {
+                isVisible.value = true
+                playWebAnimation()
+                hasAnimated = true
+                observer?.unobserve(entry.target)
+              }
+            })
+          },
+          {
+            threshold: 0.1,
+            rootMargin: '0px 0px -34px 0px',
+          },
+        )
+        observer.observe(cardRef.value)
+      }
+    })
+
+    onUnmounted(() => {
+      window.removeEventListener('scroll', onScroll)
+      if (observer) observer.disconnect()
+    })
+
+    return {
+      cardRef,
+      isVisible
+    }
+  }
+}
+</script>

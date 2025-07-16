@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-30">
+  <footer class="">
     <div class="bg-background-dark text-white py-20">
 
       <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
