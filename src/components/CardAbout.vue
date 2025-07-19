@@ -2,7 +2,7 @@
   <div
     ref="cardRef"
     :class="[
-      'group text-white p-8 w-full min-h-[340px] flex flex-col justify-between transition-all duration-200 ease-out',
+      'group text-white p-4 md:p-6 lg:p-8 w-full min-h-[280px] md:min-h-[320px] lg:min-h-[340px] flex flex-col justify-between transition-all duration-200 ease-out',
       backgroundColor,
       isVisible
         ? [animationClass, 'opacity-100 pointer-events-auto']
@@ -10,28 +10,28 @@
     ]"
   >
     <div>
-      <div class="mb-4">
+      <div class="mb-3 md:mb-4">
         <span
           :class="[
-            'inline-block rounded-full p-2 transition-transform duration-150 ease-out group-hover:rotate-12 group-hover:-translate-y-1',
+            'inline-block rounded-full p-1.5 md:p-2 transition-transform duration-150 ease-out group-hover:rotate-12 group-hover:-translate-y-1',
             iconBackgroundColor,
           ]"
         >
           <img
             :src="iconPath"
             alt="icon"
-            class="w-12 h-12 object-contain transition-transform duration-150 ease-out group-hover:scale-110"
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain transition-transform duration-150 ease-out group-hover:scale-110"
           />
         </span>
       </div>
       <h3
-        class="font-mont-heavy text-4xl mb-2 transition-transform duration-150 ease-out group-hover:-translate-y-1"
+        class="font-mont-heavy text-2xl md:text-3xl lg:text-4xl mb-2 transition-transform duration-150 ease-out group-hover:-translate-y-1"
       >
         {{ title }}
       </h3>
-      <hr class="mb-4 bg-[#B8B8B8]" />
+      <hr class="mb-3 md:mb-4 bg-[#B8B8B8]" />
       <p
-        class="font-public-sans-regular text-justify transition-transform duration-150 ease-out group-hover:-translate-y-1"
+        class="font-public-sans-regular text-justify text-sm md:text-base transition-transform duration-150 ease-out group-hover:-translate-y-1"
       >
         {{ description }}
       </p>

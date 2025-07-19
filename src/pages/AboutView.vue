@@ -1,7 +1,7 @@
 <template>
   <div class="bg-noise-white">
     <!-- Hero Section -->
-    <section class="bg-noise-blue text-white py-20">
+    <section class="bg-noise-blue text-white py-4 md:py-20">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">Nosotros</h1>
         <p class="font-public-sans-black text-sm">
@@ -13,24 +13,24 @@
     <!-- About Content -->
     <section class="py-4 mt-12">
 
-      <p class="text-xl font-mont-black text-tertiary max-w-screen-xl mx-auto px-0  mb-6">
+      <p class="text-lg md:text-xl font-mont-black text-tertiary max-w-screen-xl mx-auto px-4 xl:px-0 mb-6">
       NOSOTROS
     </p>
-      <div class="flex max-w-screen-xl mx-auto px-0 gap-32">
+      <div class="flex flex-col lg:flex-row max-w-screen-xl mx-auto px-4 xl:px-0 gap-8 lg:gap-32">
 
-        <div class="flex flex-col w-1/2">
-            <p class="font-mont-regular text-7xl w-full">Somos un</p>
-            <p class="text-7xl w-full font-mont-heavy whitespace-nowrap">punto de encuentro</p>
+        <div class="flex flex-col w-full md:w-1/2">
+            <p class="font-mont-regular text-4xl md:text-6xl lg:text-7xl w-full whitespace-nowrap">Somos un</p>
+            <p class="text-3xl md:text-6xl lg:text-7xl w-full font-mont-heavy whitespace-nowrap">punto de encuentro</p>
         </div>
 
-        <div class="flex flex-col w-1/2 h-full">
+        <div class="flex flex-col w-full md:w-1/2 h-full">
           <p class="text-justify">
             Somos el punto de encuentro entre negocios, inversión y expansión internacional,
             combinando la precisión de una boutique legal con la visión estratégica y creatividad
             de una agencia de marketing.
           </p>
           <div class="flex items-end justify-end mt-4">
-            <router-link to="" class=" w-64 btn btn-primary flex items-center justify-center">
+            <router-link to="" class=" w-56  md:w-64 btn btn-primary flex items-center justify-center">
                 <span class="">CONTÁCTANOS</span>
                 <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
             </router-link>
@@ -43,13 +43,13 @@
 
     <!-- Cards Section -->
     <section class="pb-24">
-      <div class="max-w-screen-xl mx-auto px-0">
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
       <img
         src="../assets/backgrounds/about-meet.jpg"
         alt="Nuestros Valores"
         class="w-full"
       />
-        <div class="flex justify-center gap-4 px-4 -mt-[100px] relative z-10">
+        <div class="flex flex-col md:flex-row justify-center gap-4 px-4 -mt-[50px] md:-mt-[100px] relative z-10">
           <CardAbout
             title="Equipo Interdisciplinario"
             description="Contamos con un equipo interdisciplinario de abogados, arquitectos, economistas y especialistas en marketing que trabajan de manera coordinada para ofrecer soluciones integrales."
@@ -85,10 +85,10 @@
     </section>
 
 
-  <section class="relative bg-tertiary py-24 mt-16">
+  <section class="relative bg-tertiary py-16 md:py-24 mt-16">
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
       
-      <p class="text-xl font-mont-black text-secondary max-w-screen-xl mx-auto px-0 mb-6">
+      <p class="text-lg md:text-xl font-mont-black text-secondary mb-6">
         NUESTROS PRINCIPIOS
       </p>
 
@@ -96,27 +96,27 @@
 
       <!-- Columna: title and button -->
       <div class="w-full">
-        <h2 class="text-white text-7xl">
+        <h2 class="text-white text-3xl lg:text-7xl">
           <span class="font-mont-regular">Nuestro</span><br />
           <span class="font-mont-heavy whitespace-nowrap">objetivo y horizonte</span>
         </h2>
-            <router-link to="" class=" mt-20 w-64 btn btn-secondary flex items-center justify-center">
-                <span class="">SABER MÁS</span>
+            <router-link to="" class="mt-8 md:mt-20 w-48 md:w-64 btn btn-secondary flex items-center justify-center">
+                <span class="text-sm md:text-base">SABER MÁS</span>
                 <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
             </router-link>
       </div>
 
       <!-- Columna: Cards -->
-      <div class="w-full flex flex-col gap-8">
+      <div class="w-full flex flex-col gap-6 md:gap-8">
         <!-- Card 1 -->
-        <div class="bg-noise-white p-6 md:p-8 text-tertiary ">
+        <div class="bg-noise-white p-4 md:p-6 lg:p-8 text-tertiary">
           <div class="flex flex-col items-start gap-4 mb-4">
             <div class="bg-secondary p-2 rounded-full">
-              <img src="../assets/icons/think.svg" alt="Target Icon" class="w-12 h-12 text-tertiary" />
+              <img src="../assets/icons/think.svg" alt="Target Icon" class="w-8 h-8 md:w-12 md:h-12 text-tertiary" />
             </div>
-            <h3 class="text-3xl font-mont-heavy">Nuestra misión</h3>
+            <h3 class="text-2xl md:text-3xl font-mont-heavy">Nuestra misión</h3>
           </div>
-          <p class="font-public-sans-regular text-justify">
+          <p class="font-public-sans-regular text-justify text-sm md:text-base">
             Crear conexiones entre personas, empresas e inversiones, ofreciendo asesoría estratégica
             legal, técnica y comercial que simplifica procesos y convierte ideas en proyectos
             exitosos a nivel nacional e internacional.
@@ -124,14 +124,14 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-noise-white p-6 md:p-8 text-tertiary ">
+        <div class="bg-noise-white p-4 md:p-6 lg:p-8 text-tertiary">
           <div class="flex flex-col items-start gap-4 mb-4">
             <div class="bg-secondary p-2 rounded-full">
-              <img src="../assets/icons/brain.svg" alt="Target Icon" class="w-12 h-12 text-tertiary" />
+              <img src="../assets/icons/brain.svg" alt="Target Icon" class="w-8 h-8 md:w-12 md:h-12 text-tertiary" />
             </div>
-            <h3 class="text-3xl font-mont-heavy">Nuestra visión</h3>
+            <h3 class="text-2xl md:text-3xl font-mont-heavy">Nuestra visión</h3>
           </div>
-          <p class="font-public-sans-regular text-justify">
+          <p class="font-public-sans-regular text-justify text-sm md:text-base">
             En realidades sólidas, construyendo conexiones que impulsen negocios, inversiones y
             proyectos de vida a nivel nacional e internacional.
           </p>
@@ -143,7 +143,7 @@
 
 
 
-<section class="relative w-full ">
+<section class="relative w-full">
   <!-- Imagen de fondo -->
   <img
     src="../assets/images/about-business-woman.png"
@@ -152,14 +152,14 @@
   />
 
   <!-- Contenido encima -->
-  <div class="relative max-w-screen-xl mx-auto px-0 py-24 z-10">
-    <h2 class="text-white text-5xl font-mont-regular text-center mb-12 mt-10">
+  <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
+    <h2 class="text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-12 mt-6 md:mt-10">
       Escuchamos, entendemos y construimos<br />
       <span class="font-mont-heavy">relaciones de largo plazo</span> basadas en la<br />
       <span class="font-mont-heavy">confianza y el compromiso</span>
     </h2>
 
-  <div class="flex flex-wrap justify-center gap-6">
+  <div class="flex flex-wrap justify-center gap-4 md:gap-6">
       <InfoCard
       title="Conexión genuina"
       :iconSrc="'./src/assets/icons/users.svg'"
