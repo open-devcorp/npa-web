@@ -18,7 +18,7 @@
             SERVICIOS
         </p>
 
-        <p class="text-4xl md:text-6xl xl:text-7xl mt-10 leading-tight flex flex-wrap items-center">
+        <p class="text-3xl md:text-6xl xl:text-7xl mt-10 leading-tight flex flex-wrap items-center">
             <span class="font-mont-regular mr-2">Tu</span>
             <span class="font-mont-heavy whitespace-nowrap mr-2">punto</span>
             <span class="font-mont-regular mr-2">de solución</span>
@@ -76,27 +76,27 @@
 
 
     <!-- Cards -->
-  <div class="mt-20 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32">
+  <div class="mt-12 md:mt-20 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32">
     <!-- Título -->
     <div>
       <p class="text-lg md:text-xl font-mont-black text-tertiary">SEGMENTO POR CLIENTE</p>
-      <p class="text-4xl md:text-6xl xl:text-7xl mt-10 flex flex-wrap items-center mb-4">
+      <p class="text-3xl md:text-6xl xl:text-7xl mt-6 md:mt-10 flex flex-wrap items-center mb-4">
         <span class="font-mont-regular mr-2">Nuestros</span>
         <span class="font-mont-heavy whitespace-nowrap mr-2">Segmentos</span>
       </p>
     </div>
 
     <!-- Cards -->
-    <div class="flex flex-col md:flex-row h-auto md:h-[20rem] lg:h-[25rem] overflow-hidden gap-4" @mouseleave="selected = 0">
+    <div class="flex flex-col md:flex-row h-auto md:h-[20rem] lg:h-[25rem] overflow-hidden gap-3 md:gap-4" @mouseleave="selected = 0">
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="relative transition-all duration-300 h-48 md:h-full cursor-pointer min-w-0 overflow-hidden"
-        :class="[
-          // Mobile: todas las cards ocupan el ancho completo
-          'md:' + (selected === index ? 'w-[50%]' : 'w-[25%]'),
-          'w-full'
-        ]"
+        class="relative transition-all duration-300 h-48 md:h-full cursor-pointer min-w-0 overflow-hidden w-full"
+        :class="{
+          // En desktop: comportamiento de expansión
+          'md:w-[50%]': selected === index,
+          'md:w-[25%]': selected !== index
+        }"
         @mouseenter="selected = index"
         @click="selected = index"
       >
@@ -120,10 +120,10 @@
 
         <!-- Overlay degradado y texto que se revela -->
         <div
-          class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 to-transparent text-white px-4 md:px-6 py-2 md:py-4 z-20 flex flex-col justify-end transition-all duration-300"
+          class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 to-transparent text-white px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 z-20 flex flex-col justify-end transition-all duration-300"
           :class="selected === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
         >
-          <p class="font-mont-heavy text-sm md:text-lg xl:text-xl leading-tight">
+          <p class="font-mont-heavy text-sm md:text-lg lg:text-xl leading-tight">
             {{ card.overlayTitle }}
           </p>
           <p class="text-xs md:text-sm text-yellow-300 font-public-sans-semibold">
@@ -138,7 +138,7 @@
       <!-- Primera opción -->
       <div
         v-if="selected === 0"
-        class="flex flex-col md:flex-row gap-8 mt-12 md:mt-24 items-stretch"
+        class="flex flex-col md:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch"
       >
         <!-- Imagen -->
         <div class="w-full md:w-1/2 overflow-hidden">
@@ -154,11 +154,11 @@
           <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
             Para Empresas Extranjeras
           </p>
-          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-lg md:text-xl">
+          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-base md:text-xl">
             Facilitamos la inversión, exportación e ingreso al mercado peruano
           </p>
 
-          <ul class="space-y-4 text-black">
+          <ul class="space-y-3 md:space-y-4 text-black">
             <li class="flex gap-2">
               <span class="text-base md:text-lg mt-1 flex-shrink-0">❯</span>
               <div>
@@ -202,7 +202,7 @@
       </div>
 
       <!-- Opción 2 -->
-      <div v-else-if="selected === 1" class="flex flex-col md:flex-row gap-8 mt-12 md:mt-24 items-stretch">
+      <div v-else-if="selected === 1" class="flex flex-col md:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
 
         <!-- Imagen -->
         <div class="w-full md:w-1/2 overflow-hidden">
@@ -218,11 +218,11 @@
           <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
             Para Empresas Nacionales
           </p>
-          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-lg md:text-xl">
+          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-base md:text-xl">
               Impulsar su expansión, formalización y crecimiento en el mercado local e internacional
           </p>
 
-          <ul class="space-y-4 text-black">
+          <ul class="space-y-3 md:space-y-4 text-black">
             <li class="flex gap-2">
               <span class="text-base md:text-lg mt-1 flex-shrink-0">❯</span>
               <div>
@@ -263,7 +263,7 @@
       </div>
 
       <!-- Opción 3 -->
-       <div v-else-if="selected === 2" class="flex flex-col md:flex-row gap-8 mt-12 md:mt-24 items-stretch">
+       <div v-else-if="selected === 2" class="flex flex-col md:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
 
         <!-- Imagen -->
         <div class="w-full md:w-1/2 overflow-hidden">
@@ -279,11 +279,11 @@
           <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
             Para Personas Naturales y Emprendedores
           </p>
-          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-lg md:text-xl">
+          <p class="text-gray-600 font-public-sans-regular max-w-3xl mb-4 text-base md:text-xl">
             Formalizar, proteger y potenciar sus inversiones personales o pequeños negocios
           </p>
 
-          <ul class="space-y-4 text-black">
+          <ul class="space-y-3 md:space-y-4 text-black">
             <li class="flex gap-2">
               <span class="text-base md:text-lg mt-1 flex-shrink-0">❯</span>
               <div>
@@ -324,7 +324,6 @@
       </div>
 
     </div>
-
 
   </div>
 
