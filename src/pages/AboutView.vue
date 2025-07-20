@@ -16,11 +16,11 @@
       <p class="text-lg md:text-xl font-mont-black text-tertiary max-w-screen-xl mx-auto px-4 xl:px-0 mb-6">
       NOSOTROS
     </p>
-      <div class="flex flex-col lg:flex-row max-w-screen-xl mx-auto px-4 xl:px-0 gap-8 lg:gap-32">
+      <div class="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 xl:px-0 gap-8 lg:gap-32">
 
         <div class="flex flex-col w-full md:w-1/2">
-            <p class="font-mont-regular text-4xl md:text-6xl lg:text-7xl w-full whitespace-nowrap">Somos un</p>
-            <p class="text-3xl md:text-6xl lg:text-7xl w-full font-mont-heavy whitespace-nowrap">punto de encuentro</p>
+            <p class="font-mont-regular text-4xl md:text-6xl lg:text-7xl w-full lg:whitespace-nowrap">Somos un</p>
+            <p class="text-3xl md:text-6xl lg:text-7xl w-full font-mont-heavy lg:whitespace-nowrap">punto de encuentro</p>
         </div>
 
         <div class="flex flex-col w-full md:w-1/2 h-full">
@@ -42,47 +42,55 @@
 
 
     <!-- Cards Section -->
-    <section class="pb-24">
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
-      <img
-        src="../assets/backgrounds/about-meet.jpg"
-        alt="Nuestros Valores"
-        class="w-full"
+<section class="pb-24">
+  <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+    <img
+      src="../assets/backgrounds/about-meet.jpg"
+      alt="Nuestros Valores"
+      class="w-full"
+    />
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:flex justify-center gap-6  px-4 
+         -mt-12 lg:-mt-24 z-10"
+    >
+      <CardAbout
+        title="Equipo Interdisciplinario"
+        description="Contamos con un equipo interdisciplinario de abogados, arquitectos, economistas y especialistas en marketing que trabajan de manera coordinada para ofrecer soluciones integrales."
+        background-color="bg-tertiary"
+        icon-background-color="bg-[#D5E745]"
+        icon-color="text-[#10284D]"
+        animation-class="animate-slide-left delay-100"
+        :card-index="0"
+        :iconPath="'./src/assets/icons/think.svg'"
       />
-        <div class="flex flex-col md:flex-row justify-center gap-4 px-4 -mt-[50px] md:-mt-[100px] relative z-10">
-          <CardAbout
-            title="Equipo Interdisciplinario"
-            description="Contamos con un equipo interdisciplinario de abogados, arquitectos, economistas y especialistas en marketing que trabajan de manera coordinada para ofrecer soluciones integrales."
-            background-color="bg-tertiary"
-            icon-background-color="bg-[#D5E745]"
-            icon-color="text-[#10284D]"
-            animation-class="animate-slide-left delay-100"
-            :card-index="0"
-            :iconPath="'./src/assets/icons/think.svg'"
-          />
-          <CardAbout
-            title="Catalizadores del Éxito"
-            description="Ofrecemos asesoría legal en Derecho Inmobiliario, Corporativo y Comercial, complementada con estrategias de marketing y comunicación para potenciar el crecimiento de nuestros clientes."
-            background-color="bg-noise-blue"
-            icon-background-color="bg-secondary"
-            icon-color="text-primary"
-            animation-class="animate-slide-up delay-200"
-            :card-index="1"
-            :iconPath="'./src/assets/icons/brain.svg'"
-          />
-          <CardAbout
-            title="Acceso Estratégico"
-            description="Perú es una tierra de oportunidades con estabilidad económica y crecimiento sostenido. Te ayudamos a acceder de manera estratégica a este mercado emergente lleno de posibilidades."
-            background-color="bg-tertiary"
-            icon-background-color="bg-secondary"
-            icon-color="text-[#10284D]"
-            animation-class="animate-slide-right delay-300"
-            :card-index="2"
-            :iconPath="'./src/assets/icons/book.svg'"
-          />
-        </div>
+
+      <CardAbout
+        title="Catalizadores del Éxito"
+        description="Ofrecemos asesoría legal en Derecho Inmobiliario, Corporativo y Comercial, complementada con estrategias de marketing y comunicación para potenciar el crecimiento de nuestros clientes."
+        background-color="bg-noise-blue"
+        icon-background-color="bg-secondary"
+        icon-color="text-primary"
+        animation-class="animate-slide-up delay-200"
+        :card-index="1"
+        :iconPath="'./src/assets/icons/brain.svg'"
+      />
+
+      <div class="sm:col-span-2 lg:col-span-1 justify-self-center">
+        <CardAbout
+          title="Acceso Estratégico"
+          description="Perú es una tierra de oportunidades con estabilidad económica y crecimiento sostenido. Te ayudamos a acceder de manera estratégica a este mercado emergente lleno de posibilidades."
+          background-color="bg-tertiary"
+          icon-background-color="bg-secondary"
+          icon-color="text-[#10284D]"
+          animation-class="animate-slide-right delay-300"
+          :card-index="2"
+          :iconPath="'./src/assets/icons/book.svg'"
+        />
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
   <section class="relative bg-tertiary py-16 md:py-24 mt-16">
@@ -92,7 +100,7 @@
         NUESTROS PRINCIPIOS
       </p>
 
-    <div class="flex flex-col lg:flex-row gap-8">
+    <div class="flex flex-col md:flex-row lg:flex-row gap-8">
 
       <!-- Columna: title and button -->
       <div class="w-full">

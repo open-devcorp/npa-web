@@ -13,7 +13,7 @@
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">NOSOTROS</router-link>
                 </li>
                 <li>
-                    <router-link to="/#servicios"
+                    <router-link to="/servicios"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">SERVICIOS</router-link>
                 </li>
                 <li>
@@ -22,7 +22,7 @@
                         QUÉ ELEGIRNOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/#contacto"
+                    <router-link to="/contacto"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">EQUIPO</router-link>
                 </li>
             </ul>

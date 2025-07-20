@@ -11,6 +11,10 @@
 }
 
 @font-face {
+  font-family: "semiBold";
+  src: url("/src/assets/fonts/Mont-SemiBold.ttf") format("truetype");
+}
+@font-face {
   font-family: "Black";
   src: url("/src/assets/fonts/Mont-Black.ttf") format("truetype");
 }
@@ -21,23 +25,41 @@
 }
 
 @font-face {
+  font-family: "Light";
+  src: url("/src/assets/fonts/Mont-Light.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "PublicSans";
   src: url("/src/assets/fonts/PublicSans-VariableFont_wght.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "PublicSans";
+  font-weight: 300;
+  src: url("/src/assets/fonts/PublicSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PublicSans-Regular";
+  font-weight: 400;
+  src: url("/src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
+}
+
 
 @theme {
   --font-mont-heavy: "Heavy", sans-serif;
   --font-mont-bold: "Bold", sans-serif;
   --font-mont-black: "Black", sans-serif;
   --font-mont-regular: "Regular", sans-serif;
+  --font-mont-semibold: "semiBold", sans-serif;
+  --font-mont-light: "Light", sans-serif;
   --font-public-sans: "PublicSans", sans-serif;
-  --font-public-sans-light: "PublicSans", sans-serif;
-  --font-public-sans-regular: "PublicSans", sans-serif;
-  --font-public-sans-medium: "PublicSans", sans-serif;
-  --font-public-sans-semibold: "PublicSans", sans-serif;
-  --font-public-sans-bold: "PublicSans", sans-serif;
-  --font-public-sans-black: "PublicSans", sans-serif;
+  --font-public-sans-light: "PublicSans-Light", sans-serif;
+  --font-public-sans-regular: "PublicSans-Regular", sans-serif;
+  --font-public-sans-medium: "PublicSans-Medium", sans-serif;
+  --font-public-sans-semibold: "PublicSans-SemiBold", sans-serif;
+  --font-public-sans-bold: "PublicSans-Bold", sans-serif;
+  --font-public-sans-black: "PublicSans-Black", sans-serif;
 
   --color-primary: #2628d8;
   --color-secondary: #d3de4e;
