@@ -86,31 +86,20 @@ export default {
     let hasAnimated = false
 
     function getAnimationKeyframes() {
-      const direction = props.cardIndex % 3
-      let startTransform = ''
-
-      switch (direction) {
-        case 0:
-          startTransform = 'translateX(-150px) scale(0.8)'
-          break
-        case 1:
-          startTransform = 'translateY(150px) scale(0.8)'
-          break
-        case 2:
-          startTransform = 'translateX(150px) scale(0.8)'
-          break
-      }
+      const startTransform = 'scaleY(0)'; // Crecer como barra de progreso
 
       return [
         {
           opacity: 0,
           transform: startTransform,
+          transformOrigin: 'bottom', // Punto de origen desde abajo
         },
         {
           opacity: 1,
-          transform: 'translateX(0) translateY(0) scale(1)',
+          transform: 'scaleY(1)',
+          transformOrigin: 'bottom',
         },
-      ]
+      ];
     }
 
     function playWebAnimation() {
