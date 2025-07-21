@@ -2,22 +2,28 @@
   <div
     ref="cardRef"
     :class="[
-      'bg-tertiary/80 w-40 md:w-48 h-48 md:h-64 text-white flex flex-col items-center justify-between p-3 md:p-4 rounded-xl transition-all duration-200 ease-out',
+      'flex flex-col w-full lg:w-1/3 h-full transition-all duration-300 ease-out',
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
-    <h3 class="text-center text-base md:text-xl font-semibold leading-tight">
+    <img :src="resolveImagePath(imageSrc)" :alt="imageAlt" class="w-full h-[200px] md:h-[250px] object-cover rounded" />
+
+    <div class="flex flex-wrap lg:flex-nowrap gap-2 my-4 w-full">
+      <span
+        v-for="(tag, index) in tags"
+        :key="index"
+        class="bg-secondary font-mont-regular px-3 py-1 rounded-full flex-1 text-center h-6 flex items-center justify-center text-xs"
+      >
+        {{ tag }}
+      </span>
+    </div>
+
+    <h3 class="text-2xl md:text-3xl xl:text-4xl font-mont-heavy mb-2 text-tertiary">
       {{ title }}
     </h3>
-    <div class="w-full flex-1 flex items-center justify-center">
-      <img
-        v-if="iconSrc"
-        :src="iconSrc"
-        alt="icon"
-        class="w-16 h-16 md:w-20 md:h-20 object-contain"
-      />
-      <span v-else class="text-gray-300 text-xs md:text-sm">{{ iconPlaceholder }}</span>
-    </div>
+    <p class="font-public-sans-regular text-justify text-gray-500">
+      {{ description }}
+    </p>
   </div>
 </template>
 
@@ -25,32 +31,44 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 export default {
-  name: 'InfoCard',
+  name: 'ServiceCard',
   props: {
+    imageSrc: {
+      type: String,
+      required: true,
+    },
+    imageAlt: {
+      type: String,
+      default: 'Service Image',
+    },
+    tags: {
+      type: Array,
+      required: true,
+    },
     title: {
       type: String,
       required: true,
     },
-    iconSrc: {
+    description: {
       type: String,
-      default: '',
-    },
-    iconPlaceholder: {
-      type: String,
-      default: 'icono',
+      required: true,
     },
   },
-  setup() {
+  setup(props) {
     const cardRef = ref(null);
     const isVisible = ref(false);
     let observer = null;
+
+    function resolveImagePath(path) {
+      return new URL(path, import.meta.url).href;
+    }
 
     function playAnimation() {
       if (!cardRef.value) return;
       cardRef.value.animate(
         [
-          { opacity: 0, transform: 'rotateY(90deg) translateX(-100px)' },
-          { opacity: 1, transform: 'rotateY(0deg) translateX(0)' },
+          { opacity: 0, transform: 'translateY(50px) scale(0.9)' },
+          { opacity: 1, transform: 'translateY(0) scale(1)' },
         ],
         {
           duration: 800,
@@ -86,7 +104,12 @@ export default {
     return {
       cardRef,
       isVisible,
+      resolveImagePath,
     };
   },
 };
 </script>
+
+<style scoped>
+/* Add any specific styles if needed */
+</style>
