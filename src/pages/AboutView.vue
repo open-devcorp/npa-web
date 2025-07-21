@@ -16,10 +16,10 @@
         <SectionTitle title="NOSOTROS" textColor="text-tertiary" />
 
         <div class="flex flex-col md:flex-row gap-8 lg:gap-32">
-          <div class="flex flex-col w-full md:w-1/2">
-            <p class="font-mont-regular text-4xl md:text-6xl lg:text-7xl">Somos un</p>
-            <p class="text-3xl md:text-6xl lg:text-7xl font-mont-heavy">punto de encuentro</p>
-          </div>
+        <div class="flex flex-col w-full md:w-1/2">
+            <p class="font-mont-regular text-4xl md:text-6xl lg:text-7xl w-full lg:whitespace-nowrap">Somos un</p>
+            <p class="text-3xl md:text-6xl lg:text-7xl w-full font-mont-heavy lg:whitespace-nowrap">punto de encuentro</p>
+        </div>  
 
           <div class="flex flex-col w-full md:w-1/2">
             <p class="text-justify">
