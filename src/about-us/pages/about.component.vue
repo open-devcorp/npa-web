@@ -28,7 +28,7 @@
               de una agencia de marketing.
             </p>
             <div class="flex items-end justify-end mt-4">
-              <router-link to="" class="w-56 md:w-64 btn btn-primary flex items-center justify-center">
+              <router-link to="" class="btn btn-primary flex items-center justify-center">
                 <span>CONTÁCTANOS</span>
                 <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
               </router-link>
