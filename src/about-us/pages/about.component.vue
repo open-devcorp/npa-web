@@ -103,14 +103,14 @@
             <ObjectiveCard
               title="Nuestra misión"
               description="Crear conexiones entre personas, empresas e inversiones, ofreciendo asesoría estratégica legal, técnica y comercial que simplifica procesos y convierte ideas en proyectos exitosos a nivel nacional e internacional."
-              :iconSrc="'../assets/icons/think.svg'"
+              :iconSrc="'../../assets/icons/think.svg'"
               iconBackground="bg-secondary"
             />
 
             <ObjectiveCard
               title="Nuestra visión"
               description="En realidades sólidas, construyendo conexiones que impulsen negocios, inversiones y proyectos de vida a nivel nacional e internacional."
-              :iconSrc="'../assets/icons/brain.svg'"
+              :iconSrc="'../../assets/icons/brain.svg'"
               iconBackground="bg-secondary"
             />
           </div>
@@ -119,7 +119,7 @@
     </section>
 
     <section class="relative w-full">
-      <img src="../assets/images/about-business-woman.png" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
+      <img src="../../assets/images/about-business-woman.png" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
 
       <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
         <h2 class="text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-12 mt-6 md:mt-10">
