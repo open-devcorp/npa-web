@@ -98,7 +98,7 @@
   }
 
   .btn {
-    @apply px-6 py-4 uppercase transition-colors cursor-pointer font-mont-bold leading-none;
+    @apply px-6 py-4 uppercase transition-colors cursor-pointer font-mont-bold leading-none text-xs md:text-sm lg:text-base inline-flex items-center justify-center w-fit;
   }
 
   .btn-primary {

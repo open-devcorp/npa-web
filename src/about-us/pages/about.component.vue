@@ -12,7 +12,7 @@
 
     <!-- About Content -->
     <section class="py-4 mt-12">
-      <div class="max-w-screen-xl mx-auto px-4">
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
         <SectionTitle title="NOSOTROS" textColor="text-tertiary" />
 
         <div class="flex flex-col md:flex-row gap-8 lg:gap-32">
@@ -40,8 +40,8 @@
 
     <!-- Cards Section -->
     <section class="pb-24">
-      <div class="max-w-screen-xl mx-auto px-4">
-        <img src="../assets/backgrounds/about-meet.jpg" alt="Nuestros Valores" class="w-full" />
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+        <img src="../../assets/backgrounds/about-meet.jpg" alt="Nuestros Valores" class="w-full" />
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex justify-center gap-6 -mt-12 lg:-mt-24 z-10">
           <AboutCard
@@ -82,18 +82,19 @@
       </div>
     </section>
 
-    <section class="relative bg-tertiary py-16 md:py-24 mt-16">
-      <div class="max-w-screen-xl mx-auto px-4">
+    <section class="bg-tertiary py-16 md:py-24 mt-16">
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
         <SectionTitle title="NUESTROS PRINCIPIOS" textColor="text-secondary" />
 
         <div class="flex flex-col md:flex-row gap-8">
           <div class="w-full">
             <h2 class="text-white text-3xl lg:text-7xl">
-              <span class="font-mont-regular">Nuestro</span><br />
+              <span class="font-mont-regular">Nuestro</span>
+              <br/>
               <span class="font-mont-heavy whitespace-nowrap">objetivo y horizonte</span>
             </h2>
-            <router-link to="" class="mt-8 md:mt-20 w-48 md:w-64 btn btn-secondary flex items-center justify-center">
-              <span class="text-sm md:text-base">SABER MÁS</span>
+            <router-link to="" class="btn btn-secondary flex items-center justify-center">
+              <p>SABER MÁS</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
             </router-link>
           </div>
@@ -120,7 +121,7 @@
     <section class="relative w-full">
       <img src="../assets/images/about-business-woman.png" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
 
-      <div class="relative max-w-screen-xl mx-auto px-4 py-16 md:py-24 z-10">
+      <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
         <h2 class="text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-12 mt-6 md:mt-10">
           Escuchamos, entendemos y construimos<br />
           <span class="font-mont-heavy">relaciones de largo plazo</span> basadas en la<br />

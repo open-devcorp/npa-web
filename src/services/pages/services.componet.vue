@@ -282,7 +282,7 @@
         class="absolute inset-0 w-full h-full object-cover" />
 
       <SectionTitle title="NUESTRAS ALIANZAS" textColor="text-white"
-        class="relative text-lg md:text-xl font-mont-black text-white py-4 max-w-screen-xl mx-auto px-4  mt-10" />
+        class="relative text-lg md:text-xl font-mont-black text-white py-4 max-w-screen-xl mx-auto px-4 xl:px-0  mt-10" />
 
       <div class="relative max-w-7xl mx-auto px-4 pt-20">
 
