@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Importar las vistas/páginas
 import HomeView from '../pages/HomeView.vue'
 import AboutView from '../pages/AboutView.vue'
+import ServicesView from '../pages/ServicesView.vue'
+import TeamView from '../pages/TeamView.vue'
 
 const routes = [
   {
@@ -18,8 +19,13 @@ const routes = [
   {
     path:'/servicios',
     name: 'Services',
-    component: () => import('../pages/ServicesView.vue')
+    component: ServicesView
   },
+  {
+    path:'/equipo',
+    name: 'Team',
+    component: TeamView
+  }
 ]
 
 const router = createRouter({

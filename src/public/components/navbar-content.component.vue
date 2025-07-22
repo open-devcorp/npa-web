@@ -22,7 +22,7 @@
                         QUÉ ELEGIRNOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/contacto"
+                    <router-link to="/equipo"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">EQUIPO</router-link>
                 </li>
             </ul>
