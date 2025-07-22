@@ -31,7 +31,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 export default {
-  name: 'ServiceCard',
+  name: 'service-card',
   props: {
     imageSrc: {
       type: String,

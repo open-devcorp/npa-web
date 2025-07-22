@@ -9,7 +9,6 @@ export default {
 };
 </script>
 <template>
-  <!-- <navbar-home-content></navbar-home-content> -->
   <navbar-content></navbar-content>
   <router-view></router-view>
   <footer-content></footer-content>

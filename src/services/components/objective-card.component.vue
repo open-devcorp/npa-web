@@ -2,59 +2,62 @@
   <div
     ref="cardRef"
     :class="[
-      'bg-tertiary/80 w-40 md:w-48 h-48 md:h-64 text-white flex flex-col items-center justify-between p-3 md:p-4 rounded-xl transition-all duration-200 ease-out',
+      'bg-noise-white p-4 md:p-6 lg:p-8 text-tertiary transition-all duration-200 ease-out',
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
-    <h3 class="text-center text-base md:text-xl font-semibold leading-tight">
-      {{ title }}
-    </h3>
-    <div class="w-full flex-1 flex items-center justify-center">
-      <img
-        v-if="iconSrc"
-        :src="iconSrc"
-        alt="icon"
-        class="w-16 h-16 md:w-20 md:h-20 object-contain"
-      />
-      <span v-else class="text-gray-300 text-xs md:text-sm">{{ iconPlaceholder }}</span>
+    <div class="flex flex-col items-start gap-4 mb-4">
+      <div :class="['p-2 rounded-full', iconBackground]">
+        <img :src="resolvedIconSrc" alt="Icon" class="w-8 h-8 md:w-12 md:h-12" />
+      </div>
+      <h3 class="text-2xl md:text-3xl font-mont-heavy">{{ title }}</h3>
     </div>
+    <p class="font-public-sans-regular text-justify text-sm md:text-base">
+      {{ description }}
+    </p>
   </div>
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 
 export default {
-  name: 'InfoCard',
+  name: 'objective-card',
   props: {
     title: {
       type: String,
       required: true,
     },
+    description: {
+      type: String,
+      required: true,
+    },
     iconSrc: {
       type: String,
-      default: '',
+      required: true,
     },
-    iconPlaceholder: {
+    iconBackground: {
       type: String,
-      default: 'icono',
+      default: 'bg-secondary',
     },
   },
-  setup() {
+  setup(props) {
     const cardRef = ref(null);
     const isVisible = ref(false);
     let observer = null;
+
+    const resolvedIconSrc = computed(() => new URL(props.iconSrc, import.meta.url).href);
 
     function playAnimation() {
       if (!cardRef.value) return;
       cardRef.value.animate(
         [
-          { opacity: 0, transform: 'rotateY(90deg) translateX(-100px)' },
-          { opacity: 1, transform: 'rotateY(0deg) translateX(0)' },
+          { opacity: 0, transform: 'translateX(100px)' },
+          { opacity: 1, transform: 'translateX(0)' },
         ],
         {
-          duration: 800,
-          easing: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
+          duration: 600,
+          easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
           fill: 'forwards',
         }
       );
@@ -86,7 +89,12 @@ export default {
     return {
       cardRef,
       isVisible,
+      resolvedIconSrc,
     };
   },
 };
 </script>
+
+<style scoped>
+/* Add any specific styles if needed */
+</style>

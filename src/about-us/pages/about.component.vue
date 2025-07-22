@@ -140,13 +140,13 @@
 </template>
 
 <script>
-import AboutCard from '../components/AboutCard.vue';
-import InfoCard from '../components/InfoCard.vue';
-import ObjectiveCard from '../components/ObjectiveCard.vue';
-import SectionTitle from '../components/SectionTitle.vue';
+import AboutCard from '../components/about-card.component.vue';
+import InfoCard from '../components/info-card.component.vue';
+import ObjectiveCard from '../../services/components/objective-card.component.vue';
+import SectionTitle from '../../services/components/section-title.component.vue';
 
 export default {
-  name: 'AboutView',
+  name: 'about',
   components: {
     AboutCard,
     InfoCard,

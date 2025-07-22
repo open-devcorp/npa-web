@@ -25,10 +25,9 @@
   </div>
 </template>
 
-<script setup>
-// Este es un componente básico de Home
+<script>
+export default {
+  name: "home"
+}
 </script>
 
-<style scoped>
-/* Estilos específicos del componente Home */
-</style>

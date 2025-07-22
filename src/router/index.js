@@ -1,30 +1,31 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
 // Importar las vistas/páginas
-import HomeView from '../pages/HomeView.vue'
-import AboutView from '../pages/AboutView.vue'
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  },
-  {
-    path: '/nosotros',
-    name: 'About',
-    component: AboutView
-  },
-  {
-    path:'/servicios',
-    name: 'Services',
-    component: () => import('../pages/ServicesView.vue')
-  },
-]
+import HomeComponent from "../home/pages/home.component.vue";
+import AboutComponent from "../about-us/pages/about.component.vue";
+import ServicesComponent from "../services/pages/services.componet.vue";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: HomeComponent,
+      meta: { title: "Home" },
+    },
+    {
+      path: "/nosotros",
+      name: "about",
+      component: AboutComponent,
+    },
+    {
+      path: "/servicios",
+      name: "services",
+      component: ServicesComponent,
+    },
+    { path: "/", redirect: "/home" },
+  ],
+});
 
-export default router
+export default router;
