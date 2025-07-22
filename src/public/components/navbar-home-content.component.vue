@@ -1,19 +1,19 @@
 <template>
-    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 mt-6 mb-8">
+    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-6">
         <div class="flex justify-between items-center">
             <img src="/src/assets/icons/logo-home-npa.svg" alt="Logo NPA" class="w-35 md:w-42 object-contain" />
 
             <ul class="hidden lg:flex gap-8">
                 <li>
-                    <router-link to="/home"
+                    <router-link to="/"
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">INICIO</router-link>
                 </li>
                 <li>
-                    <router-link to="/about"
+                    <router-link to="/nosotros"
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">NOSOTROS</router-link>
                 </li>
                 <li>
-                    <router-link to="/#servicios"
+                    <router-link to="/servicios"
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">SERVICIOS</router-link>
                 </li>
                 <li>
@@ -22,7 +22,7 @@
                         QUÉ ELEGIRNOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/#contacto"
+                    <router-link to="/contacto"
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">EQUIPO</router-link>
                 </li>
             </ul>

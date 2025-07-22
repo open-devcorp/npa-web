@@ -87,12 +87,12 @@
         </div>
 
         <!-- Texto dinámico debajo -->
-        <div class="mt-6 min-h-[20rem] md:min-h-[32rem]">
+        <div class="mt-6 h-[500px]">
           <!-- Primera opción -->
           <div v-if="selected === 0" class="flex flex-col md:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
             <!-- Imagen -->
             <div class="w-full md:w-1/2 overflow-hidden">
-              <img src="../assets/images/foreign-company.jpg" alt="Empresas extranjeras"
+              <img src="../../assets/images/foreign-company.jpg" alt="Empresas extranjeras"
                 class="w-full h-[200px] md:h-full max-h-[300px] md:max-h-[600px] object-cover" />
             </div>
 
@@ -153,7 +153,7 @@
 
             <!-- Imagen -->
             <div class="w-full md:w-1/2 overflow-hidden">
-              <img src="../assets/images/foreign-company.jpg" alt="Empresas Nacionales"
+              <img src="../../assets/images/foreign-company.jpg" alt="Empresas Nacionales"
                 class="w-full h-[200px] md:h-full max-h-[300px] md:max-h-[600px] object-cover" />
             </div>
 
@@ -282,7 +282,7 @@
         class="absolute inset-0 w-full h-full object-cover" />
 
       <SectionTitle title="NUESTRAS ALIANZAS" textColor="text-white"
-        class="relative text-lg md:text-xl font-mont-black text-white py-4 max-w-screen-xl mx-auto px-4 xl:px-0  mt-10" />
+        class="relative text-lg md:text-xl font-mont-black text-white py-4 max-w-screen-xl mx-auto px-4  mt-10" />
 
       <div class="relative max-w-7xl mx-auto px-4 pt-20">
 

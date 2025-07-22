@@ -93,7 +93,7 @@
               <br/>
               <span class="font-mont-heavy whitespace-nowrap">objetivo y horizonte</span>
             </h2>
-            <router-link to="" class="btn btn-secondary flex items-center justify-center">
+            <router-link to="" class="btn btn-secondary">
               <p>SABER MÁS</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
             </router-link>

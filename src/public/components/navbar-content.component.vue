@@ -1,5 +1,5 @@
 <template>
-    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 mt-6 mb-8">
+    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-6">
         <div class="flex justify-between items-center">
             <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-35 md:w-42 object-contain" />
 
