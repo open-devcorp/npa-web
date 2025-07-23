@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'SectionTitle',
+  name: 'section-title',
   props: {
     title: {
       type: String,
@@ -21,5 +21,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add any specific styles if needed */
+
 </style>

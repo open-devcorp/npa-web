@@ -2,49 +2,28 @@
   <div
     ref="cardRef"
     :class="[
-      'flex flex-col w-full lg:w-1/3 h-full transition-all duration-300 ease-out',
+      'bg-noise-white p-4 md:p-6 lg:p-8 text-tertiary transition-all duration-200 ease-out',
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
-    <img :src="resolveImagePath(imageSrc)" :alt="imageAlt" class="w-full h-[200px] md:h-[250px] object-cover rounded" />
-
-    <div class="flex flex-wrap lg:flex-nowrap gap-2 my-4 w-full">
-      <span
-        v-for="(tag, index) in tags"
-        :key="index"
-        class="bg-secondary font-mont-regular px-3 py-1 rounded-full flex-1 text-center h-6 flex items-center justify-center text-xs"
-      >
-        {{ tag }}
-      </span>
+    <div class="flex flex-col items-start gap-4 mb-4">
+      <div :class="['p-2 rounded-full', iconBackground]">
+        <img :src="resolvedIconSrc" alt="Icon" class="w-8 h-8 md:w-12 md:h-12" />
+      </div>
+      <h3 class="text-2xl md:text-3xl font-mont-heavy">{{ title }}</h3>
     </div>
-
-    <h3 class="text-2xl md:text-3xl xl:text-4xl font-mont-heavy mb-2 text-tertiary">
-      {{ title }}
-    </h3>
-    <p class="font-public-sans-regular text-justify text-gray-500">
+    <p class="font-public-sans-regular text-justify text-sm md:text-base">
       {{ description }}
     </p>
   </div>
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 
 export default {
-  name: 'ServiceCard',
+  name: 'objective-card',
   props: {
-    imageSrc: {
-      type: String,
-      required: true,
-    },
-    imageAlt: {
-      type: String,
-      default: 'Service Image',
-    },
-    tags: {
-      type: Array,
-      required: true,
-    },
     title: {
       type: String,
       required: true,
@@ -53,26 +32,32 @@ export default {
       type: String,
       required: true,
     },
+    iconSrc: {
+      type: String,
+      required: true,
+    },
+    iconBackground: {
+      type: String,
+      default: 'bg-secondary',
+    },
   },
   setup(props) {
     const cardRef = ref(null);
     const isVisible = ref(false);
     let observer = null;
 
-    function resolveImagePath(path) {
-      return new URL(path, import.meta.url).href;
-    }
+    const resolvedIconSrc = computed(() => new URL(props.iconSrc, import.meta.url).href);
 
     function playAnimation() {
       if (!cardRef.value) return;
       cardRef.value.animate(
         [
-          { opacity: 0, transform: 'translateY(50px) scale(0.9)' },
-          { opacity: 1, transform: 'translateY(0) scale(1)' },
+          { opacity: 0, transform: 'translateX(100px)' },
+          { opacity: 1, transform: 'translateX(0)' },
         ],
         {
-          duration: 800,
-          easing: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
+          duration: 600,
+          easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
           fill: 'forwards',
         }
       );
@@ -104,7 +89,7 @@ export default {
     return {
       cardRef,
       isVisible,
-      resolveImagePath,
+      resolvedIconSrc,
     };
   },
 };

@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import HomeView from '../pages/HomeView.vue'
-import AboutView from '../pages/AboutView.vue'
-import ServicesView from '../pages/ServicesView.vue'
-import TeamView from '../pages/TeamView.vue'
+import HomeView from '../home/pages/home.component.vue'
+import AboutView from '../about-us/pages/about.component.vue'
+import ServicesView from '../services/pages/services.componet.vue'
+import TeamView from '../team/pages/team.component.vue'
 
 const routes = [
   {
@@ -31,6 +31,6 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
-export default router
+export default router;
