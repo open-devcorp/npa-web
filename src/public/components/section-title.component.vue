@@ -1,7 +1,10 @@
 <template>
-  <p :class="['text-lg font-mont-black mb-6', textColor]">
-    {{ title }}
-  </p>
+  <div class="flex items-center">
+    <img src="../../assets/icons/logo-tertiary.svg" alt="new point" class="w-9 h-9" />
+    <p :class="['text-xl font-mont-black uppercase ml-3', textColor]">
+      {{ title }}
+    </p>
+  </div>
 </template>
 
 <script>
