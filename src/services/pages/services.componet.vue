@@ -15,7 +15,7 @@
 
       <SectionTitle title="SERVICIOS" textColor="text-tertiary" />
 
-      <p class="text-3xl md:text-6xl lg:text-7xl mt-10 leading-tight flex flex-wrap items-center">
+      <p class="text-3xl md:text-6xl xl:text-7xl mt-6 md:mt-10 flex items-center mb-4">
         <span class="font-mont-regular mr-2">Tu</span>
         <span class="font-mont-heavy whitespace-nowrap mr-2">punto</span>
         <span class="font-mont-regular mr-2">de solución</span>
@@ -42,7 +42,7 @@
           <span class="font-mont-heavy whitespace-nowrap mr-2">Segmentos</span>
         </p>
 
-        <div class="flex flex-col md:flex-row h-auto md:h-[20rem] lg:h-[25rem] overflow-hidden gap-3 md:gap-4" @mouseleave="resetSelection">
+        <div class="flex flex-col md:flex-row h-auto md:h-[20rem] lg:h-[25rem] overflow-hidden gap-3 md:gap-4" @mouseleave="selected = selected >= 0 ? selected : 0">
           <div 
             v-for="(card, index) in cards" 
             :key="index"
@@ -52,13 +52,13 @@
               'md:w-[25%]': selected !== index
             }" 
             @mouseenter="selectCard(index)" 
-            @click="toggleLock(index)">
+            @click="selectCard(index)">
 
             <template v-if="card.img">
-              <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-center" />
+              <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-center transition-transform duration-300"/>
             </template>
 
-            <div v-if="selected !== index" class="absolute inset-0 bg-[#00213F] opacity-70 z-10 flex items-center justify-center">
+            <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 opacity-70 z-10 flex items-center justify-center">
               <p class="text-white font-mont-semibold text-sm md:text-lg lg:text-xl text-center md:hidden">
                 {{ card.overlayTitle }}
               </p>
@@ -77,16 +77,16 @@
           </div>
         </div>
 
-        <div class="mt-6 h-auto md:h-[500px]">
+        <div class="mt-6 h-auto lg:h-[500px]" ref="infoSection">
           <div v-if="selectedContent">
-            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
-              <!-- Imagen -->
-              <div class="w-full md:w-1/2 overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
+              <!-- Image -->
+              <div class="w-full lg:w-1/2 overflow-hidden">
                 <img :src="selectedContent.img" :alt="selectedContent.alt" class="w-full h-auto md:h-full max-h-[300px] md:max-h-[600px] object-cover" />
               </div>
 
-              <!-- Contenido -->
-              <div class="w-full md:w-1/2 text-justify flex flex-col justify-start">
+              <!-- Body -->
+              <div class="w-full lg:w-1/2 text-justify flex flex-col justify-start">
                 <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
                   {{ selectedContent.title }}
                 </p>
@@ -122,7 +122,7 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
 import SectionTitle from '../../services/components/section-title.component.vue';
 
@@ -133,8 +133,11 @@ export default {
     SectionTitle
   },
   setup() {
-    const selected = ref(0);
+    const selected = ref(0); 
     const locked = ref(false);
+    const isMobile = ref(false);
+
+    const infoSection = ref(null);
 
     const services = [
       {
@@ -208,8 +211,23 @@ export default {
       }
     ];
 
+    const checkMobile = () => {
+      isMobile.value = window.innerWidth <= 768;
+    };
+
+    const scrollToInfo = () => {
+      if (infoSection.value) {
+        infoSection.value.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
     const selectCard = (index) => {
-      if (!locked.value) selected.value = index;
+      if (!locked.value) {
+        selected.value = index;
+        if (isMobile.value) {
+          scrollToInfo();
+        }
+      }
     };
 
     const resetSelection = () => {
@@ -226,6 +244,11 @@ export default {
       return card ? { ...card.content, img: card.img, alt: card.alt } : null;
     });
 
+    onMounted(() => {
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+    });
+
     return {
       selected,
       locked,
@@ -234,7 +257,9 @@ export default {
       selectCard,
       resetSelection,
       toggleLock,
-      selectedContent
+      selectedContent,
+      isMobile,
+      infoSection 
     };
   }
 };
