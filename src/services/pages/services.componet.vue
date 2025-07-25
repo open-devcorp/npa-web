@@ -359,7 +359,7 @@
 <script>
 import { ref, nextTick } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
-import SectionTitle from '../../services/components/section-title.component.vue';
+import SectionTitle from '../../public/components/section-title.component.vue';
 
 export default {
   name: "services",

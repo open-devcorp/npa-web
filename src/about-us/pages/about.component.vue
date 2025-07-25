@@ -144,7 +144,7 @@
 import AboutCard from '../components/about-card.component.vue';
 import InfoCard from '../components/info-card.component.vue';
 import ObjectiveCard from '../../services/components/objective-card.component.vue';
-import SectionTitle from '../../services/components/section-title.component.vue';
+import SectionTitle from '../../public/components/section-title.component.vue';
 
 export default {
   name: 'about',
