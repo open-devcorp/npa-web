@@ -1,7 +1,7 @@
 <template>
     <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-6">
         <div class="flex justify-between items-center">
-            <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-35 md:w-42 object-contain" />
+            <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-25 md:w-35 lg:w-40 object-contain" />
 
             <ul class="hidden lg:flex gap-8">
                 <li>
