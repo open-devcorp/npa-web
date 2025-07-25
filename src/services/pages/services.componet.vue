@@ -58,8 +58,8 @@
               <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-center transition-transform duration-300"/>
             </template>
 
-            <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 opacity-70 z-10 flex items-center justify-center">            
-              <p class="text-white font-mont-semibold text-sm md:text-lg lg:text-xl text-center md:hidden">
+            <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 z-10 flex items-center justify-center">            
+              <p class="text-white font-mont-heavy text-sm md:text-lg lg:text-xl text-center md:hidden">
                 {{ card.overlayTitle }}
               </p>
             </div>
