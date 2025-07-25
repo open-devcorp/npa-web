@@ -15,7 +15,7 @@ s="bg-noise-blue text-white py-4
       <!-- Title -->
       <div>
         <SectionTitle title="CONOCE AL EQUIPO" textColor="text-tertiary" />
-        <p class="text-3xl md:text-6xl xl:text-7xl mt-6 md:mt-10 flex items-center mb-4">
+        <p class="text-4xl md:text-7xl xl:text-8xl mt-6 md:mt-10 flex items-center mb-4">
           <span class="font-mont-regular mr-2">Nuestro</span>
           <span class="font-mont-heavy mr-2">Equipo</span>
         </p>
@@ -98,9 +98,12 @@ s="bg-noise-blue text-white py-4
         <!-- Right -->
         <div class="w-full xl:w-1/2 text-justify flex flex-col">
           <div>
-            <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
-              New Point Asesores
-            </p>
+                <div class="flex items-center gap-2 mb-4">
+                  <img src="/src/assets/icons/star.svg" class="h-8 w-8"/>
+                  <p class="text-lg md:text-xl font-mont-black text-tertiary">
+                    New Point Asesores
+                  </p>
+                </div>
             <div class="">
               <p class="font-mont-heavy text-2xl lg:text-7xl text-start">
                 {{ cards[selected]?.overlayTitle }}

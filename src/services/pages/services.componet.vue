@@ -58,7 +58,7 @@
               <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-center transition-transform duration-300"/>
             </template>
 
-            <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 opacity-70 z-10 flex items-center justify-center">
+            <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 opacity-70 z-10 flex items-center justify-center">            
               <p class="text-white font-mont-semibold text-sm md:text-lg lg:text-xl text-center md:hidden">
                 {{ card.overlayTitle }}
               </p>
@@ -87,9 +87,12 @@
 
               <!-- Body -->
               <div class="w-full lg:w-1/2 text-justify flex flex-col justify-start">
-                <p class="text-lg md:text-xl font-mont-black text-tertiary mb-4">
-                  {{ selectedContent.title }}
-                </p>
+                <div class="flex items-center gap-2 mb-4">
+                  <img src="/src/assets/icons/star.svg" class="h-8 w-8"/>
+                  <p class="text-lg md:text-xl font-mont-black text-tertiary">
+                    {{ selectedContent.title }}
+                  </p>
+                </div>
                 <p class="text-gray-600 font-public-sans-regular text-sm md:text-xl max-w-3xl mb-4">
                   {{ selectedContent.description }}
                 </p>
