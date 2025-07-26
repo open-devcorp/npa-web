@@ -2,14 +2,14 @@
   <div class="bg-noise-white">
 
     <!-- Hero Section -->
-    <section class="bg-noise-blue text-white py-4 md:py-20">
-      <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">Servicios</h1>
-        <p class="font-public-sans-black text-sm">
-          <span class="text-secondary">INICIO</span> / SERVICIOS
-        </p>
-      </div>
-    </section>
+  <section class="bg-noise-blue text-white py-4 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('services.title') }}</h1>
+      <p class="font-public-sans-black text-sm">
+        <span class="text-secondary">INICIO</span> / {{ t('services.title') }}
+      </p>
+    </div>
+  </section>
 
     <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32 mt-10">
 
@@ -128,6 +128,7 @@
 import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
 import SectionTitle from '../../services/components/section-title.component.vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
   name: "services",
@@ -136,6 +137,7 @@ export default {
     SectionTitle
   },
   setup() {
+    const { t } = useI18n();
     const selected = ref(0); 
     const locked = ref(false);
     const isMobile = ref(false);
@@ -262,7 +264,8 @@ export default {
       toggleLock,
       selectedContent,
       isMobile,
-      infoSection 
+      infoSection,
+      t
     };
   }
 };

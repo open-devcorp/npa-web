@@ -98,14 +98,18 @@
         <span>Diseñado y desarrollado por: </span>
         logo de DevCorp
         <span class="ml-2 text-gray-400">© 2025</span>
+         <LanguageSwitcher />
       </div>
     </div>
-
   </footer>
 </template>
 
 <script>
+import LanguageSwitcher from './language-switcher.component.vue';
 export default {
-  name: "footer-content"
-}
+  name: "footer-content",
+  components: {
+    LanguageSwitcher
+  }
+};
 </script>
