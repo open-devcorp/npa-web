@@ -146,13 +146,13 @@
 
       <div class="bg-tertiary p-5 md:p-8 lg:p-9 xl:p-11 relative">
 
-        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold md:mb-1 text-nowrap">
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1 text-nowrap">
           Impulsemos proyectos
         </p>
-        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold md:mb-1">
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1">
           extraordinarios
         </p>
-        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold mb-6 md:mb-10">
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none mb-6 md:mb-10">
           juntos
         </p>
 
