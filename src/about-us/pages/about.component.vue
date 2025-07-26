@@ -30,7 +30,7 @@
             <div class="flex items-end justify-end mt-4">
               <router-link to="" class="btn btn-primary flex items-center justify-center">
                 <span>CONTÁCTANOS</span>
-                <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+                <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
               </router-link>
             </div>
           </div>
@@ -95,7 +95,7 @@
             </h2>
             <router-link to="" class="btn btn-secondary">
               <p>SABER MÁS</p>
-              <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+              <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
             </router-link>
           </div>
 

@@ -97,7 +97,7 @@
   }
 
   .btn {
-    @apply lg:px-6 lg:py-4 py-2 md:py-3 px-5 uppercase transition-colors cursor-pointer font-mont-bold leading-none text-xs md:text-sm lg:text-base inline-flex items-center justify-center w-fit;
+    @apply lg:px-6 lg:py-4 py-3 md:py-3 px-5 uppercase transition-colors cursor-pointer font-mont-bold leading-none text-xs md:text-sm lg:text-base inline-flex items-center justify-center w-fit;
   }
 
   .btn-primary {

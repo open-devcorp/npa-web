@@ -69,9 +69,9 @@
             </div>
 
 
-            <router-link to="" class="btn btn-tertiary border-2 border-black">
+            <router-link to="" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
               <span class="">CONÓCENOS</span>
-              <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1 invert" />
+              <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
 
           </div>
@@ -87,29 +87,31 @@
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-19">
 
       <!-- Titulo y boton -->
-      <div class="flex items-end justify-between">
-        <div class="flex items-start gap-15">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between">
+        <div class="flex flex-col lg:flex-row lg:items-start md:gap-6 gap-4 lg:gap-10 xl:gap-15">
           <!-- vineta -->
-          <div class="">
+          <div class="flex-shrink-0">
             <SectionTitle title="lo que ofrecemos" textColor="text-tertiary" />
           </div>
 
           <!-- Titulo -->
           <div>
-            <p class="text-7xl font-mont-regular">
+            <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap">
               Descubre nuestras
             </p>
-            <p class="text-7xl font-mont-heavy">
+            <p class="text-4xl md:text-5xl xl:text-7xl font-mont-heavy text-nowrap">
               soluciones
             </p>
           </div>
         </div>
 
         <!-- boton -->
-        <router-link to="" class="btn btn-primary">
-          <p>Saber más</p>
-          <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
-        </router-link>
+        <div class="flex justify-end">
+          <router-link to="" class="btn btn-primary whitespace-nowrap items-center">
+            <p>Saber más</p>
+            <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
+          </router-link>
+        </div>
       </div>
 
       <!-- cards -->

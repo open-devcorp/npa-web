@@ -14,10 +14,10 @@
       </span>
     </div>
 
-    <h3 class="text-2xl md:text-3xl xl:text-4xl font-mont-heavy mb-2 text-tertiar text-nowrap">
+    <h3 class="text-xl md:text-2xl xl:text-4xl font-mont-heavy mb-2 text-tertiar text-nowrap">
       {{ title }}
     </h3>
-    <p class="font-public-sans-regular text-justify text-gray-500">
+    <p class="font-public-sans-regular text-justify text-gray-500 lg:text-base md:text-sm text-xs">
       {{ description }}
     </p>
   </div>
