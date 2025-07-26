@@ -109,7 +109,7 @@
   }
 
   .btn-secondary {
-    @apply bg-secondary  text-white;
+    @apply bg-secondary  text-tertiary;
   }
 
   .btn-secondary:hover {

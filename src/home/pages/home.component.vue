@@ -1,6 +1,6 @@
 <template>
   <!-- Hero -->
-  <section class="relative">
+  <section>
     <!-- Imagen de fondo -->
     <div class="w-full">
       <img src="/src/assets/backgrounds/bg-home.png" alt="Background"
@@ -68,14 +68,13 @@
               </div>
             </div>
 
-
             <router-link to="" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
               <span class="">CONÓCENOS</span>
-              <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
+              <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+                class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
 
           </div>
-
         </div>
       </div>
     </div>
@@ -84,7 +83,7 @@
   <!-- lo que ofrecemos -->
   <section class="bg-noise-white">
 
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-19">
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
 
       <!-- Titulo y boton -->
       <div class="flex flex-col md:flex-row md:items-end md:justify-between">
@@ -109,7 +108,8 @@
         <div class="flex justify-end">
           <router-link to="" class="btn btn-primary whitespace-nowrap items-center">
             <p>Saber más</p>
-            <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
+            <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+              class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
           </router-link>
         </div>
       </div>
@@ -132,6 +132,45 @@
 
     </div>
   </section>
+
+  <!-- impulsemos proyectos -->
+  <section class="relative">
+    <!-- Imagen de fondo -->
+    <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
+      <img src="/src/assets/backgrounds/computer-coffee.png" alt="Background"
+        class="w-full h-full object-cover -scale-x-100" />
+    </div>
+
+    <!-- Contenido superpuesto -->
+    <div class="absolute inset-0 flex flex-col items-end justify-end p-4 md:p-10 lg:p-16">
+
+      <div class="bg-tertiary p-5 md:p-8 lg:p-9 xl:p-11 relative">
+
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold md:mb-1 text-nowrap">
+          Impulsemos proyectos
+        </p>
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold md:mb-1">
+          extraordinarios
+        </p>
+        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold mb-6 md:mb-10">
+          juntos
+        </p>
+
+        <!-- Estrella decorativa posicionada en la esquina -->
+        <div class="absolute bottom-0 right-0">
+          <img src="/src/assets/images/star-secondary.svg" alt="Star decoration" class="h-13 md:h-30 object-contain" />
+        </div>
+
+        <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
+          <p>Contáctanos</p>
+          <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+            class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
+        </router-link>
+      </div>
+    </div>
+
+  </section>
+
 </template>
 
 <script>
