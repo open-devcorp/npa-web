@@ -3,7 +3,7 @@
     'xl:w-[399px] lg:w-[310px] transition-all duration-300 ease-out',
     isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
   ]">
-    <div class="w-full h-full">
+    <div class="w-full xl:h-[360px] lg:h-[250px] md:h-[500px] h-[265px]">
       <img :src="resolveImagePath(imageSrc)" :alt="imageAlt" class="w-full h-full object-cover" />
     </div>
 

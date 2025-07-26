@@ -115,14 +115,14 @@
       <!-- cards -->
       <div class="flex flex-col lg:flex-row justify-between items-start mt-15 gap-y-10 lg:gap-y-0">
 
-        <ServiceCard imageSrc="../../assets/images/about-business-woman.png" imageAlt="Imagen 1"
+        <ServiceCard imageSrc="../../assets/images/service-1.jpeg" imageAlt="Imagen 1"
           :tags="['Mercado', 'Marca', 'Contenido']" title="Asesoría Comercial"
           description="Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial." />
 
-        <ServiceCard imageSrc="../../assets/images/about-business-woman.png" imageAlt="Imagen 2"
+        <ServiceCard imageSrc="../../assets/images/service-2.png" imageAlt="Imagen 2"
           :tags="['Inmobiliario', 'Empresarial', 'Arquitectónicos']" title="Asesoría legal"
           description="Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución." />
-        <ServiceCard imageSrc="../../assets/images/about-business-woman.png" imageAlt="Imagen 2"
+        <ServiceCard imageSrc="../../assets/images/service-3.jpg" imageAlt="Imagen 3"
           :tags="['Inversores', 'Proveedores', 'Exportaciones']" title="Asesoría legal"
           description="Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución." />
 
@@ -130,8 +130,6 @@
 
     </div>
   </section>
-
-
 </template>
 
 <script>
