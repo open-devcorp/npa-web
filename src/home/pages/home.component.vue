@@ -89,9 +89,9 @@
       <div class="flex flex-col md:flex-row md:items-end md:justify-between">
         <div class="flex flex-col lg:flex-row lg:items-start md:gap-6 gap-4 lg:gap-10 xl:gap-15">
           <!-- vineta -->
-          <div class="flex-shrink-0">
-            <SectionTitle title="lo que ofrecemos" textColor="text-tertiary" />
-          </div>
+
+          <SectionTitle title="lo que ofrecemos" textColor="text-tertiary" />
+
 
           <!-- Titulo -->
           <div>
@@ -146,7 +146,8 @@
 
       <div class="bg-tertiary p-5 md:p-8 lg:p-9 xl:p-11 relative">
 
-        <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1 text-nowrap">
+        <p
+          class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1 text-nowrap">
           Impulsemos proyectos
         </p>
         <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1">
@@ -168,6 +169,51 @@
         </router-link>
       </div>
     </div>
+  </section>
+
+  <!-- testimonios -->
+  <section class="bg-tertiary">
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
+      <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
+        <SectionTitle title="Testimonios" textColor="text-white " />
+        <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">
+          Confían en <span class="font-mont-heavy">nosotros</span>
+        </p>
+      </div>
+      <div class="mt-15 justify-center flex">
+        <TestimonyCard name="Elaine Ford" role="Fundadora de Democracia digital"
+          testimony="Excelente servicio. El equipo de New Point es profesional, cercano y siempre estuvo ahí para resolver mis dudas. Me dieron soluciones claras y efectivas, y lo mejor es que lograron los resultados que necesitaba. ¡Totalmente recomendados!"
+          image="/src/assets/images/about-business-woman.png" :rating="5" />
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-noise-white">
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-25">
+      <div class="bg-tertiary p-5 pb-20 md:p-8 lg:p-9 xl:p-15 relative rounded-2xl ">
+        <!-- Estrella decorativa posicionada en la esquina -->
+        <div class="absolute bottom-0 left-0">
+          <img src="/src/assets/images/star-secondary.svg" alt="Star decoration"
+            class="h-25 xl:h-50 lg:h-40 md:h-30 object-contain -scale-x-100" />
+        </div>
+        <div class="flex flex-col xl:pl-60 md:pl-40">
+          <p
+            class="text-white text-xl md:text-xl lg:text-3xl xl:text-4xl font-mont-bold md:mb-3 mb-1 text-center md:text-left">
+            Conecta con nosotros y accede a oportunidades exclusivas para tu negocio
+          </p>
+
+          <div class="flex md:justify-end justify-center">
+            <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
+              <p>¡Empieza ya!</p>
+              <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+                class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
+            </router-link>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -176,12 +222,14 @@
 <script>
 import SectionTitle from '../../public/components/section-title.component.vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
+import TestimonyCard from '../../home/components/testimony-card.component.vue';
 
 export default {
   name: "Home",
   components: {
     SectionTitle,
-    ServiceCard
+    ServiceCard,
+    TestimonyCard
   }
 }
 </script>
