@@ -1,5 +1,111 @@
 {
+  "home": "INICIO",
   "services": {
-    "title": "Servicios"
+    "title": "Servicios",
+    "titlesServices": {
+      "legalAdvisory": "Asesoría legal",
+      "commercialBrokerage": "Corretaje Comercial",
+      "commercialAdvisory": "Asesoría Comercial"
+    },
+    "subtitle": "SERVICIOS",
+    "solution": {
+      "part1": "Tu",
+      "part2": "punto",
+      "part3": "de solución"
+    },
+    "clientSegmentTitle": "SEGMENTO POR CLIENTE",
+    "clientSegment": {
+      "part1": "Nuestros",
+      "part2": "Segmentos"
+    },
+    "tags": {
+      "market": "Mercado",
+      "brand": "Marca",
+      "content": "Contenido",
+      "realEstate": "Inmobiliario",
+      "business": "Empresarial",
+      "architectural": "Arquitectónicos",
+      "investors": "Inversores",
+      "providers": "Proveedores",
+      "exports": "Exportaciones"
+    },
+      "descriptions": {
+      "commercialAdvisory": "Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial.",
+       "legalAdvisory": "Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.",
+      "commercialBrokerage": "Servicio que facilita la conexión entre inversores y proveedores, promoviendo exportaciones e inversiones. También gestionamos búsqueda y selección de oportunidades comerciales, contribuyendo al crecimiento y éxito de empresas en diversos mercados."
+    },
+    "cards": {
+      "foreignCompany": {
+        "alt": "Empresas extranjeras",
+        "overlayTitle": "EMPRESAS EXTRANJERAS",
+        "overlaySubtitle": "FACILITAMOS NEGOCIOS",
+        "content": {
+          "title": "Para Empresas Extranjeras",
+          "description": "Facilitamos la inversión, exportación e ingreso al mercado peruano",
+          "details": [
+            {
+              "title": "Consultoría y Asesoría Legal y Técnica:",
+              "subtitle": "Asesoramos en la adquisición y regularización de propiedades para inversión o expansión.",
+              "extra": "También brindamos soporte legal en constitución de empresas, contratos y normativa Perú–UE."
+            },
+            {
+              "title": "Estudios de Mercado y Análisis de Demanda Local:",
+              "subtitle": "Identificación de oportunidades reales de negocio en el mercado peruano."
+            },
+            {
+              "title": "Corretaje Comercial Internacional:",
+              "subtitle": "Conexión con productores, proveedores y proyectos de inversión en Perú en sectores estratégicos."
+            }
+          ]
+        }
+      },
+      "nationalCompany": {
+        "alt": "Empresas Nacionales",
+        "overlayTitle": "EMPRESAS NACIONALES",
+        "overlaySubtitle": "ESCALAMOS CONTIGO",
+        "content": {
+          "title": "Para Empresas Nacionales",
+          "description": "Impulsar su expansión, formalización y crecimiento en el mercado local e internacional",
+          "details": [
+            {
+              "title": "Saneamiento Físico-Legal de Inmuebles:",
+              "subtitle": "Regularización integral de predios, declaratoria de fábrica, independizaciones y habilitaciones urbanas"
+            },
+            {
+              "title": "Planes de Marketing Estratégico:",
+              "subtitle": "Diseño de estrategias de crecimiento comercial basadas en datos reales y estudios de mercado."
+            },
+            {
+              "title": "Proyectos Arquitectónicos Comerciales:",
+              "subtitle": "Diseño y desarrollo técnico-legal de proyectos de centros comerciales, mercados, centros educativos, viviendas multifamiliares y unifamiliares."
+            }
+          ]
+        }
+      },
+      "personCompany": {
+        "alt": "Personas y Emprendedores",
+        "overlayTitle": "PERSONAS Y EMPRENDEDORES",
+        "overlaySubtitle": "IMPULSAMOS TU ALCANCE",
+        "content": {
+          "title": "Para Personas Naturales y Emprendedores",
+          "description": "Formalizar, proteger y potenciar sus inversiones personales o pequeños negocios",
+          "details": [
+            {
+              "title": "Consultoría Legal Personalizada en Derecho Inmobiliario:",
+              "subtitle": "Asesoría en compraventa, prescripción adquisitiva, acción reivindicatoria y protección patrimonial"
+            },
+            {
+              "title": "Gestión de Trámites y Regularizaciones ante SUNARP y Catastro:",
+              "subtitle": "Gestión de títulos, subdivisiones, acumulaciones, habilitaciones urbanas y otros procedimientos técnicos-legales."
+            },
+            {
+              "title": "Asesoría en Identidad y Estrategia Comercial:",
+              "subtitle": "Desarrollo de marca personal o de negocio, posicionamiento digital y diseño de estrategias de comunicación adaptadas al mercado"
+            }
+          ]
+        }
+      }
+    }
+    
   }
 }

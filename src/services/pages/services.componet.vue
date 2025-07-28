@@ -6,23 +6,22 @@
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('services.title') }}</h1>
       <p class="font-public-sans-black text-sm">
-        <span class="text-secondary">INICIO</span> / {{ t('services.title') }}
+        <span class="text-secondary">{{ t('home') }}</span> / {{ t('services.subtitle') }}
       </p>
     </div>
   </section>
 
     <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32 mt-10">
 
-      <SectionTitle title="SERVICIOS" textColor="text-tertiary" />
-
+    <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
       <p class="text-3xl md:text-6xl xl:text-7xl mt-6 md:mt-10 flex items-center mb-4">
-        <span class="font-mont-regular mr-2">Tu</span>
-        <span class="font-mont-heavy whitespace-nowrap mr-2">punto</span>
-        <span class="font-mont-regular mr-2">de solución</span>
+        <span class="font-mont-regular mr-2">{{ t('services.solution.part1') }}</span>
+        <span class="font-mont-heavy whitespace-nowrap mr-2">{{ t('services.solution.part2') }}</span>
+        <span class="font-mont-regular mr-2">{{ t('services.solution.part3') }}</span>
       </p>
 
       <!-- Service Cards -->
-      <div class="flex flex-col lg:flex-row max-w-screen-xl mx-auto gap-8 lg:gap-12 mt-10 px-4 xl:px-0">
+      <div class="flex flex-col xl:flex-row max-w-screen-xl mx-auto gap-8 xl:gap-12 mt-10 px-4">
         <ServiceCard 
           v-for="(service, index) in services" 
           :key="index"
@@ -36,10 +35,10 @@
 
       <!-- Client Segment Cards -->
       <div class="mt-12 md:mt-20 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32">
-        <SectionTitle title="SEGMENTO POR CLIENTE" textColor="text-tertiary" />
+        <SectionTitle :title="t('services.clientSegmentTitle')" textColor="text-tertiary" />
         <p class="text-3xl md:text-6xl xl:text-7xl mt-6 md:mt-10 flex items-center mb-4">
-          <span class="font-mont-regular mr-2">Nuestros</span>
-          <span class="font-mont-heavy whitespace-nowrap mr-2">Segmentos</span>
+          <span class="font-mont-regular mr-2">{{ t('services.clientSegment.part1') }}</span>
+          <span class="font-mont-heavy whitespace-nowrap mr-2">{{ t('services.clientSegment.part2') }}</span>
         </p>
 
         <div class="flex flex-col md:flex-row h-auto md:h-[20rem] lg:h-[25rem] overflow-hidden gap-3 md:gap-4" @mouseleave="selected = selected >= 0 ? selected : 0">
@@ -77,7 +76,7 @@
           </div>
         </div>
 
-        <div class="mt-6 h-auto lg:h-[500px]" ref="infoSection">
+        <div class="mt-6 h-auto lg:h-[500px] mb-6" ref="infoSection">
           <div v-if="selectedContent">
             <div class="flex flex-col lg:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
               <!-- Image -->
@@ -123,7 +122,6 @@
 
   </div>
 </template>
-
 <script>
 import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
@@ -141,80 +139,108 @@ export default {
     const selected = ref(0); 
     const locked = ref(false);
     const isMobile = ref(false);
-
     const infoSection = ref(null);
 
-    const services = [
+    // Servicios (traducidos y reactivos)
+    const services = computed(() => [
       {
         imageSrc: '../../assets/images/service-1.webp',
         imageAlt: 'Imagen 1',
-        tags: ['Mercado', 'Marca', 'Contenido'],
-        title: 'Asesoría Comercial',
-        description: 'Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial.'
+        tags: [t('services.tags.market'), t('services.tags.brand'), t('services.tags.content')],
+        title: t('services.titlesServices.commercialAdvisory'),
+        description: t('services.descriptions.commercialAdvisory'),
       },
       {
         imageSrc: '../../assets/images/service-2.jpg',
         imageAlt: 'Imagen 2',
-        tags: ['Inmobiliario', 'Empresarial', 'Arquitectónicos'],
-        title: 'Asesoría legal',
-        description: 'Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.'
+        tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
+        title: t('services.titlesServices.legalAdvisory'),
+        description: t('services.descriptions.legalAdvisory'),
       },
       {
         imageSrc: '../../assets/images/service-3.jpg',
         imageAlt: 'Imagen 3',
-        tags: ['Inversores', 'Proveedores', 'Exportaciones'],
-        title: 'Corretaje Comercial',
-        description: 'Servicio que facilita la conexión entre inversores y proveedores, promoviendo exportaciones e inversiones. También gestionamos búsqueda y selección de oportunidades comerciales, contribuyendo al crecimiento y éxito de empresas en diversos mercados.'
+        tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
+        title: t('services.titlesServices.commercialBrokerage'),
+        description: t('services.descriptions.commercialBrokerage'),
       }
-    ];
+    ]);
 
-    const cards = [
+    const cards = computed(() => [
       {
         img: '/src/assets/images/foreign-company.jpg',
-        alt: 'Empresas extranjeras',
-        overlayTitle: 'EMPRESAS EXTRANJERAS',
-        overlaySubtitle: 'FACILITAMOS NEGOCIOS',
+        alt: t('services.cards.foreignCompany.alt'),
+        overlayTitle: t('services.cards.foreignCompany.overlayTitle'),
+        overlaySubtitle: t('services.cards.foreignCompany.overlaySubtitle'),
         content: {
-          title: 'Para Empresas Extranjeras',
-          description: 'Facilitamos la inversión, exportación e ingreso al mercado peruano',
-          details: [
-            { title: 'Consultoría y Asesoría Legal y Técnica:', subtitle: 'Asesoramos en la adquisición y regularización de propiedades para inversión o expansión.', extra: 'También brindamos soporte legal en constitución de empresas, contratos y normativa Perú–UE.' },
-            { title: 'Estudios de Mercado y Análisis de Demanda Local:', subtitle: 'Identificación de oportunidades reales de negocio en el mercado peruano.' },
-            { title: 'Corretaje Comercial Internacional:', subtitle: 'Conexión con productores, proveedores y proyectos de inversión en Perú en sectores estratégicos.' }
-          ]
+          title: t('services.cards.foreignCompany.content.title'),
+          description: t('services.cards.foreignCompany.content.description'),
+      details: [
+        { 
+          title: t('services.cards.foreignCompany.content.details[0].title'), 
+          subtitle: t('services.cards.foreignCompany.content.details[0].subtitle'), 
+          extra: t('services.cards.foreignCompany.content.details[0].extra') 
+        },
+        { 
+          title: t('services.cards.foreignCompany.content.details[1].title'), 
+          subtitle: t('services.cards.foreignCompany.content.details[1].subtitle') 
+        },
+        { 
+          title: t('services.cards.foreignCompany.content.details[2].title'), 
+          subtitle: t('services.cards.foreignCompany.content.details[2].subtitle') 
+        }
+      ]
         }
       },
       {
         img: '/src/assets/images/national-company.webp',
-        alt: 'Empresas Nacionales',
-        overlayTitle: 'EMPRESAS NACIONALES',
-        overlaySubtitle: 'ESCALAMOS CONTIGO',
+        alt: t('services.cards.nationalCompany.alt'),
+        overlayTitle: t('services.cards.nationalCompany.overlayTitle'),
+        overlaySubtitle: t('services.cards.nationalCompany.overlaySubtitle'),
         content: {
-          title: 'Para Empresas Nacionales',
-          description: 'Impulsar su expansión, formalización y crecimiento en el mercado local e internacional',
+          title: t('services.cards.nationalCompany.content.title'),
+          description: t('services.cards.nationalCompany.content.description'),
           details: [
-            { title: 'Saneamiento Físico-Legal de Inmuebles:', subtitle: 'Regularización integral de predios, declaratoria de fábrica, independizaciones y habilitaciones urbanas' },
-            { title: 'Planes de Marketing Estratégico:', subtitle: 'Diseño de estrategias de crecimiento comercial basadas en datos reales y estudios de mercado.' },
-            { title: 'Proyectos Arquitectónicos Comerciales:', subtitle: 'Diseño y desarrollo técnico-legal de proyectos de centros comerciales, mercados, centros educativos, viviendas multifamiliares y unifamiliares.' }
+            { 
+              title: t('services.cards.nationalCompany.content.details[0].title'), 
+              subtitle: t('services.cards.nationalCompany.content.details[0].subtitle') 
+            },
+            { 
+              title: t('services.cards.nationalCompany.content.details[1].title'), 
+              subtitle: t('services.cards.nationalCompany.content.details[1].subtitle') 
+            },
+            { 
+              title: t('services.cards.nationalCompany.content.details[2].title'), 
+              subtitle: t('services.cards.nationalCompany.content.details[2].subtitle') 
+            }
           ]
-        }
+            }
       },
       {
         img: '/src/assets/images/person-company.avif',
-        alt: 'Personas y Emprendedores',
-        overlayTitle: 'PERSONAS Y EMPRENDEDORES',
-        overlaySubtitle: 'IMPULSAMOS TU ALCANCE',
+        alt: t('services.cards.personCompany.alt'),
+        overlayTitle: t('services.cards.personCompany.overlayTitle'),
+        overlaySubtitle: t('services.cards.personCompany.overlaySubtitle'),
         content: {
-          title: 'Para Personas Naturales y Emprendedores',
-          description: 'Formalizar, proteger y potenciar sus inversiones personales o pequeños negocios',
+          title: t('services.cards.personCompany.content.title'),
+          description: t('services.cards.personCompany.content.description'),
           details: [
-            { title: 'Consultoría Legal Personalizada en Derecho Inmobiliario:', subtitle: 'Asesoría en compraventa, prescripción adquisitiva, acción reivindicatoria y protección patrimonial' },
-            { title: 'Gestión de Trámites y Regularizaciones ante SUNARP y Catastro:', subtitle: 'Gestión de títulos, subdivisiones, acumulaciones, habilitaciones urbanas y otros procedimientos técnicos-legales.' },
-            { title: 'Asesoría en Identidad y Estrategia Comercial:', subtitle: 'Desarrollo de marca personal o de negocio, posicionamiento digital y diseño de estrategias de comunicación adaptadas al mercado' }
+            { 
+              title: t('services.cards.personCompany.content.details[0].title'), 
+              subtitle: t('services.cards.personCompany.content.details[0].subtitle') 
+            },
+            { 
+              title: t('services.cards.personCompany.content.details[1].title'), 
+              subtitle: t('services.cards.personCompany.content.details[1].subtitle') 
+            },
+            { 
+              title: t('services.cards.personCompany.content.details[2].title'), 
+              subtitle: t('services.cards.personCompany.content.details[2].subtitle') 
+            }
           ]
         }
       }
-    ];
+    ]);
 
     const checkMobile = () => {
       isMobile.value = window.innerWidth <= 768;
@@ -245,7 +271,7 @@ export default {
     };
 
     const selectedContent = computed(() => {
-      const card = cards[selected.value];
+      const card = cards.value[selected.value];
       return card ? { ...card.content, img: card.img, alt: card.alt } : null;
     });
 

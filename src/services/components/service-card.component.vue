@@ -2,7 +2,7 @@
   <div
     ref="cardRef"
     :class="[
-      'flex flex-col w-full lg:w-1/3 h-full transition-all duration-300 ease-out',
+      'flex flex-col w-full xl:w-1/3 h-full transition-all duration-300 ease-out',
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
@@ -18,7 +18,7 @@
       </span>
     </div>
 
-    <h3 class="text-2xl md:text-3xl xl:text-4xl font-mont-heavy mb-2 text-tertiary">
+    <h3 class="text-2xl md:text-3xl xl:text-4xl font-mont-heavy mb-2 text-tertiary whitespace-nowrap">
       {{ title }}
     </h3>
     <p class="font-public-sans-regular text-justify text-gray-500">
