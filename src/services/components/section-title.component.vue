@@ -1,5 +1,5 @@
 <template>
-<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 mb-4">
   <img src="/src/assets/icons/star.svg" class="h-8 w-8"/>
   <p :class="['text-lg font-mont-black', textColor]">
     {{ title }}
