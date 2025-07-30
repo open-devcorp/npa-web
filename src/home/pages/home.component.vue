@@ -94,7 +94,7 @@
 
 
           <!-- Titulo -->
-          <div>
+          <div class="space-y-0 md:space-y-2">
             <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap">
               Descubre nuestras
             </p>

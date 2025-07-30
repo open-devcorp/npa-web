@@ -63,19 +63,19 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/#servicios"
+                        <router-link @click="isOpen = false" to="/servicios"
                             class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             SERVICIOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/"
+                        <router-link @click="isOpen = false" to="/why-choose-us"
                             class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/#contacto"
+                        <router-link @click="isOpen = false" to="/contacto"
                             class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             EQUIPO
                         </router-link>

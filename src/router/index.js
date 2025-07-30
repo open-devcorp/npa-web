@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent from "../home/pages/home.component.vue";
 import AboutComponent from "../about-us/pages/about.component.vue";
 import ServicesComponent from "../services/pages/services.componet.vue";
+import WhyChooseUsComponent from "../why-choose-us/pages/why-choose-us.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: "/servicios",
       name: "services",
       component: ServicesComponent,
+    },
+    {
+      path: "/por-que-elegirnos",
+      name: "why-choose-us",
+      component: WhyChooseUsComponent,
     },
     { path: "/", redirect: "/home" },
   ],
