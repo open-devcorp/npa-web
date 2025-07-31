@@ -14,7 +14,7 @@
     <section class="py-4 max-w-screen-xl mx-auto px-4 gap-32 mt-12">
 
     <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
-      <p class="text-4xl md:text-6xl xl:text-7xl">
+      <p class="text-3xl md:text-6xl xl:text-7xl">
         <span class="font-mont-regular mr-2">{{ t('services.solution.part1') }}</span>
         <span class="font-mont-heavy mr-2">{{ t('services.solution.part2') }}</span>
         <span class="font-mont-regular mr-2">{{ t('services.solution.part3') }}</span>

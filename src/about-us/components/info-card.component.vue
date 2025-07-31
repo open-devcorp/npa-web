@@ -2,11 +2,11 @@
   <div
     ref="cardRef"
     :class="[
-      'bg-tertiary/80 w-40 md:w-48 h-48 md:h-64 text-white flex flex-col items-center justify-between p-3 md:p-4 rounded-xl transition-all duration-200 ease-out',
+      'bg-tertiary w-40 md:w-48 h-48 md:h-64 text-white flex flex-col items-center justify-between p-3 md:p-4 rounded-xl transition-all duration-200 ease-out',
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
-    <h3 class="text-center text-base md:text-xl font-semibold leading-tight">
+    <h3 class="text-center text-base md:text-xl font-semibold px-10">
       {{ title }}
     </h3>
     <div class="w-full flex-1 flex items-center justify-center">
