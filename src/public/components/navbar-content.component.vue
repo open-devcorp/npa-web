@@ -17,7 +17,7 @@
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">SERVICIOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/"
+                    <router-link to="/por-que-elegirnos"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">POR
                         QUÉ ELEGIRNOS</router-link>
                 </li>
@@ -51,7 +51,7 @@
             <div class="px-4 sm:px-6 py-4">
                 <ul class="flex flex-col gap-3 mb-6">
                     <li>
-                        <router-link @click="isOpen = false" to="/home"
+                        <router-link @click="isOpen = false" to="/"
                             class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             INICIO
                         </router-link>
@@ -64,19 +64,19 @@
                     </li>
                     <li>
                         <router-link @click="isOpen = false" to="/servicios"
-                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             SERVICIOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/why-choose-us"
-                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                        <router-link @click="isOpen = false" to="/por-que-elegirnos"
+                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>
                     </li>
                     <li>
                         <router-link @click="isOpen = false" to="/contacto"
-                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             EQUIPO
                         </router-link>
                     </li>
@@ -84,7 +84,7 @@
 
                 <div class="flex flex-shrink-0 items-center">
                     <router-link @click="isOpen = false" to="/contacto"
-                        class="group w-full justify-center bg-primary text-white px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
+                        class="group w-full justify-center bg-primary text-primary px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
                         <span class="text-center flex-1">CONTÁCTANOS</span>
                         <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
                     </router-link>
