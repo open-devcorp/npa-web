@@ -131,7 +131,7 @@
 <script>
 import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
-import SectionTitle from '../../services/components/section-title.component.vue';
+import SectionTitle from '../../public/components/section-title.component.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {

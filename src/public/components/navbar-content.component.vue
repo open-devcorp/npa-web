@@ -1,7 +1,7 @@
 <template>
     <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-6">
         <div class="flex justify-between items-center">
-            <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-35 md:w-42 object-contain" />
+            <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-25 md:w-35 lg:w-40 object-contain" />
 
             <ul class="hidden lg:flex gap-8">
                 <li>
@@ -31,7 +31,7 @@
             <div class="hidden lg:flex">
                 <router-link to="" class="btn btn-secondary flex items-center justify-center">
                     <span class="">CONTÁCTANOS</span>
-                    <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+                    <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
                 </router-link>
             </div>
 
@@ -64,19 +64,19 @@
                     </li>
                     <li>
                         <router-link @click="isOpen = false" to="/servicios"
-                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             SERVICIOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/"
-                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                        <router-link @click="isOpen = false" to="/why-choose-us"
+                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/equipo"
-                            class="hover:text-secondary text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                        <router-link @click="isOpen = false" to="/contacto"
+                            class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             EQUIPO
                         </router-link>
                     </li>
@@ -86,7 +86,7 @@
                     <router-link @click="isOpen = false" to="/contacto"
                         class="group w-full justify-center bg-primary text-white px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
                         <span class="text-center flex-1">CONTÁCTANOS</span>
-                        <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+                        <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
                     </router-link>
                 </div>
             </div>

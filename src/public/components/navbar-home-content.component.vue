@@ -1,7 +1,7 @@
- <template>
-    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-6">
+<template>
+    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-5 md:my-8 absolute top-0 left-0 right-0 z-50">
         <div class="flex justify-between items-center">
-            <img src="/src/assets/icons/logo-home-npa.svg" alt="Logo NPA" class="w-35 md:w-42 object-contain" />
+            <img src="/src/assets/icons/logo-home-npa.svg" alt="Logo NPA" class="w-20 md:w-35 lg:w-40 object-contain" />
 
             <ul class="hidden lg:flex gap-8">
                 <li>
@@ -17,7 +17,7 @@
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">SERVICIOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/"
+                    <router-link to="/por-que-elegirnos"
                         class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">POR
                         QUÉ ELEGIRNOS</router-link>
                 </li>
@@ -31,13 +31,14 @@
             <div class="hidden lg:flex">
                 <router-link to="" class="btn btn-primary flex items-center justify-center">
                     <span class="">CONTÁCTANOS</span>
-                    <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+                    <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+                        class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
                 </router-link>
             </div>
 
             <!-- botón hamburguesa para móvil y tablet -->
             <div class="lg:hidden flex items-center justify-center">
-                <button @click="isOpen = !isOpen" class="focus:outline-none cursor-pointer p-2">
+                <button @click="isOpen = !isOpen" class="focus:outline-none cursor-pointer">
                     <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
@@ -63,13 +64,13 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/#servicios"
+                        <router-link @click="isOpen = false" to="/servicios"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             SERVICIOS
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/"
+                        <router-link @click="isOpen = false" to="/por-que-elegirnos"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>
@@ -86,7 +87,8 @@
                     <router-link @click="isOpen = false" to="/#contacto"
                         class="group w-full justify-center bg-primary text-white px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
                         <span class="text-center flex-1">CONTÁCTANOS</span>
-                        <img src="/src/assets/icons/arrow.svg" alt="Arrow" class="w-[14px] h-[14px] ml-2 mb-1" />
+                        <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+                            class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
                     </router-link>
                 </div>
             </div>
