@@ -1,109 +1,164 @@
 {
     "home": "HOME",
     "services": {
-        "title": "Services",
-         "titlesServices": {
-            "legalAdvisory": "Legal Advisory",
-            "commercialBrokerage": "Commercial Brokerage",
-            "commercialAdvisory": "Commercial Advisory"
+            "title": "Services",
+            "subtitle": "SERVICES",
+
+            "titlesServices": {
+                "legalAdvisory": "Legal Advisory",
+                "commercialBrokerage": "Commercial Brokerage",
+                "commercialAdvisory": "Commercial Advisory"
+                },
+            "solution": {
+            "part1": "Your",
+            "part2": "point",
+            "part3": "of solution"
             },
-        "subtitle": "SERVICES",
-        "solution": {
-        "part1": "Your",
-        "part2": "point",
-        "part3": "of solution"
+        "clientSegmentTitle": "CLIENT SEGMENT",
+        "clientSegment": {
+        "part1": "Our",
+        "part2": "Segments"
         },
-    "clientSegmentTitle": "CLIENT SEGMENT",
-    "clientSegment": {
-    "part1": "Our",
-    "part2": "Segments"
-    },
-    "tags": {
-    "market": "Market",
-    "brand": "Brand",
-    "content": "Content",
-    "realEstate": "Real Estate",
-    "business": "Business",
-    "architectural": "Architectural",
-    "investors": "Investors",
-    "providers": "Providers",
-    "exports": "Exports"
-    },
-     "descriptions": {
-      "commercialAdvisory": "Market research and feasibility services to identify growth opportunities, complemented by business strategies, branding, and digital plans to strengthen business presence and competitiveness.",        "legalAdvisory": "Services in real estate law and property management, with comprehensive legal support for real estate and business operations. Includes planning of architectural and urban projects, ensuring regulatory compliance and legal feasibility from start to execution.",
-      "commercialBrokerage": "Service that facilitates the connection between investors and providers, promoting exports and investments. We also manage the search and selection of business opportunities, contributing to the growth and success of companies in various markets."
-    },
-     "cards": {
-      "foreignCompany": {
-        "alt": "Foreign Companies",
-        "overlayTitle": "FOREIGN COMPANIES",
-        "overlaySubtitle": "WE FACILITATE BUSINESS",
-        "content": {
-          "title": "For Foreign Companies",
-          "description": "We facilitate investment, export, and entry into the Peruvian market",
-          "details": [
-            {
-              "title": "Consulting and Legal Advisory:",
-              "subtitle": "We advise on the acquisition and regularization of properties for investment or expansion.",
-              "extra": "We also provide legal support in company formation, contracts, and Peru–EU regulations."
-            },
-            {
-              "title": "Market Studies and Local Demand Analysis:",
-              "subtitle": "Identification of real business opportunities in the Peruvian market."
-            },
-            {
-              "title": "International Commercial Brokerage:",
-              "subtitle": "Connecting with producers, suppliers, and investment projects in Peru in strategic sectors."
+        "tags": {
+        "market": "Market",
+        "brand": "Brand",
+        "content": "Content",
+        "realEstate": "Real Estate",
+        "business": "Business",
+        "architectural": "Architectural",
+        "investors": "Investors",
+        "providers": "Providers",
+        "exports": "Exports"
+        },
+        "descriptions": {
+          "commercialAdvisory": "Market research and feasibility services to identify growth opportunities, complemented by business strategies, branding, and digital plans to strengthen business presence and competitiveness.",        "legalAdvisory": "Services in real estate law and property management, with comprehensive legal support for real estate and business operations. Includes planning of architectural and urban projects, ensuring regulatory compliance and legal feasibility from start to execution.",
+          "commercialBrokerage": "Service that facilitates the connection between investors and providers, promoting exports and investments. We also manage the search and selection of business opportunities, contributing to the growth and success of companies in various markets."
+        },
+        "cards": {
+          "foreignCompany": {
+            "alt": "Foreign Companies",
+            "overlayTitle": "FOREIGN COMPANIES",
+            "overlaySubtitle": "WE FACILITATE BUSINESS",
+            "content": {
+              "title": "For Foreign Companies",
+              "description": "We facilitate investment, export, and entry into the Peruvian market",
+              "details": [
+                {
+                  "title": "Consulting and Legal Advisory:",
+                  "subtitle": "We advise on the acquisition and regularization of properties for investment or expansion.",
+                  "extra": "We also provide legal support in company formation, contracts, and Peru–EU regulations."
+                },
+                {
+                  "title": "Market Studies and Local Demand Analysis:",
+                  "subtitle": "Identification of real business opportunities in the Peruvian market."
+                },
+                {
+                  "title": "International Commercial Brokerage:",
+                  "subtitle": "Connecting with producers, suppliers, and investment projects in Peru in strategic sectors."
+                }
+              ]
             }
-          ]
+          },
+          "nationalCompany": {
+            "alt": "National Companies",
+            "overlayTitle": "NATIONAL COMPANIES",
+            "overlaySubtitle": "WE SCALE WITH YOU",
+            "content": {
+              "title": "For National Companies",
+              "description": "Boosting their expansion, formalization, and growth in the local and international market",
+              "details": [
+                {
+                  "title": "Physical-Legal Property Regularization:",
+                  "subtitle": "Comprehensive regularization of properties, factory declarations, subdivisions, and urban habilitations"
+                },
+                {
+                  "title": "Strategic Marketing Plans:",
+                  "subtitle": "Design of commercial growth strategies based on real data and market studies."
+                },
+                {
+                  "title": "Commercial Architectural Projects:",
+                  "subtitle": "Design and technical-legal development of projects for shopping centers, markets, educational centers, multifamily and single-family homes."
+                }
+              ]
+            }
+          },
+          "personCompany": {
+            "alt": "Individuals and Entrepreneurs",
+            "overlayTitle": "INDIVIDUALS AND ENTREPRENEURS",
+            "overlaySubtitle": "WE BOOST YOUR REACH",
+            "content": {
+              "title": "For Individuals and Entrepreneurs",
+              "description": "Formalize, protect, and enhance their personal investments or small businesses",
+              "details": [
+                {
+                  "title": "Personalized Legal Consulting in Real Estate Law:",
+                  "subtitle": "Advisory on purchase-sale, acquisitive prescription, vindicatory action, and asset protection"
+                },
+                {
+                  "title": "Management of Procedures and Regularizations with SUNARP and Cadastre:",
+                  "subtitle": "Management of titles, subdivisions, accumulations, urban habilitations, and other technical-legal procedures."
+                },
+                {
+                  "title": "Advisory on Identity and Commercial Strategy:",
+                  "subtitle": "Development of personal or business branding, digital positioning, and communication strategies adapted to the market"
+                }
+              ]
+            }
+          }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "ABOUT US",
+        "mainTitle":{
+          "part1": "We are a",
+          "part2": "meeting point",
+          "part3": "We are the meeting point between business, investment, and international expansion, combining the precision of a legal boutique with the strategic vision and creativity of a marketing agency."
+        },
+        "buttonContact": "CONTACT US",
+        "cards":{
+          "first": {
+            "title": "Expert Team",
+            "description": "We have an interdisciplinary team of lawyers, architects, economists, and marketing specialists who work in a coordinated manner to deliver comprehensive solutions."
+            },
+          "second": {
+            "title": "Catalysts",
+            "description": "We provide legal advice in Real Estate, Corporate, and Commercial Law, complemented by marketing and communication strategies to drive our clients' growth."
+            },
+          "third": {  
+            "title": "Strategic Access",
+            "description": "Peru is a land of opportunities, with economic stability and sustained growth. We help you access this emerging market full of possibilities in a strategic way."
+            }
+      },
+      "secondSubtitle": "OUR VALUES",
+      "values": {
+        "title": {
+          "part1": "Our",
+          "part2": "Goal and Horizon"
+        },
+        "mission":{
+          "title": "Mission",
+          "description": "To create connections between people, businesses, and investments by providing strategic legal, technical, and commercial advice that simplifies processes and transforms ideas into successful projects at both national and international levels."
+        },
+        "vision":{
+          "title": "Vision",
+          "description": "To build solid realities by creating connections that drive businesses, investments, and life projects—nationally and internationally."
         }
       },
-      "nationalCompany": {
-        "alt": "National Companies",
-        "overlayTitle": "NATIONAL COMPANIES",
-        "overlaySubtitle": "WE SCALE WITH YOU",
-        "content": {
-          "title": "For National Companies",
-          "description": "Boosting their expansion, formalization, and growth in the local and international market",
-          "details": [
-            {
-              "title": "Physical-Legal Property Regularization:",
-              "subtitle": "Comprehensive regularization of properties, factory declarations, subdivisions, and urban habilitations"
-            },
-            {
-              "title": "Strategic Marketing Plans:",
-              "subtitle": "Design of commercial growth strategies based on real data and market studies."
-            },
-            {
-              "title": "Commercial Architectural Projects:",
-              "subtitle": "Design and technical-legal development of projects for shopping centers, markets, educational centers, multifamily and single-family homes."
-            }
-          ]
-        }
+      "buttonMore": "LEARN MORE",
+        "finalTile": {
+        "part1": "We listen, understand, and build",
+        "part2": "long-term relationships",
+        "part3": "based on",
+        "part4": "trust and commitment"
       },
-      "personCompany": {
-        "alt": "Individuals and Entrepreneurs",
-        "overlayTitle": "INDIVIDUALS AND ENTREPRENEURS",
-        "overlaySubtitle": "WE BOOST YOUR REACH",
-        "content": {
-          "title": "For Individuals and Entrepreneurs",
-          "description": "Formalize, protect, and enhance their personal investments or small businesses",
-          "details": [
-            {
-              "title": "Personalized Legal Consulting in Real Estate Law:",
-              "subtitle": "Advisory on purchase-sale, acquisitive prescription, vindicatory action, and asset protection"
-            },
-            {
-              "title": "Management of Procedures and Regularizations with SUNARP and Cadastre:",
-              "subtitle": "Management of titles, subdivisions, accumulations, urban habilitations, and other technical-legal procedures."
-            },
-            {
-              "title": "Advisory on Identity and Commercial Strategy:",
-              "subtitle": "Development of personal or business branding, digital positioning, and communication strategies adapted to the market"
-            }
-          ]
-        }
-      }
+      "infoCard": {
+      "first": "Genuine Connection",
+      "second": "Collaborative Excellence",
+      "third": "Conscious Innovation",
+      "fourth": "Active Transparency",
+      "fifth": "Democratization of Information"
     }
-}
+    }
+
 }
