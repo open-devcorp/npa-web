@@ -136,191 +136,207 @@ s="bg-noise-blue text-white py-4
 </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
+import { ref, computed, onMounted } from 'vue';
 import SectionTitle from '../../services/components/section-title.component.vue';
+import { useI18n } from 'vue-i18n';
 
-const selected = ref(0);
-const isMobile = ref(false);
+export default {
+  name: 'team',
+  components: {
+    SectionTitle,
+  },
+  setup() {
+    const { t } = useI18n();
 
-const cards = [
-  {
-    img: '/src/assets/images/narem.png',
-    alt: 'NAREM',
-    overlayTitle: 'NAREM ROEL GAUTO',
-    overlaySubtitle: 'LÍDER DEL ÁREA COMERCIAL',
-  },
-  {
-    img: '/src/assets/images/claudia.png',
-    alt: 'CLAUDIA',
-    overlayTitle: 'CLAUDIA SILVA GARCIA',
-    overlaySubtitle: 'LÍDER DEL ÁREA LEGAL',
-  },
-  {
-    img: '/src/assets/images/carlos.png',
-    alt: 'CARLOS',
-    overlayTitle: 'CARLOS ROEL MONTELLANOS',
-    overlaySubtitle: 'CONSULTOR EN ARQUITECTURA',
-  },
-  {
-    img: '/src/assets/images/eliana.png',
-    alt: 'ELIANA',
-    overlayTitle: 'ELIANA ROJAS QUINTO',
-    overlaySubtitle: 'ASISTENTE LEGAL',
-  },
-  {
-    img: '/src/assets/images/veronika.png',
-    alt: 'VERONIKA',
-    overlayTitle: 'VERONIKA JAMARIKOVÁ',
-    overlaySubtitle: 'CONSULTORA LEGAL JUNIOR',
-  },
-  {
-    img: '/src/assets/images/celia.png',
-    alt: 'CELIA',
-    overlayTitle: 'CELIA CHIRINOS VASQUEZ',
-    overlaySubtitle: 'ASISTENTE LEGAL',
-  },
-];
+    const selected = ref(0);
+    const isMobile = ref(false);
 
-const details = [
-  [
-    {
-      title: 'Especialidad:',
-      subtitle: 'Narem lidera la expansión de New Point con una estrategia sólida, empatía y comunicación efectiva, destacando en la creación de relaciones y superación de barreras internacionales.',
-      extra: 'Arbitraje en Contrataciones del Estado y Arbitraje en Inversiones.',
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Árbitro en competencias de arbitraje en Perú, Ecuador y Austria.',
-    },
-    {
-      title: 'Afiliaciones:',
-      extra: 'Director del Dpto. de Negocios Internacionales – CCBLP, miembro de WAPPP y Arbitraje Alumni.',
-    },
+    const cards = computed (() => [
+      {
+        img: '/src/assets/images/narem.png',
+        alt: 'NAREM',
+        overlayTitle: t('team.members.member1.name'),
+        overlaySubtitle: t('team.members.member1.role'),
+      },
+      {
+        img: '/src/assets/images/claudia.png',
+        alt: 'CLAUDIA',
+        overlayTitle: t('team.members.member2.name'),
+        overlaySubtitle: t('team.members.member2.role'),
+      },
+      {
+        img: '/src/assets/images/carlos.png',
+        alt: 'CARLOS',
+        overlayTitle: t('team.members.member3.name'),
+        overlaySubtitle: t('team.members.member3.role'),
+      },
+      {
+        img: '/src/assets/images/eliana.png',
+        alt: 'ELIANA',
+        overlayTitle: t('team.members.member4.name'),
+        overlaySubtitle: t('team.members.member4.role'),
+      },
+      {
+        img: '/src/assets/images/veronika.png',
+        alt: 'VERONIKA',
+        overlayTitle: t('team.members.member5.name'),
+        overlaySubtitle: t('team.members.member5.role'),
+      },
+      {
+        img: '/src/assets/images/celia.png',
+        alt: 'CELIA',
+        overlayTitle: t('team.members.member6.name'),
+        overlaySubtitle: t('team.members.member6.role'),
+      },
+    ]);
+
+    const details = computed(() => [
+      [
         {
-      title: 'Dato curioso:',
-      extra: 'Músico en su tiempo libre, porque los negocios también requieren ritmo y armonía. Traductor Inglés-español.',
-    },
-  ],
-  [
-
-    {
-      title: 'Especialidad:',
-      extra: 'Derecho civil e inmobiliario. Diseño para redes sociales.',
-      subtitle: 'Claudia integra su formación jurídica con una sólida capacidad creativa, lo que nos permite ofrecer soluciones integrales tanto en el ámbito del Derecho como en el comercial. Siempre apuesta por la innovación, transformando ideas complejas en soluciones claras y funcionales.',
-
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Asesora legal en el Ministerio de Justicia y Derechos Humanos.',
-    },
-   {
-      title: 'Afiliaciones:',
-      extra: 'Consultora legal y diseñadora en la Cámara de Comercio y Cultura de Bélgica y Luxemburgo en el Perú.',
-    },
-    {
-      title: 'Dato curioso:',
-      extra: 'Diseñadora freelance desde hace cuatro años. Apasionada por el canto y la escritura creativa.',
-    },
-  ],
-  [
-    {
-      title: 'Especialidad:',
-      subtitle: 'Carlos es un profesional multidisciplinario con un enfoque integral en planificación urbana y desarrollo económico. Cuenta con más de 40 años de experiencia en la creación de proyectos de vivienda social, mercados, equipamiento urbano y defensas civiles a nivel nacional',
-      extra: 'Arquitecto Urbanista, Economista y Catastro.',
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Saneamiento físico legal de viviendas, habilitaciones urbanas y proyectos de infraestructura.',
-    },
-    {
-      title: 'Afiliaciones:',
-      extra: 'Ex-miembro del Instituto de Desarrollo Urbano y Social del Perú (IDESUR). Colegio de arquitectos del Perú.',
-    },
-    {
-      title: 'Dato curioso:',
-      extra: 'Candidato a la alcaldía distrital de Ate en 2018, demostrando su compromiso con la gestión pública y el desarrollo local.',
-    },
-  ],
-
-  [
-    {
-      title: 'Especialidad:',
-      subtitle: 'Eliana contribuye al equipo con su criterio, iniciativa y pasión. Su experiencia en el Poder Judicial y en el Arbitraje le proporciona una perspectiva práctica del Derecho, que se complementa con su notable habilidad de redacción en español e inglés.',
-      extra: 'Derecho Civil e Inmobiliario. Investigación y redacción jurídica.',
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Miembro de la comisión de redacción de la Revista de Derecho “Ita Ius Esto”.',
-    },
+          title: t('team.members.member1.data.0.title'),
+          subtitle: t('team.members.member1.description'),
+          extra: t('team.members.member1.data.0.description'),
+        },
         {
-      title: 'Afiliaciones:',
-      extra: 'Asistente legal del Dpto. de Negocios Internacionales – CCBLP.',
-    },
-    {
-      title: 'Dato interesante:',
-      extra: 'Colabora con distintas instituciones para brindar apoyo social y comunitario. Ciclista en su tiempo libre.',
-    },
-  ],
-  [
-    {
-      title: 'Especialidad:',
-      subtitle: 'Veronika es una jurista multilingüe con formación internacional en Derecho Francés, Latinoamericano y Europeo. Con experiencia en Francia y formación en México, combina análisis jurídico y sensibilidad intercultural para crear soluciones globales.',
-      extra:"Derecho Internacional Privado, Arbitraje y Derecho de la Unión Europea."
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Pasantía en derecho migratorio y fiscalidad en Francia; estudios en México, Francia y Países Bajos.',
-    },
-    {
-      title: 'Afiliaciones:',
-      extra: 'Universidad Paris Nanterre y Universidad Nacional Autónoma de México.',
-    },
-    {
-      title: 'Dato interesante:',
-      extra: 'Domina cinco idiomas y le apasiona explorar sistemas legales y nuevas culturas.',
-    },
-  ],
-  [
-    {
-      title: 'Especialidad:',
-      subtitle: 'Celia proporciona una mirada analítica y versátil que la convierte en una pieza clave dentro del equipo, tanto en el ámbito legal como organizativo. Es una estudiante destacada, parte del quinto superior y ganadora de la Beca Lead de la Universidad de Piura.',
-      extra:"Derecho Civil. inmobiliario y Derecho Administrativo."
-    },
-    {
-      title: 'Experiencia destacada:',
-      extra: 'Ganadora de la beca del programa “Gobernanza en tiempo de crisis” de la Universidad Panamericana (México).',
-    },
-    {
-      title: 'Afiliaciones:',
-      extra: 'Asistente legal del Dpto. de Negocios Internacionales – CCBLP.',
+          title: t('team.members.member1.data.1.title'),
+          extra: t('team.members.member1.data.1.description'),
+        },
+        {
+          title: t('team.members.member1.data.2.title'),
+          extra: t('team.members.member1.data.2.description'),
+        },
+        {
+          title: t('team.members.member1.data.3.title'),
+          extra: t('team.members.member1.data.3.description'),
+        },
+      ],
+      [
+        {
+          title: t('team.members.member2.data.0.title'),
+          subtitle: t('team.members.member2.description'),
+          extra: t('team.members.member2.data.0.description'),
+        },
+        {
+          title: t('team.members.member2.data.1.title'),
+            extra: t('team.members.member2.data.1.description'),  
+        },
+        {
+          title: t('team.members.member2.data.2.title'),
+          extra: t('team.members.member2.data.2.description'),
+        },
+        {
+          title: t('team.members.member2.data.3.title'),
+          extra: t('team.members.member2.data.3.description'),
+        },
+      ],
+      [
+        {
+          title: t('team.members.member3.data.0.title'),
+          subtitle: t('team.members.member3.description'),
+          extra: t('team.members.member3.data.0.description'),
+        },
+        {
+          title: t('team.members.member3.data.1.title'),
+          extra: t('team.members.member3.data.1.description'),
+        },
+        {
+          title: t('team.members.member3.data.2.title'),
+          extra: t('team.members.member3.data.2.description'),
+        },
+        {
+          title: t('team.members.member3.data.3.title'),
+          extra: t('team.members.member3.data.3.description'),
+        },
+      ],
+      [
+        {
+          title: t('team.members.member4.data.0.title'),
+          subtitle: t('team.members.member4.description'),
+          extra: t('team.members.member4.data.0.description'),
+        },
+        {
+          title: t('team.members.member4.data.1.title'),
+          extra: t('team.members.member4.data.1.description'),
+        },
+        {
+          title: t('team.members.member4.data.2.title'),
+          extra: t('team.members.member4.data.2.description'),
+        },
+        {
+          title: t('team.members.member4.data.3.title'),
+          extra: t('team.members.member4.data.3.description'),
+        },
+      ],
+      [
+        {
+          title: t('team.members.member5.data.0.title'),
+          subtitle: t('team.members.member5.description'),
+          extra: t('team.members.member5.data.0.description'),
+        },
+        {
+          title: t('team.members.member5.data.1.title'),
+          extra: t('team.members.member5.data.1.description'),
+        },
+        {
+          title: t('team.members.member5.data.2.title'),
+          extra: t('team.members.member5.data.2.description'),
+        },
+        {
+          title: t('team.members.member5.data.3.title'),
+          extra: t('team.members.member5.data.3.description'),
+        },
+      ],
+      [
+        {
+          title: t('team.members.member4.data.0.title'),
+          subtitle: t('team.members.member4.description'),
+          extra: t('team.members.member4.data.0.description'),
+        },
+        {
+          title: t('team.members.member4.data.1.title'),
+          extra: t('team.members.member4.data.1.description'),
+        },
+        {
+          title: t('team.members.member4.data.2.title'),
+          extra: t('team.members.member4.data.2.description'),
+        },
+        {
+          title: t('team.members.member4.data.3.title'),
+          extra: t('team.members.member4.data.3.description'),
+        },
+      ],
+    ]);
 
-    },
-    {
-      title: 'Dato interesante:',
-      extra: 'apasionada por la fotografía y los idiomas (inglés, francés y alemán).',
-    },
-  ],
-];
+    onMounted(() => {
+      const checkMobile = () => {
+        isMobile.value = window.innerWidth <= 768;
+      };
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+    });
 
-onMounted(() => {
-  const checkMobile = () => {
-    isMobile.value = window.innerWidth <= 768;
-  };
+    const scrollToInfo = () => {
+      const infoSection = document.querySelector('[class*="min-h-"]');
+      infoSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
-  checkMobile();
-  window.addEventListener('resize', checkMobile);
-});
+    const handleCardClick = (index) => {
+      selected.value = index;
+      if (isMobile.value) {
+        scrollToInfo();
+      }
+    };
 
-const scrollToInfo = () => {
-  const infoSection = document.querySelector('[class*="min-h-"]');
-  infoSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-
-const handleCardClick = (index) => {
-  selected.value = index;
-  if (isMobile.value) {
-    scrollToInfo();
+    return {
+      selected,
+      isMobile,
+      cards,
+      details,
+      handleCardClick,
+      scrollToInfo,
+      t
+    };
   }
 };
 </script>

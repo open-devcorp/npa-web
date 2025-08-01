@@ -159,6 +159,155 @@
       "fourth": "Active Transparency",
       "fifth": "Democratization of Information"
     }
+    },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "TEAM",
+    "secondSubtitle": "MEET THE TEAM",
+    "members": {
+      "title": {
+        "part1": "Our",
+        "part2": "Team"
+      },
+      "member1": {
+        "name": "NAREM ROEL GAUTO",
+        "role": "HEAD OF COMMERCIAL AREA",
+        "description": "Narem leads New Point's expansion with a solid strategy, empathy, and effective communication, excelling in building relationships and overcoming international barriers.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "State Contracting Arbitration and Investment Arbitration."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Arbitrator in arbitration competitions in Peru, Ecuador, and Austria."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Director of the International Business Department – CCBLP, member of WAPPP and Arbitraje Alumni."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Musician in his free time, because business also requires rhythm and harmony. English-Spanish translator."
+          }
+        ]
+      },
+      "member2": {
+        "name": "CLAUDIA SILVA GARCIA",
+        "role": "HEAD OF LEGAL AREA",
+        "description": "Claudia combines her legal training with strong creative skills, allowing us to offer comprehensive solutions both in law and in business. She always bets on innovation, transforming complex ideas into clear, functional solutions.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "Civil and real estate law. Social media design."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Legal advisor at the Ministry of Justice and Human Rights."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Legal consultant and designer at the Chamber of Commerce and Culture of Belgium and Luxembourg in Peru."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Freelance designer for four years. Passionate about singing and creative writing."
+          }
+        ]
+      },
+      "member3": {
+        "name": "CARLOS ROEL MONTELLANOS",
+        "role": "ARCHITECTURE CONSULTANT",
+        "description": "Carlos is a multidisciplinary professional with a comprehensive approach to urban planning and economic development. He has over 40 years of experience in creating social housing projects, markets, urban equipment, and civil defenses nationwide.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "Urban Architect, Economist, and Cadastre expert."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Legal physical sanitation of housing, urban habilitations, and infrastructure projects."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Former member of the Institute for Urban and Social Development of Peru (IDESUR). College of Architects of Peru."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Candidate for the district mayor of Ate in 2018, demonstrating his commitment to public management and local development."
+          }
+        ]
+      },
+      "member4": {
+        "name": "ELIANA ROJAS QUINTO",
+        "role": "LEGAL ASSISTANT",
+        "description": "Eliana contributes to the team with her judgment, initiative, and passion. Her experience in the Judiciary and Arbitration provides her with a practical perspective on Law, complemented by her remarkable writing skills in Spanish and English.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "Civil and real estate law. Legal research and writing."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Member of the editorial committee of the law journal “Ita Ius Esto”."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Legal assistant of the International Business Department – CCBLP."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Collaborates with various institutions to provide social and community support. Cyclist in her free time."
+          }
+        ]
+      },
+      "member5": {
+        "name": "VERONIKA JAMARIKOVÁ",
+        "role": "JUNIOR LEGAL CONSULTANT",
+        "description": "Veronika is a multilingual jurist with international training in French, Latin American, and European law. With experience in France and training in Mexico, she combines legal analysis and intercultural sensitivity to create global solutions.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "Private International Law, Arbitration, and European Union Law."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Internship in migration law and taxation in France; studies in Mexico, France, and the Netherlands."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Paris Nanterre University and National Autonomous University of Mexico."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Speaks five languages and is passionate about exploring legal systems and new cultures."
+          }
+        ]
+      },
+      "member6": {
+        "name": "CELIA CHIRINOS VASQUEZ",
+        "role": "LEGAL ASSISTANT",
+        "description": "Celia brings an analytical and versatile perspective that makes her a key member of the team, both legally and organizationally. She is an outstanding student, part of the top fifth, and winner of the Lead Scholarship from the University of Piura.",
+        "data": [
+          {
+            "title": "Specialty:",
+            "description": "Civil, real estate, and administrative law."
+          },
+          {
+            "title": "Outstanding Experience:",
+            "description": "Winner of the “Governance in Times of Crisis” scholarship program at Panamerican University (Mexico)."
+          },
+          {
+            "title": "Affiliations:",
+            "description": "Legal assistant of the International Business Department – CCBLP."
+          },
+          {
+            "title": "Fun Fact:",
+            "description": "Passionate about photography and languages (English, French, and German)."
+          }
+        ]
+      }
     }
+  }
 
 }

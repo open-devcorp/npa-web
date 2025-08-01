@@ -19,7 +19,7 @@
           <div class="flex flex-col md:flex-row gap-8 lg:gap-32">
             <div class="flex flex-col w-full md:w-1/2">
               <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular lg:whitespace-nowrap">{{ t('about.mainTitle.part1') }}</p>
-              <p class="text-4xl md:text-5xl xl:text-7xl font-mont-heavy lg:whitespace-nowrap">{{ t('about.mainTitle.part2') }} </p>
+              <p class="text-3xl md:text-5xl xl:text-7xl font-mont-heavy lg:whitespace-nowrap">{{ t('about.mainTitle.part2') }} </p>
             </div>
             <div class="flex flex-col w-full md:w-1/2">
               <p class="text-justify">

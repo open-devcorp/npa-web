@@ -162,5 +162,162 @@
         "fifth":"Difusión del conocimiento"
       }
 
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "subtitle": "EQUIPO",
+    "secondSubtitle": "CONOCE AL EQUIPO", 
+    "members": {
+      "title":{
+        "part1": "Nuestro",
+        "part2": "Equipo"
+      },
+      "member1": {
+        "name": "NAREM ROEL GAUTO",
+        "role": "LÍDER DEL ÁREA COMERCIAL",
+        "description": "Narem lidera la expansión de New Point con una estrategia sólida, empatía y comunicación efectiva, destacando en la creación de relaciones y superación de barreras internacionales.",
+        "data":[
+          {
+            "title": "Especialidad:",
+            "description": "Arbitraje en Contrataciones del Estado y Arbitraje en Inversiones."
+          },
+          {
+            "title": "Experiencia destacada:",
+            "description": "Árbitro en competencias de arbitraje en Perú, Ecuador y Austria."
+          },
+          {
+            "title": "Afiliaciones:",
+            "description": "Director del Dpto. de Negocios Internacionales – CCBLP, miembro de WAPPP y Arbitraje Alumni."
+          },
+          {
+            "title": "Dato curioso:",
+            "description": "Músico en su tiempo libre, porque los negocios también requieren ritmo y armonía. Traductor Inglés-español."
+          }
+        ]
+      },
+      "member2":{
+        "name": "CLAUDIA SILVA GARCIA",
+        "role": "LÍDER DEL ÁREA LEGAL",
+        "description": "Claudia integra su formación jurídica con una sólida capacidad creativa, lo que nos permite ofrecer soluciones integrales tanto en el ámbito del Derecho como en el comercial. Siempre apuesta por la innovación, transformando ideas complejas en soluciones claras y funcionales.",
+        "data":[
+          {
+            "title": "Especialidad:",
+            "description": "Derecho civil e inmobiliario. Diseño para redes sociales."
+          },
+          {
+            "title": "Experiencia destacada:",
+            "description": "Asesora legal en el Ministerio de Justicia y Derechos Humanos."
+          },
+          {
+            "title": "Afiliaciones:",
+            "description": "Consultora legal y diseñadora en la Cámara de Comercio y Cultura de Bélgica y Luxemburgo en el Perú."
+          },
+          {
+            "title": "Dato curioso:",
+            "description": "Diseñadora freelance desde hace cuatro años. Apasionada por el canto y la escritura creativa."
+          }
+        ]
+      },
+      "member3":{
+      "name": "CARLOS ROEL MONTELLANOS",
+      "role": "CONSULTOR EN ARQUITECTURA",
+      "description": "Carlos es un profesional multidisciplinario con un enfoque integral en planificación urbana y desarrollo económico. Cuenta con más de 40 años de experiencia en la creación de proyectos de vivienda social, mercados, equipamiento urbano y defensas civiles a nivel nacional.",
+      "data":[
+        {
+          "title": "Especialidad:",
+          "description": "Arquitecto Urbanista, Economista y Catastro."
+        },
+        {
+          "title": "Experiencia destacada:",
+          "description": "Saneamiento físico legal de viviendas, habilitaciones urbanas y proyectos de infraestructura."
+        },
+        {
+          "title": "Afiliaciones:",
+          "description": "Ex-miembro del Instituto de Desarrollo Urbano y Social del Perú (IDESUR). Colegio de arquitectos del Perú."
+        },
+        {
+          "title": "Dato curioso:",
+          "description": "Candidato a la alcaldía distrital de Ate en 2018, demostrando su compromiso con la gestión pública y el desarrollo local."
+        }
+      ]
+    },
+    "member4":{
+      "name": "ELIANA ROJAS QUINTO",
+      "role": "ASISTENTE LEGAL",
+      "description": "Eliana contribuye al equipo con su criterio, iniciativa y pasión. Su experiencia en el Poder Judicial y en el Arbitraje le proporciona una perspectiva práctica del Derecho, que se complementa con su notable habilidad de redacción en español e inglés.",
+      "data":[
+        {
+          "title": "Especialidad:",
+          "description": "Derecho Civil e Inmobiliario. Investigación y redacción jurídica."
+        },
+        {
+          "title": "Experiencia destacada:",
+          "description": "Miembro de la comisión de redacción de la Revista de Derecho “Ita Ius Esto”."
+        },
+        {
+          "title": "Afiliaciones:",
+          "description": "Asistente legal del Dpto. de Negocios Internacionales – CCBLP."
+        },
+        {
+          "title": "Dato curioso:",
+          "description": "Colabora con distintas instituciones para brindar apoyo social y comunitario. Ciclista en su tiempo libre."
+        }
+      ]
+    },
+      "member5":{
+      "name": "VERONIKA JAMARIKOVÁ",
+      "role": "CONSULTORA LEGAL JUNIOR",
+      "description": "Veronika es una jurista multilingüe con formación internacional en Derecho Francés, Latinoamericano y Europeo. Con experiencia en Francia y formación en México, combina análisis jurídico y sensibilidad intercultural para crear soluciones globales.",
+      "data":[
+        {
+          "title": "Especialidad:",
+          "description": "Derecho Internacional Privado, Arbitraje y Derecho de la Unión Europea."
+        },
+        {
+          "title": "Experiencia destacada:",
+          "description": "Pasantía en derecho migratorio y fiscalidad en Francia; estudios en México, Francia y Países Bajos."
+        },
+        {
+          "title": "Afiliaciones:",
+          "description": "Universidad Paris Nanterre y Universidad Nacional Autónoma de México."
+        },
+        {
+          "title": "Dato curioso:",
+          "description": "Domina cinco idiomas y le apasiona explorar sistemas legales y nuevas culturas."
+        }
+      ]
+    },
+    
+    "member6":{
+      "name": "CELIA CHIRINOS VASQUEZ",
+      "role": "ASISTENTE LEGAL",
+      "description": "Celia proporciona una mirada analítica y versátil que la convierte en una pieza clave dentro del equipo, tanto en el ámbito legal como organizativo. Es una estudiante destacada, parte del quinto superior y ganadora de la Beca Lead de la Universidad de Piura.",
+      "data":[
+        {
+          "title": "Especialidad:",
+          "description": "Derecho Civil. inmobiliario y Derecho Administrativo."
+        },
+        {
+          "title": "Experiencia destacada:",
+          "description": "Ganadora de la beca del programa “Gobernanza en tiempo de crisis” de la Universidad Panamericana (México)."
+        },
+        {
+          "title": "Afiliaciones:",
+          "description": "Asistente legal del Dpto. de Negocios Internacionales – CCBLP."
+        },
+        {
+          "title": "Dato curioso:",
+          "description": "apasionada por la fotografía y los idiomas (inglés, francés y alemán)."
+        }
+      ]
+    }
+    
+
+    }
+ 
+
+
+
+
   }
 }
