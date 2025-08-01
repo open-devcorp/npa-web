@@ -130,4 +130,11 @@
   .label-home {
     @apply lg:text-base md:text-sm text-xs font-mont-regular border-2 border-black md:py-2 py-1 rounded-full md:w-40 lg:w-45 w-30 text-center;
   }
+  .form-label {
+    @apply font-mont-light text-tertiary mb-2;
+  }
+  .form-input {
+    @apply bg-white rounded-lg px-4 py-2 w-full text-tertiary font-mont-regular focus:outline-none lg:placeholder:text-base placeholder:text-sm;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
 }

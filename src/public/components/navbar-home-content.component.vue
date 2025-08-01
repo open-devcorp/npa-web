@@ -29,7 +29,7 @@
 
             <!-- Botón "CONTÁCTANOS" para escritorio -->
             <div class="hidden lg:flex">
-                <router-link to="" class="btn btn-primary flex items-center justify-center">
+                <router-link to="/contacto" class="btn btn-primary flex items-center justify-center">
                     <span class="">CONTÁCTANOS</span>
                     <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                         class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
