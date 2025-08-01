@@ -316,8 +316,53 @@
     }
  
 
-
-
-
-  }
+  },
+  "why":{
+    "title": "Por qué elegirnos",
+    "subtitle": "POR QUÉ ELEGIRNOS",
+    "mainTitle": {
+      "part1": "Tu",
+      "part2": "punto de partida",
+      "part3": "hacia el",
+      "part4": "éxito",
+      "description": "En New Point, no solo brindamos asesoría. Creamos puentes reales entre personas, empresas e inversiones. Nuestra propuesta es integral, estratégica y construida desde la experiencia."
+    },
+    "firstSubtitle": "CREANDO PUENTES HACIA EL FUTURO",
+    "cards": [
+    {
+      "title": "Red Activa",
+      "description": "Contamos con una red internacional activa en Europa y América Latina que facilita conexiones comerciales efectivas."    
+    },
+    {
+      "title": "Procesos ágiles",
+      "description": "Simplificamos y aceleramos procesos legales, técnicos y estratégicos, manteniendo siempre el rigor y la seguridad jurídica."    
+    },
+    {
+      "title": "Servicio integral",
+      "description": "Ofrecemos un servicio integral y multidisciplinario para satisfacer todas las necesidades de nuestros clientes."    
+    },
+        {
+      "title": "Conexiones globales",
+      "description": "Experiencia en apertura de mercados internacionales y acompañamiento a inversores, con alianzas globales clave."    
+    }
+    ],
+    "secondSubtitle": "CREANDO PUENTES",
+  "infoCards":{
+    "title":[
+      {
+        "part1": "¿Por qué ",
+        "part2": "invertir",
+        "part3": "en",
+        "part4": "Perú",
+        "description": "Elegir New Point es apostar por una visión estratégica y confiable para invertir en Perú, uno de los destinos más competitivos de América Latina para la inversión y el comercio internacional."
+      }
+    ],
+    "first": "Apertura comercial global",
+    "second": "Ubicación estratégica",
+    "third": "Fortaleza macroeconómica",
+    "fourth": "Potencial exportador global",
+    "fifth": "Diversidad cultural y social",
+    "sixth": "Diversificación y resiliencia"
+    }
+}
 }

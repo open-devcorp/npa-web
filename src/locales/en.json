@@ -308,6 +308,54 @@
         ]
       }
     }
+  },
+  "why": {
+    "title": "Why choose us",
+    "subtitle": "WHY CHOOSE US",
+    "mainTitle": {
+      "part1": "Your",
+      "part2": "starting point",
+      "part3": "towards",
+      "part4": "success",
+      "description": "At New Point, we don’t just offer advice. We build real bridges between people, companies, and investments. Our approach is comprehensive, strategic, and built from experience."
+    },
+    "firstSubtitle": "BUILDING BRIDGES TO THE FUTURE",
+    "cards": [
+      {
+        "title": "Active Network",
+        "description": "We have an active international network in Europe and Latin America that facilitates effective business connections."
+      },
+      {
+        "title": "Agile Processes",
+        "description": "We simplify and accelerate legal, technical, and strategic processes, always maintaining rigor and legal security."
+      },
+      {
+        "title": "Comprehensive Service",
+        "description": "We offer a comprehensive, multidisciplinary service to meet all our clients’ needs."
+      },
+      {
+        "title": "Global Connections",
+        "description": "Experience in opening international markets and supporting investors, with key global alliances."
+      }
+    ],
+    "secondSubtitle": "BUILDING BRIDGES",
+    "infoCards": {
+      "title": [
+        {
+          "part1": "Why ",
+          "part2": "invest",
+          "part3": "in",
+          "part4": "Peru",
+          "description": "Choosing New Point means betting on a strategic and reliable vision for investing in Peru, one of the most competitive destinations in Latin America for investment and international trade."
+        }
+      ],
+      "first": "Global commercial openness",
+      "second": "Strategic location",
+      "third": "Macroeconomic strength",
+      "fourth": "Global export potential",
+      "fifth": "Cultural and social diversity",
+      "sixth": "Diversification and resilience"
+    }
   }
 
 }
