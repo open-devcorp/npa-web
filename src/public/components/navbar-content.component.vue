@@ -17,7 +17,7 @@
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">SERVICIOS</router-link>
                 </li>
                 <li>
-                    <router-link to="/"
+                 <router-link to="/por-que-elegirnos"
                         class="hover:text-secondary text-white transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">POR
                         QUÉ ELEGIRNOS</router-link>
                 </li>
@@ -69,7 +69,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/why-choose-us"
+                        <router-link @click="isOpen = false" to=/por-que-elegirnos
                             class="hover:text-secondary text-white font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>

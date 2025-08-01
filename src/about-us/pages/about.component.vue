@@ -123,8 +123,8 @@
           <span class="font-mont-heavy">{{ t('about.finalTile.part4') }}</span>
         </h2>
 
-        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-          <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'" />
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6 ">
+          <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'"/>
           <InfoCard :title="t('about.infoCard.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
           <InfoCard :title="t('about.infoCard.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
           <InfoCard :title="t('about.infoCard.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />

@@ -70,7 +70,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/por-que-elegirnos"
+                        <router-link @click="isOpen = false" to=/por-que-elegirnos
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             POR QUÉ ELEGIRNOS
                         </router-link>

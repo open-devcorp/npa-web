@@ -6,7 +6,7 @@
       isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]"
   >
-    <h3 class="text-center text-base md:text-xl font-semibold px-10">
+    <h3 class="text-center text-base md:text-xl font-semibold px-10 lg:px-0 ">
       {{ title }}
     </h3>
     <div class="w-full flex-1 flex items-center justify-center">
