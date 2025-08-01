@@ -5,7 +5,7 @@ s="bg-noise-blue text-white py-4
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('team.title') }}</h1>
       <p class="font-public-sans-black text-sm">
-        <span class="text-secondary">{{ t('home') }}</span> / {{ t('team.subtitle') }}
+        <span class="text-secondary">{{ t('homeTitle') }}</span> / {{ t('team.subtitle') }}
       </p>
     </div>
   </section>

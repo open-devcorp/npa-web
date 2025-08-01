@@ -1,5 +1,5 @@
 {
-    "home": "HOME",
+    "homeTitle": "HOME",
     "services": {
             "title": "Services",
             "subtitle": "SERVICES",
@@ -356,6 +356,69 @@
       "fifth": "Cultural richness",
       "sixth": "Diversification and resilience"
     }
-  }
+  },
+  "home": {
+  "title": {
+    "part1": "Your strategic partner",
+    "part2": "and business accelerator"
+  },
+  "labels": {
+    "international": "International",
+    "advisors": "Advisors",
+    "np": "New Point"
+  },
+  "services": [
+    {
+      "part1": "Technical-legal",
+      "part2": "advisory"
+    },
+    {
+      "part1": "Marketing and",
+      "part2": "advertising"
+    },
+    {
+      "part1": "Commercial",
+      "part2": "brokerage"
+    }
+  ],
+  "meetButton": "MEET US",
+  "firstSubtitle": "WHAT WE OFFER",
+  "solutions": {
+    "part1": "Discover our",
+    "part2": "solutions"
+  },
+  "learnButton": "LEARN MORE",
+  "proyect": [
+    {
+      "part1": "Let's boost extraordinary",
+      "part2": "projects together",
+      "part3": ""
+    }
+  ],
+  "contactButton": "CONTACT US",
+  "secondSubtitle": "TESTIMONIALS",
+  "testimonialsTitle": [
+    {
+      "part1": "They trust",
+      "part2": "us"
+    }
+  ],
+  "testimonialsCards": [
+    {
+      "client": "Client 1",
+      "feedback": "Excellent service and customer care."
+    },
+    {
+      "client": "Client 2",
+      "feedback": "Highly skilled professionals."
+    },
+    {
+      "client": "Client 3",
+      "feedback": "I 100% recommend their services."
+    }
+  ],
+  "finalTitle": "Connect with us and access exclusive opportunities for your business",
+  "startButton": "START NOW!"
+}
 
 }

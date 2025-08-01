@@ -4,7 +4,7 @@
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('why.title') }}</h1>
       <p class="font-public-sans font-black text-sm">
-        <span class="text-secondary font-public-sans font-black">{{ t('home') }}</span> / {{ t('why.subtitle') }}
+        <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('why.subtitle') }}
       </p>
     </div>
   </section>

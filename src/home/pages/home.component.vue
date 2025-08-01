@@ -13,23 +13,23 @@
         <!-- Título -->
         <div class="text-center">
           <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-regular">
-            Tu socio estratégico
+            {{ t("home.title.part1") }}
           </p>
           <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-heavy text-background-dark mt-1">
-            y acelerador comercial
+            {{ t("home.title.part2") }}
           </p>
         </div>
 
         <!-- Category Buttons -->
         <div class="flex justify-center md:gap-20 lg:gap-18 gap-3 mt-5 xl:mt-12">
           <div class="label-home bg-tertiary text-white md:text-sm lg:text-base">
-            Internacional
+            {{ t("home.labels.international") }}
           </div>
           <div class="label-home bg-primary text-white md:text-sm lg:text-base">
-            Asesores
+            {{ t("home.labels.advisors") }}
           </div>
           <div class="label-home bg-secondary text-black md:text-sm lg:text-base">
-            New Point
+            {{ t("home.labels.np") }}
           </div>
         </div>
 
@@ -45,8 +45,8 @@
                   <img src="/src/assets/icons/book.svg" alt="Asesoría"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">Asesoría</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">Técnico-legal</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part2") }}</p>
               </div>
 
               <div class="text-center lg:flex-none">
@@ -54,8 +54,8 @@
                   <img src="/src/assets/icons/brain.svg" alt="Marketing"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">Marketing y</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">publicidad</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part2") }}</p>
               </div>
 
               <div class="text-center lg:flex-none">
@@ -63,13 +63,13 @@
                   <img src="/src/assets/icons/think.svg" alt="Corretaje"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">Corretaje</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">comercial</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part2") }}</p>
               </div>
             </div>
 
             <router-link to="" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
-              <span class="">CONÓCENOS</span>
+              <span class="">{{ t("home.meetButton") }}</span>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
@@ -90,16 +90,16 @@
         <div class="flex flex-col lg:flex-row lg:items-start md:gap-6 gap-4 lg:gap-10 xl:gap-15">
           <!-- vineta -->
 
-          <SectionTitle title="lo que ofrecemos" textColor="text-tertiary" />
+          <SectionTitle :title="t('home.firstSubtitle')" textColor="text-tertiary" />
 
 
           <!-- Titulo -->
           <div class="space-y-0 md:space-y-2">
             <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap">
-              Descubre nuestras
+              {{ t("home.solutions.part1") }}
             </p>
             <p class="text-4xl md:text-5xl xl:text-7xl font-mont-heavy text-nowrap">
-              soluciones
+              {{ t("home.solutions.part2") }}
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@
         <!-- boton -->
         <div class="flex justify-end">
           <router-link to="" class="btn btn-primary whitespace-nowrap items-center">
-            <p>Saber más</p>
+            <p>{{ t("home.learnButton") }}</p>
             <img src="/src/assets/icons/arrow.svg" alt="Arrow"
               class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
           </router-link>
@@ -117,17 +117,15 @@
       <!-- cards -->
       <div class="flex flex-col lg:flex-row justify-between items-start mt-15 gap-y-10 lg:gap-y-0">
 
-        <ServiceCard imageSrc="../../assets/images/service-1.jpeg" imageAlt="Imagen 1"
-          :tags="['Mercado', 'Marca', 'Contenido']" title="Asesoría Comercial"
-          description="Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial." />
-
-        <ServiceCard imageSrc="../../assets/images/service-2.png" imageAlt="Imagen 2"
-          :tags="['Inmobiliario', 'Empresarial', 'Arquitectónicos']" title="Asesoría legal"
-          description="Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución." />
-        <ServiceCard imageSrc="../../assets/images/service-3.jpg" imageAlt="Imagen 3"
-          :tags="['Inversores', 'Proveedores', 'Exportaciones']" title="Asesoría legal"
-          description="Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución." />
-
+        <ServiceCard 
+          v-for="(service, index) in services" 
+          :key="index"
+          :imageSrc="service.imageSrc" 
+          :imageAlt="service.imageAlt" 
+          :tags="service.tags" 
+          :title="service.title" 
+          :description="service.description" 
+        />
       </div>
 
     </div>
@@ -148,13 +146,13 @@
 
         <p
           class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1 text-nowrap">
-          Impulsemos proyectos
+          {{ t('home.proyect.0.part1') }}
         </p>
         <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none md:mb-2 mb-1">
-          extraordinarios
+          {{ t('home.proyect.0.part2') }}
         </p>
         <p class="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-mont-bold leading-none mb-6 md:mb-10">
-          juntos
+          {{ t('home.proyect.0.part3') }}
         </p>
 
         <!-- Estrella decorativa posicionada en la esquina -->
@@ -163,7 +161,7 @@
         </div>
 
         <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
-          <p>Contáctanos</p>
+          <p>{{ t('home.contactButton') }}</p>
           <img src="/src/assets/icons/arrow.svg" alt="Arrow"
             class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
         </router-link>
@@ -175,9 +173,9 @@
   <section class="bg-tertiary">
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
-        <SectionTitle title="Testimonios" textColor="text-white " />
+        <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
         <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">
-          Confían en <span class="font-mont-heavy">nosotros</span>
+         {{ t('home.testimonialsTitle.0.part1') }} <span class="font-mont-heavy">{{ t('home.testimonialsTitle.0.part2') }}</span>
         </p>
       </div>
       <div class="mt-15 justify-center flex">
@@ -200,12 +198,13 @@
         <div class="flex flex-col xl:pl-60 md:pl-40">
           <p
             class="text-white text-xl md:text-xl lg:text-3xl xl:text-4xl font-mont-bold md:mb-3 mb-1 text-center md:text-left">
-            Conecta con nosotros y accede a oportunidades exclusivas para tu negocio
+            {{ t('home.finalTitle') }}
+
           </p>
 
           <div class="flex md:justify-end justify-center">
             <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
-              <p>¡Empieza ya!</p>
+              <p>{{ t('home.startButton') }}</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
@@ -223,13 +222,44 @@
 import SectionTitle from '../../public/components/section-title.component.vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
 import TestimonyCard from '../../home/components/testimony-card.component.vue';
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 export default {
-  name: "Home",
+  name: "home",
   components: {
     SectionTitle,
     ServiceCard,
     TestimonyCard
+  },
+  setup() {
+    const { t } = useI18n();
+
+    const services = computed(() => [
+      {
+        imageSrc: '../../assets/images/service-1.webp',
+        imageAlt: 'Imagen 1',
+        tags: [t('services.tags.market'), t('services.tags.brand'), t('services.tags.content')],
+        title: t('services.titlesServices.commercialAdvisory'),
+        description: t('services.descriptions.commercialAdvisory'),
+      },
+      {
+        imageSrc: '../../assets/images/service-2.jpg',
+        imageAlt: 'Imagen 2',
+        tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
+        title: t('services.titlesServices.legalAdvisory'),
+        description: t('services.descriptions.legalAdvisory'),
+      },
+      {
+        imageSrc: '../../assets/images/service-3.jpg',
+        imageAlt: 'Imagen 3',
+        tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
+        title: t('services.titlesServices.commercialBrokerage'),
+        description: t('services.descriptions.commercialBrokerage'),
+      }
+    ]);
+
+    return { t, services };
   }
 }
 </script>

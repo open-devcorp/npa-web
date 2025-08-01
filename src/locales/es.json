@@ -1,5 +1,68 @@
 {
-  "home": "INICIO",
+  "homeTitle": "INICIO",
+  "home":{
+    "title":{
+      "part1": "Tu socio estratégico",
+      "part2": "y acelerador comercial"
+    },
+    "labels":{
+      "international": "Internacional",
+      "advisors": "Asesores",
+      "np": "New Point"
+    },
+    "services":[
+      {
+        "part1": "Asesoría",
+        "part2": "Técnico-legal"
+      },
+      {
+        "part1": "Marketing y",
+        "part2": "publicidad"
+      },
+      {
+        "part1": "Corretaje",
+        "part2": "Comercial"
+      }
+    ],
+    "meetButton": "CONÓCENOS",
+    "firstSubtitle": "LO QUE OFRECEMOS",
+    "solutions":{
+      "part1": "Descubre nuestras",
+      "part2": "soluciones"
+    },
+    "learnButton": "SABER MÁS",
+    "proyect": [
+      {
+        "part1": "Impulsemos proyectos",
+        "part2": "extraordinarios",
+        "part3": "juntos"
+      }
+    ],
+    "contactButton": "CONTÁCTANOS",
+    "secondSubtitle": "TESTIMONIOS",
+    "testimonialsTitle":[
+      {
+        "part1": "Confían en",
+        "part2": "nosotros"
+      }
+    ],
+    "testimonialsCards": [
+      {
+        "client": "Cliente 1",
+        "feedback": "Excelente servicio y atención al cliente."
+      },
+      {
+        "client": "Cliente 2",
+        "feedback": "Profesionales altamente capacitados."
+      },
+      {
+        "client": "Cliente 3",
+        "feedback": "Recomiendo sus servicios al 100%."
+      }
+    ],
+    "finalTitle":"Conecta con nosotros y accede a oportunidades exclusivas para tu negocio",
+    "startButton": "¡EMPIEZA YA!"
+  },
   "services": {
     "title": "Servicios",
     "titlesServices": {

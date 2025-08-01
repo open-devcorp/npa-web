@@ -52,13 +52,13 @@
             <div class="px-4 sm:px-6 py-4">
                 <ul class="flex flex-col gap-3 mb-6">
                     <li>
-                        <router-link @click="isOpen = false" to="/home"
+                        <router-link @click="isOpen = false" to="/"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             INICIO
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/about"
+                        <router-link @click="isOpen = false" to="/nosotros"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             NOSOTROS
                         </router-link>
@@ -76,7 +76,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link @click="isOpen = false" to="/#contacto"
+                        <router-link @click="isOpen = false" to="/contacto"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                             EQUIPO
                         </router-link>
@@ -84,7 +84,7 @@
                 </ul>
 
                 <div class="flex flex-shrink-0 items-center">
-                    <router-link @click="isOpen = false" to="/#contacto"
+                    <router-link @click="isOpen = false" to="/contacto"
                         class="group w-full justify-center bg-primary text-white px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
                         <span class="text-center flex-1">CONTÁCTANOS</span>
                         <img src="/src/assets/icons/arrow.svg" alt="Arrow"
