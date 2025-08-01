@@ -3,19 +3,19 @@ s="bg-noise-blue text-white py-4
 <div class="bg-noise-white">
   <section class="bg-noise-blue text-white py-4 md:py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">Nuestro Equipo</h1>
+      <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('team.title') }}</h1>
       <p class="font-public-sans-black text-sm">
-        <span class="text-secondary">INICIO</span> / EQUIPO
+        <span class="text-secondary">{{ t('home') }}</span> / {{ t('team.subtitle') }}
       </p>
     </div>
   </section>
 
   <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 mt-12">
       <!-- Title -->
-        <SectionTitle title="CONOCE AL EQUIPO" textColor="text-tertiary" />
+        <SectionTitle :title="t('team.secondSubtitle')" textColor="text-tertiary" />
         <p class="text-4xl md:text-6xl xl:text-7xl flex items-center mb-4">
-          <span class="font-mont-regular mr-2">Nuestro</span>
-          <span class="font-mont-heavy mr-2">Equipo</span>
+          <span class="font-mont-regular mr-2">{{ t('team.members.title.part1') }}</span>
+          <span class="font-mont-heavy mr-2">{{ t('team.members.title.part2') }}</span>
         </p>
 
       <!-- Cards -->
