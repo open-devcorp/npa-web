@@ -16,11 +16,11 @@
 
   <!-- Creando puentes hacia el futuro -->
   <section class="bg-noise-white">
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
-
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
       <!-- titulo -->
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('why.firstSubtitle')" textColor="text-tertiary" />
+
         <div class="flex flex-col lg:flex-row justify-between lg:gap-10 gap-5">
 
           <div class="space-y-0 md:space-y-2">
@@ -28,7 +28,7 @@
               {{ t('why.mainTitle.part1') }} <span class="font-mont-heavy">{{ t('why.mainTitle.part2') }}</span>
             </p>
             <p class="text-3xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap">
-             {{ t('why.mainTitle.part3') }} <span class="font-mont-heavy">{{ t('why.mainTitle.part4') }}</span>
+              {{ t('why.mainTitle.part3') }} <span class="font-mont-heavy">{{ t('why.mainTitle.part4') }}</span>
             </p>
           </div>
 
@@ -37,6 +37,7 @@
               {{ t('why.mainTitle.description') }}
             </p>
           </div>
+
         </div>
       </div>
 
@@ -127,63 +128,62 @@
 
   <!-- ¿Por qué invertir en Perú? -->
   <section class="relative overflow-hidden xl:h-[900px] md:h-[1000px]">
-  <!-- Fondo -->
-  <img
-    src="../../assets/backgrounds/lima-plaza.jpg"
-    alt="Lima Plaza"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
+    <!-- Fondo -->
+    <img src="../../assets/backgrounds/lima-plaza.jpg" alt="Lima Plaza"
+      class="absolute inset-0 w-full h-full object-cover" />
 
-  <!-- Contenido principal -->
-  <div class="relative w-full max-w-screen-xl mx-auto px-4 xl:px-0 pt-20 pb-10">
-    <!-- Titulo y vineta -->
-    <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-8 lg:gap-24">
-      <!-- vineta -->
-      <SectionTitle :title="t('why.secondSubtitle')" textColor="text-white" class="text-nowrap text-shadow-lg/25" />
+    <!-- Contenido principal -->
+    <div class="relative w-full max-w-screen-xl mx-auto px-4 xl:px-0 pt-20 pb-10">
+      <!-- Titulo y vineta -->
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-8 lg:gap-24">
+        <!-- vineta -->
+        <SectionTitle :title="t('why.secondSubtitle')" textColor="text-white" class="text-nowrap text-shadow-lg/25" />
 
-      <!-- Titulo -->
-      <div class="flex flex-col gap-2">
-        <div class="space-y-0 md:space-y-2">
-          <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap text-white text-shadow-lg/25">
-            {{t('why.infoCards.title.0.part1')}}<span class="text-secondary font-mont-heavy">{{t('why.infoCards.title.0.part2')}}</span>
-          </p>
-          <p class="text-4xl md:text-5xl xl:text-7xl font-mont-heavy text-nowrap text-white text-shadow-lg/25">
-            {{t('why.infoCards.title.0.part3')}} <span class="text-secondary font-mont-heavy">{{t('why.infoCards.title.0.part4')}}</span>?
-          </p>
-        </div>
-        <div class="flex mt-2">
-          <p class="font-mont-regular lg:text-xl text-white text-shadow-lg/25 text-justify">
-           {{ t('why.infoCards.title.0.description') }}
-          </p>
+        <!-- Titulo -->
+        <div class="flex flex-col gap-2">
+          <div class="space-y-0 md:space-y-2">
+            <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-nowrap text-white text-shadow-lg/25">
+              {{ t('why.infoCards.title.0.part1') }}<span class="text-secondary font-mont-heavy">{{
+                t('why.infoCards.title.0.part2') }}</span>
+            </p>
+            <p class="text-4xl md:text-5xl xl:text-7xl font-mont-heavy text-nowrap text-white text-shadow-lg/25">
+              {{ t('why.infoCards.title.0.part3') }} <span class="text-secondary font-mont-heavy">{{
+                t('why.infoCards.title.0.part4') }}</span>?
+            </p>
+          </div>
+          <div class="flex mt-2">
+            <p class="font-mont-regular lg:text-xl text-white text-shadow-lg/25 text-justify">
+              {{ t('why.infoCards.title.0.description') }}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Tarjetas -->
-    <div class="flex flex-wrap justify-center md:items-center gap-4 md:gap-6 mt-16 xl:mt-32" >
+      <!-- Tarjetas -->
+      <div class="flex flex-wrap justify-center md:items-center gap-4 md:gap-6 mt-16 xl:mt-32">
 
-      <InfoCard :title="t('why.infoCards.first')" :iconSrc="'./src/assets/icons/users.svg'" />
-      <InfoCard :title="t('why.infoCards.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
-      <InfoCard :title="t('why.infoCards.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
-      <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-      <InfoCard :title="t('why.infoCards.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
-      <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
-    </div>
+        <InfoCard :title="t('why.infoCards.first')" :iconSrc="'./src/assets/icons/users.svg'" />
+        <InfoCard :title="t('why.infoCards.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
+        <InfoCard :title="t('why.infoCards.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
+        <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
+        <InfoCard :title="t('why.infoCards.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
+        <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
+      </div>
 
-    <!-- Etiquetas flotantes (opcional) -->
-    <!--
+      <!-- Etiquetas flotantes (opcional) -->
+      <!--
     <span class="absolute left-0 bottom-24 rotate-[-15deg] bg-white text-black px-6 py-1 rounded-full shadow-lg font-mont-bold text-lg border border-black/20">Inversión</span>
     <span class="absolute right-0 top-32 rotate-[15deg] bg-yellow-200 text-black px-6 py-1 rounded-full shadow-lg font-mont-bold text-lg border border-black/20">Comercio</span>
     -->
-  </div>
-</section>
+    </div>
+  </section>
 
 </template>
 
 <script>
 import SectionTitle from '../../public/components/section-title.component.vue';
 import InfoCard from '../../about-us/components/info-card.component.vue';
-import { useI18n } from 'vue-i18n'; 
+import { useI18n } from 'vue-i18n';
 export default {
   name: "why-choose-us",
   components: {
@@ -197,4 +197,3 @@ export default {
   }
 };
 </script>
-

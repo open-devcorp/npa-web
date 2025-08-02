@@ -11,7 +11,7 @@
     </section>
     <!-- Contact Form Section -->
     <section class="bg-noise-white">
-        <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25 md:h-screen flex items-center">
+        <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20 md:h-screen flex items-center">
 
             <div class="md:flex md:flex-row xl:gap-20 md:gap-10 space-y-10 md:space-x-0 w-full">
 

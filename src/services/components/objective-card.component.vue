@@ -1,11 +1,8 @@
 <template>
-  <div
-    ref="cardRef"
-    :class="[
-      'bg-noise-white p-4 md:p-6 lg:p-8 text-tertiary transition-all duration-200 ease-out',
-      isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-    ]"
-  >
+  <div ref="cardRef" :class="[
+    'bg-noise-white p-6 lg:p-8 text-tertiary transition-all duration-200 ease-out w-full md:w-[500px] lg:w-full',
+    isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+  ]">
     <div class="flex flex-col items-start gap-4 mb-4">
       <div :class="['p-2 rounded-full', iconBackground]">
         <img :src="resolvedIconSrc" alt="Icon" class="w-8 h-8 md:w-12 md:h-12" />
