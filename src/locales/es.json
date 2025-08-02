@@ -29,9 +29,9 @@
       "providers": "Proveedores",
       "exports": "Exportaciones"
     },
-      "descriptions": {
+    "descriptions": {
       "commercialAdvisory": "Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial.",
-       "legalAdvisory": "Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.",
+      "legalAdvisory": "Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.",
       "commercialBrokerage": "Servicio que facilita la conexión entre inversores y proveedores, promoviendo exportaciones e inversiones. También gestionamos búsqueda y selección de oportunidades comerciales, contribuyendo al crecimiento y éxito de empresas en diversos mercados."
     },
     "cards": {
@@ -106,61 +106,99 @@
         }
       }
     }
-    
   },
   "about": {
     "title": "Nosotros",
     "subtitle": "NOSOTROS",
-    "mainTitle":{
+    "mainTitle": {
       "part1": "Somos un",
       "part2": "punto de encuentro",
       "part3": "Somos el punto de encuentro entre negocios, inversión y expansión internacional, combinando la precisión de una boutique legal con la visión estratégica y creatividad de una agencia de marketing."
     },
     "buttonContact": "CONTÁCTANOS",
-        "cards":{
+    "cards": {
       "first": {
         "title": "Equipo Interdisciplinario",
         "description": "Contamos con un equipo interdisciplinario de abogados, arquitectos, economistas y especialistas en marketing que trabajan de manera coordinada para ofrecer soluciones integrales."
-        },
+      },
       "second": {
         "title": "Catalizadores del éxito",
         "description": "Ofrecemos asesoría legal en Derecho Inmobiliario, Corporativo y Comercial, complementada con estrategias de marketing y comunicación para potenciar el crecimiento de nuestros clientes."
-        },
+      },
       "third": {
         "title": "Acceso Estratégico",
         "description": "Perú es una tierra de oportunidades con estabilidad económica y crecimiento sostenido. Te ayudamos a acceder de manera estratégica a este mercado emergente lleno de posibilidades."
-        }
-      },
-      "secondSubtitle": "NUESTROS PRINCIPIOS",
-      "values": {
-        "title": {
-          "part1": "Nuestro",
-          "part2": "Objetivo y Horizonte"
-        },
-        "mission":{
-          "title": "Nuestra misión",
-          "description": "Crear conexiones entre personas, empresas e inversiones, ofreciendo asesoría estratégica legal, técnica y comercial que simplifica procesos y convierte ideas en proyectos exitosos a nivel nacional e internacional."
-        },
-        "vision":{
-          "title": "Nuestra visión",
-          "description": "En realidades sólidas, construyendo conexiones que impulsen negocios, inversiones y proyectos de vida a nivel nacional e internacional."
-        }
-
-      },
-      "buttonMore": "SABER MÁS",
-      "finalTile":{
-        "part1": "Escuchamos, entendemos y construimos",
-        "part2": "relaciones de largo plazo",
-        "part3": "basadas en la",
-        "part4": "confianza y el compromiso"
-      },
-       "infoCard":{
-        "first":"Conexión genuina",
-        "second":"Excelencia colaborativa",
-        "third":"Innovación consciente",
-        "fourth":"Transparencia activa",
-        "fifth":"Difusión del conocimiento"
       }
-
+    },
+    "secondSubtitle": "NUESTROS PRINCIPIOS",
+    "values": {
+      "title": {
+        "part1": "Nuestro",
+        "part2": "Objetivo y Horizonte"
+      },
+      "mission": {
+        "title": "Nuestra misión",
+        "description": "Crear conexiones entre personas, empresas e inversiones, ofreciendo asesoría estratégica legal, técnica y comercial que simplifica procesos y convierte ideas en proyectos exitosos a nivel nacional e internacional."
+      },
+      "vision": {
+        "title": "Nuestra visión",
+        "description": "En realidades sólidas, construyendo conexiones que impulsen negocios, inversiones y proyectos de vida a nivel nacional e internacional."
+      }
+    },
+    "buttonMore": "SABER MÁS",
+    "finalTile": {
+      "part1": "Escuchamos, entendemos y construimos",
+      "part2": "relaciones de largo plazo",
+      "part3": "basadas en la",
+      "part4": "confianza y el compromiso"
+    },
+    "infoCard": {
+      "first": "Conexión genuina",
+      "second": "Excelencia colaborativa",
+      "third": "Innovación consciente",
+      "fourth": "Transparencia activa",
+      "fifth": "Difusión del conocimiento"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "CONTÁCTANOS",
+    "breadcrumb": {
+      "home": "INICIO",
+      "contact": "CONTÁCTANOS"
+    },
+    "sectionTitle": "UBÍCANOS",
+    "mainTitle": "Conectemos",
+    "description": "Conecta con nosotros y encuentra la estrategia ideal para ti.",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingresa tu nombre"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Ingresa tu email"
+      },
+      "phone": {
+        "label": "Celular",
+        "placeholder": "Ingresa tu celular"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje aquí..."
+      },
+      "submitButton": "Empieza hoy"
+    },
+    "contactInfo": {
+      "phone": "+51 959 790 654",
+      "email": "newpoint.asesores@gmail.com",
+      "address": "Av. Las azucenas, Santiago de Surco"
+    },
+    "altTexts": {
+      "phoneIcon": "Ícono de teléfono",
+      "emailIcon": "Ícono de correo electrónico",
+      "locationIcon": "Ícono de ubicación",
+      "arrow": "Arrow"
+    }
   }
 }
