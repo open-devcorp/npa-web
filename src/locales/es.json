@@ -484,8 +484,8 @@
     "description": "Conecta con nosotros y encuentra la estrategia ideal para ti.",
     "form": {
       "name": {
-        "label": "Nombre",
-        "placeholder": "Ingresa tu nombre"
+        "label": "Nombres",
+        "placeholder": "Ingresa tus nombres"
       },
       "email": {
         "label": "Email",

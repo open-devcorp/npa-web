@@ -453,8 +453,8 @@
     "description": "Connect with us and find the ideal strategy for you.",
     "form": {
       "name": {
-        "label": "Name",
-        "placeholder": "Enter your name"
+        "label": "Names",
+        "placeholder": "Enter your names"
       },
       "email": {
         "label": "Email",
