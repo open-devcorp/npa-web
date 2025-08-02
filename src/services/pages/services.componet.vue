@@ -2,14 +2,14 @@
   <div class="bg-noise-white">
 
     <!-- Hero Section -->
-  <section class="bg-noise-blue text-white py-4 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('services.title') }}</h1>
-      <p class="font-public-sans-black text-sm">
-        <span class="text-secondary">{{ t('homeTitle') }}</span> / {{ t('services.subtitle') }}
-      </p>
-    </div>
-  </section>
+      <section class="bg-noise-blue text-white py-15 md:py-20 lg:py-25">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('services.title') }}</h1>
+        <p class="font-public-sans font-black text-sm">
+          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('services.subtitle') }}
+        </p>
+      </div>
+    </section>
 
     <section class="py-4 max-w-screen-xl mx-auto px-4 gap-32 mt-12">
 
