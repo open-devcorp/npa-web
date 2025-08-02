@@ -12,7 +12,7 @@
       </div>
     </section>
 
-    <section class="py-4 max-w-screen-xl mx-auto px-4 gap-32 mt-12">
+    <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32 mt-12">
 
       <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
       <p class="text-3xl md:text-6xl xl:text-7xl">
@@ -29,7 +29,7 @@
     </section>
 
     <!-- Client Segment Cards -->
-    <section class="py-4 max-w-screen-xl mx-auto px-4 gap-32 mt-10">
+    <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32 mt-10">
       <SectionTitle :title="t('services.clientSegmentTitle')" textColor="text-tertiary" />
       <p class="text-3xl md:text-6xl xl:text-7xl">
         <span class="font-mont-regular mr-2">{{ t('services.clientSegment.part1') }}</span>

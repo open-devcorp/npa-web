@@ -1,18 +1,19 @@
 <template>
-  
+
   <div class="bg-noise-white">
 
     <!-- Hero Section -->
-  <section class="bg-noise-blue text-white py-15 md:py-20 lg:py-25">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('terms.title') }}</h1>
+    <section class="bg-noise-blue text-white py-15 md:py-20 lg:py-25">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('terms.title') }}</h1>
         <p class="font-public-sans font-black text-sm">
-          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('terms.subtitle') }}
+          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('terms.subtitle')
+          }}
         </p>
-    </div>
-  </section>
+      </div>
+    </section>
 
-    <section class="max-w-4xl mx-auto p-6 text-justify">
+    <section class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20 text-justify">
       <p class="mb-4" v-html="t('terms.intro_1')"></p>
       <p class="mb-4">{{ t('terms.intro_2') }}</p>
 
@@ -45,7 +46,7 @@
       <p class="mb-4" v-html="t('terms.section_8_p1')"></p>
     </section>
 
-</div>
+  </div>
 </template>
 <script>
 import { useI18n } from 'vue-i18n';
