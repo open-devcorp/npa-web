@@ -200,5 +200,30 @@
       "locationIcon": "Ícono de ubicación",
       "arrow": "Arrow"
     }
+  },
+  "footer": {
+    "pages": {
+      "title": "Páginas",
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "whyChooseUs": "Por qué elegirnos",
+      "team": "Equipo",
+      "contact": "Contáctanos"
+    },
+    "socialMedia": {
+      "title": "Redes sociales",
+      "tiktok": "Tiktok",
+      "instagram": "Instagram",
+      "linkedin": "Linkedin"
+    },
+    "description": "Somos el punto de encuentro entre negocios, inversión y expansión internacional que une lo mejor de dos mundos: el rigor y la precisión de una boutique legal con la creatividad y visión estratégica de una agencia de marketing y publicidad.",
+    "copyright": "New Point Asesores 2024 © Todos los derechos reservados",
+    "privacyPolicy": "Política de privacidad",
+    "termsConditions": "Términos y condiciones",
+    "professionalWeb": "¿Quieres una web profesional?",
+    "visitDevcorp": "Visítanos en Devcorp",
+    "designedBy": "Diseñado y desarrollado por:",
+    "logoAlt": "Icono de New Point Asesores"
   }
 }

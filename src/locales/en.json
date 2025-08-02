@@ -201,5 +201,30 @@
       "locationIcon": "Location icon",
       "arrow": "Arrow"
     }
+  },
+  "footer": {
+    "pages": {
+      "title": "Pages",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "whyChooseUs": "Why Choose Us",
+      "team": "Team",
+      "contact": "Contact Us"
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "tiktok": "Tiktok",
+      "instagram": "Instagram",
+      "linkedin": "Linkedin"
+    },
+    "description": "We are the meeting point between business, investment, and international expansion, combining the best of two worlds: the rigor and precision of a legal boutique with the strategic vision and creativity of a marketing agency.",
+    "copyright": "New Point Asesores 2024 © All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms and Conditions",
+    "professionalWeb": "Want a professional website?",
+    "visitDevcorp": "Visit us at Devcorp",
+    "designedBy": "Designed and developed by:",
+    "logoAlt": "New Point Asesores Icon"
   }
 }
