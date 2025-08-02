@@ -12,7 +12,7 @@
 
     <!-- About Content -->
     <section class="py-4 mt-12">
-      <div class="max-w-screen-xl mx-auto px-4">
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
 
         <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
           <SectionTitle :title="t('about.subtitle')" textColor="text-tertiary" />
@@ -81,7 +81,7 @@
 </section>
 
     <section class="bg-tertiary py-16  mt-16">
-      <div class="max-w-screen-xl mx-auto px-4">
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
         <SectionTitle :title="t('about.secondSubtitle')" textColor="text-secondary" />
 
         <div class="flex flex-col xl:flex-row gap-8">

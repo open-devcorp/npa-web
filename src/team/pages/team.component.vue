@@ -48,7 +48,7 @@ s="bg-noise-blue text-white py-4
           </template>
           <div
             v-if="selected !== index"
-            class="absolute inset-0 bg-tertiary/90 opacity-70 z-10 transition-opacity duration-300"
+            class="absolute inset-0 bg-tertiary/65 opacity-70 z-10 transition-opacity duration-300"
           ></div>
 
           <div

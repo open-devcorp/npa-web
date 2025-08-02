@@ -52,41 +52,40 @@
         </div>
 
         <!-- menú móvil -->
-        <div v-if="isOpen" class="lg:hidden mt-4 bg-white shadow-lg rounded-lg border border-gray-200 mx-2">
-            <div class="px-4 sm:px-6 py-4">
-                <ul class="flex flex-col gap-3 mb-6">
-                    <li>
+        <div v-if="isOpen" class="lg:hidden mt-4 bg-white rounded-md">
+            <div class="p-5">
+                <div class="flex flex-col gap-3">
+                    <div>
                         <router-link @click="isOpen = false" to="/"
-                            class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
                             {{ $t("navHome.0.title") }}
                         </router-link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <router-link @click="isOpen = false" to="/nosotros"
-                            class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
                             {{ $t("navHome.1.title") }}
                         </router-link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <router-link @click="isOpen = false" to="/servicios"
-                            class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
                             {{ $t("navHome.2.title") }}
                         </router-link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <router-link @click="isOpen = false" to="/por-que-elegirnos"
-                            class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
+                            class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
                             {{ $t("navHome.3.title") }}
                         </router-link>
-                    </li>
-                </ul>
-                <div class="flex flex-shrink-0 items-center">
-                    <router-link @click="isOpen = false" to="/contacto"
-                        class="group w-full justify-center bg-primary text-white px-4 py-3 text-base flex items-center gap-2 hover:bg-secondary transition-colors font-mont-bold whitespace-nowrap rounded-lg hover:text-tertiary">
-                        <span class="text-center flex-1">{{ $t("navHome.5.title") }}</span>
-                        <img src="/src/assets/icons/arrow.svg" alt="Arrow"
-                            class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
-                    </router-link>
+                    </div>
+                    <div class="flex flex-shrink-0 items-center">
+                        <router-link @click="isOpen = false" to="/contacto" class="btn btn-primary w-full">
+                            <span class="text-center flex-1">{{ $t("navHome.5.title") }}</span>
+                            <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+                                class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
+                        </router-link>
+                    </div>
                 </div>
             </div>
         </div>

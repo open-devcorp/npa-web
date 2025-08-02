@@ -2,18 +2,19 @@
   <div class="bg-noise-white">
 
     <!-- Hero Section -->
-    <section class="bg-noise-blue text-white py-4 md:py-20">
+    <section class="bg-noise-blue text-white py-15 md:py-20 lg:py-25">
       <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="font-mont-heavy text-4xl md:text-6xl mb-6">{{ t('services.title') }}</h1>
-        <p class="font-public-sans-black text-sm">
-          <span class="text-secondary">{{ t('homeTitle') }}</span> / {{ t('services.subtitle') }}
+        <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('services.title') }}</h1>
+        <p class="font-public-sans font-black text-sm">
+          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{
+            t('services.subtitle') }}
         </p>
       </div>
     </section>
 
-    <section class="py-4 max-w-screen-xl mx-auto px-4 gap-32 mt-12">
+    <section class="py-4 max-w-screen-xl mx-auto px-4 xl:px-0 gap-32 mt-12">
 
-    <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
+      <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
       <p class="text-3xl md:text-6xl xl:text-7xl">
         <span class="font-mont-regular mr-2">{{ t('services.solution.part1') }}</span>
         <span class="font-mont-heavy mr-2">{{ t('services.solution.part2') }}</span>
@@ -55,7 +56,7 @@
           @click="selectCard(index)">
 
             <template v-if="card.img">
-              <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-center transition-transform duration-300"/>
+              <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover object-top transition-transform duration-300"/>
             </template>
 
             <div v-if="selected !== index" class="absolute inset-0 bg-tertiary/90 z-10 flex items-center justify-center">            
@@ -115,13 +116,14 @@
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
-
   </div>
 </template>
+
 <script>
 import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
@@ -136,7 +138,7 @@ export default {
   },
   setup() {
     const { t } = useI18n();
-    const selected = ref(0); 
+    const selected = ref(0);
     const locked = ref(false);
     const isMobile = ref(false);
     const infoSection = ref(null);
@@ -201,20 +203,20 @@ export default {
           title: t('services.cards.nationalCompany.content.title'),
           description: t('services.cards.nationalCompany.content.description'),
           details: [
-            { 
-              title: t('services.cards.nationalCompany.content.details[0].title'), 
-              subtitle: t('services.cards.nationalCompany.content.details[0].subtitle') 
+            {
+              title: t('services.cards.nationalCompany.content.details[0].title'),
+              subtitle: t('services.cards.nationalCompany.content.details[0].subtitle')
             },
-            { 
-              title: t('services.cards.nationalCompany.content.details[1].title'), 
-              subtitle: t('services.cards.nationalCompany.content.details[1].subtitle') 
+            {
+              title: t('services.cards.nationalCompany.content.details[1].title'),
+              subtitle: t('services.cards.nationalCompany.content.details[1].subtitle')
             },
-            { 
-              title: t('services.cards.nationalCompany.content.details[2].title'), 
-              subtitle: t('services.cards.nationalCompany.content.details[2].subtitle') 
+            {
+              title: t('services.cards.nationalCompany.content.details[2].title'),
+              subtitle: t('services.cards.nationalCompany.content.details[2].subtitle')
             }
           ]
-            }
+        }
       },
       {
         img: '/src/assets/images/person-company.avif',
@@ -225,17 +227,17 @@ export default {
           title: t('services.cards.personCompany.content.title'),
           description: t('services.cards.personCompany.content.description'),
           details: [
-            { 
-              title: t('services.cards.personCompany.content.details[0].title'), 
-              subtitle: t('services.cards.personCompany.content.details[0].subtitle') 
+            {
+              title: t('services.cards.personCompany.content.details[0].title'),
+              subtitle: t('services.cards.personCompany.content.details[0].subtitle')
             },
-            { 
-              title: t('services.cards.personCompany.content.details[1].title'), 
-              subtitle: t('services.cards.personCompany.content.details[1].subtitle') 
+            {
+              title: t('services.cards.personCompany.content.details[1].title'),
+              subtitle: t('services.cards.personCompany.content.details[1].subtitle')
             },
-            { 
-              title: t('services.cards.personCompany.content.details[2].title'), 
-              subtitle: t('services.cards.personCompany.content.details[2].subtitle') 
+            {
+              title: t('services.cards.personCompany.content.details[2].title'),
+              subtitle: t('services.cards.personCompany.content.details[2].subtitle')
             }
           ]
         }
