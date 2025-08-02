@@ -4,7 +4,8 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ $t('contact.title') }}</h1>
             <p class="font-public-sans font-black text-sm">
-                <span class="text-secondary font-public-sans font-black">{{ $t('contact.breadcrumb.home') }}</span> / {{ $t('contact.breadcrumb.contact') }}
+                <span class="text-secondary font-public-sans font-black">{{ $t('contact.breadcrumb.home') }}</span> / {{
+                    $t('contact.breadcrumb.contact') }}
             </p>
         </div>
     </section>
@@ -40,11 +41,13 @@
                     <div class="flex lg:gap-10 gap-5">
                         <div class="w-full">
                             <p class="form-label">{{ $t('contact.form.email.label') }}</p>
-                            <input type="email" class="form-input" :placeholder="$t('contact.form.email.placeholder')" />
+                            <input type="email" class="form-input"
+                                :placeholder="$t('contact.form.email.placeholder')" />
                         </div>
                         <div class="w-full">
                             <p class="form-label">{{ $t('contact.form.phone.label') }}</p>
-                            <input type="number" class="form-input" :placeholder="$t('contact.form.phone.placeholder')" />
+                            <input type="number" class="form-input"
+                                :placeholder="$t('contact.form.phone.placeholder')" />
                         </div>
                     </div>
                     <div>
@@ -92,22 +95,20 @@
                         <div class="flex flex-row items-center gap-3">
                             <img src="../../assets/icons/email-icon.svg" :alt="$t('contact.altTexts.emailIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
-                            <p class="font-public-sans font-black lg:text-xl text-base">{{ $t('contact.contactInfo.email') }}</p>
+                            <p class="font-public-sans font-black lg:text-xl text-base">{{
+                                $t('contact.contactInfo.email') }}</p>
                         </div>
                         <div class="flex flex-row items-center gap-3">
                             <img src="../../assets/icons/marker-icon.svg" :alt="$t('contact.altTexts.locationIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
-                            <p class="font-public-sans font-black lg:text-xl text-base">{{ $t('contact.contactInfo.address') }}</p>
+                            <p class="font-public-sans font-black lg:text-xl text-base">{{
+                                $t('contact.contactInfo.address') }}</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </section>
-
 </template>
 
 <script>
@@ -117,6 +118,5 @@ export default {
     components: {
         SectionTitle
     }
-
 };
 </script>
