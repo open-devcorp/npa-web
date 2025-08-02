@@ -89,13 +89,13 @@
           {{ $t('footer.copyright') }}
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 lg:mt-0 mt-4">
-          <a href="/politica-de-privacidad" class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
+          <router-link to="/politica-de-privacidad" class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
             {{ $t('footer.privacyPolicy') }}
-          </a>
-          <a href="/terminos-y-condiciones"
+          </router-link>
+          <router-link to="/terminos-y-condiciones"
             class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
             {{ $t('footer.termsConditions') }}
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

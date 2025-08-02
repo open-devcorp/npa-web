@@ -68,7 +68,7 @@
               </div>
             </div>
 
-            <router-link to="" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
+            <router-link to="/contacto" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
               <span class="">{{ t("home.meetButton") }}</span>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
@@ -106,7 +106,7 @@
 
         <!-- boton -->
         <div class="flex justify-end">
-          <router-link to="" class="btn btn-primary whitespace-nowrap items-center">
+          <router-link to="/contacto" class="btn btn-primary whitespace-nowrap items-center">
             <p>{{ t("home.learnButton") }}</p>
             <img src="/src/assets/icons/arrow.svg" alt="Arrow"
               class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
@@ -160,7 +160,7 @@
           <img src="/src/assets/images/star-secondary.svg" alt="Star decoration" class="h-13 md:h-30 object-contain" />
         </div>
 
-        <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
+        <router-link to="/contacto" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
           <p>{{ t('home.contactButton') }}</p>
           <img src="/src/assets/icons/arrow.svg" alt="Arrow"
             class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
@@ -203,7 +203,7 @@
           </p>
 
           <div class="flex md:justify-end justify-center">
-            <router-link to="/contact-us" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
+            <router-link to="/contacto" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
               <p>{{ t('home.startButton') }}</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />

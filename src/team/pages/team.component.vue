@@ -5,7 +5,12 @@ s="bg-noise-blue text-white py-4
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('team.title') }}</h1>
         <p class="font-public-sans font-black text-sm">
-          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('team.subtitle') }}
+        <span class="text-secondary font-public-sans font-black">
+          <router-link to="/" class="hover:underline">
+            {{ t('homeTitle') }}
+          </router-link>
+          </span>
+          / {{ t('team.subtitle') }}
         </p>
       </div>
     </section>
