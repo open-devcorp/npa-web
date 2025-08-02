@@ -1,4 +1,25 @@
 {
+  "navHome":[
+    {
+      "title": "INICIO"
+    },
+    {
+      "title": "NOSOTROS"
+    },
+    {
+      "title": "SERVICIOS"
+    },
+    {
+      "title": "POR QUÉ ELEGIRNOS"
+    },
+    {
+      "title": "EQUIPO"
+    },
+    {
+      "title": "CONTÁCTANOS"
+    }
+
+  ],
   "homeTitle": "INICIO",
   "home":{
     "title":{
