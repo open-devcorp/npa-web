@@ -89,13 +89,15 @@
           {{ $t('footer.copyright') }}
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 lg:mt-0 mt-4">
-          <router-link to="/politica-de-privacidad" class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
+          <router-link to="/politica-de-privacidad"
+            class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
             {{ $t('footer.privacyPolicy') }}
           </router-link>
           <router-link to="/terminos-y-condiciones"
             class="text-sm font-mont-regular text-white hover:text-secondary transition-colors underline">
             {{ $t('footer.termsConditions') }}
           </router-link>
+          <LanguageSwitcher />
         </div>
       </div>
     </div>
@@ -105,12 +107,13 @@
         <p class="text-center lg:text-left font-mont-regular">
           {{ $t('footer.professionalWeb') }} <a href="https://devcorp.pe" target="_blank" rel="noopener"
             class="underline font-semibold">{{ $t('footer.visitDevcorp') }}</a>
+
         </p>
         <div class="flex flex-col lg:flex-row items-center gap-1 lg:gap-4 mt-2 lg:mt-0 font-mont-regular">
           <span>{{ $t('footer.designedBy') }} </span>
-          logo de DevCorp
-          <span class="ml-2 text-gray-400">© 2025</span>
-          <LanguageSwitcher />
+          <a href="https://devcorp.pe" target="_blank" rel="noopener">
+            <img src="../../assets/images/logo-devcorp.png" alt="Logo Devcorp" class="h-8 object-contain">
+          </a>
         </div>
       </div>
     </div>
