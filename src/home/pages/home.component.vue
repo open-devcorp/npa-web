@@ -83,7 +83,7 @@
   <!-- lo que ofrecemos -->
   <section class="bg-noise-white">
 
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
 
       <!-- Titulo y boton -->
       <div class="flex flex-col md:flex-row md:items-end md:justify-between">
@@ -171,7 +171,7 @@
 
   <!-- testimonios -->
   <section class="bg-tertiary">
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 pt-19 pb-25">
+    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
         <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">

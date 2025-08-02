@@ -1,7 +1,10 @@
 <template>
     <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-5 md:my-8 absolute top-0 left-0 right-0 z-50">
         <div class="flex justify-between items-center">
-            <img src="/src/assets/icons/logo-home-npa.svg" alt="Logo NPA" class="w-20 md:w-35 lg:w-40 object-contain" />
+            <router-link to="/">
+                <img src="/src/assets/icons/logo-home-npa.svg" alt="Logo NPA"
+                    class="w-20 md:w-35 lg:w-40 object-contain" />
+            </router-link>
 
             <ul class="hidden lg:flex gap-8">
                 <li>
@@ -77,6 +80,12 @@
                         <router-link @click="isOpen = false" to="/por-que-elegirnos"
                             class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
                             {{ $t("navHome.3.title") }}
+                        </router-link>
+                    </div>
+                    <div>
+                        <router-link @click="isOpen = false" to="/contacto"
+                            class="text-tertiary hover:text-primary font-mont-heavy text-base block py-2 transition-colors">
+                            {{ $t("navHome.4.title") }}
                         </router-link>
                     </div>
                     <div class="flex flex-shrink-0 items-center">
