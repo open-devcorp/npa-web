@@ -537,5 +537,57 @@
     "visitDevcorp": "Visítanos en Devcorp",
     "designedBy": "Diseñado y desarrollado por:",
     "logoAlt": "Icono de New Point Asesores"
-  }
+  },
+  "policy": {
+    "title": "Política de privacidad",
+    "subtitle": "POLÍTICA DE PRIVACIDAD",
+    "company_intro": "<strong>New Point Asesores S.A.C.</strong> (En adelante, “La Empresa”) garantiza el respeto a la privacidad de los usuarios y el adecuado tratamiento de sus datos personales, en cumplimiento de la Ley N° 29733 - Ley de Protección de Datos Personales, y su reglamento (Decreto Supremo N° 003-2013-JUS).",
+    "description": "Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información personal que nos proporcionas al utilizar nuestro sitio web y nuestros servicios. Al utilizar nuestro sitio web, estás aceptando todo lo estipulado en esta Política de Privacidad.",
+    "info_title": "Información que recopilamos:",
+    "info_items": [
+      "<strong>Información personal:</strong> como nombre completo, correo electrónico, teléfono, dirección y otros datos proporcionados al registrarte o realizar una transacción.",
+      "<strong>Información de registro y uso:</strong> como dirección IP, tipo de navegador, páginas visitadas, duración de visita y patrones de navegación."
+    ],
+    "purpose_title": "Finalidad y uso de la información",
+    "purpose_description_1": "El tratamiento de datos personales se limita a finalidades relacionadas con las actividades de la Empresa: atención de consultas, gestión de solicitudes, prestación de servicios y cumplimiento de obligaciones legales o contractuales.",
+    "purpose_description_2": "También se utiliza para personalizar la experiencia del usuario, mejorar servicios y, con su consentimiento, enviar boletines, actualizaciones y promociones. Podemos usar datos anonimizados con fines estadísticos y de análisis.",
+    "security_title": "Confidencialidad y Seguridad",
+    "security_description": "La Empresa implementa medidas legales, técnicas y organizativas para proteger los datos personales contra pérdida, alteración, uso indebido, acceso no autorizado u otros tratamientos indebidos, de acuerdo a la normativa vigente.",
+    "transfer_title": "Transferencia y Encargos de Tratamiento",
+    "transfer_description": "La Empresa no compartirá datos personales con terceros salvo que sea necesario para cumplir con las finalidades indicadas, exista obligación legal o el usuario otorgue su consentimiento expreso.",
+    "rights_title": "Derechos del titular de los datos",
+    "rights_description": "Usted tiene derecho a acceder, rectificar, actualizar o eliminar sus datos personales. Para ejercer estos derechos, puede contactarnos a través de los canales indicados al final de esta Política de Privacidad.",
+    "changes_title": "Cambios a esta Política de Privacidad",
+    "changes_description": "La Empresa se reserva el derecho de actualizar o modificar esta Política en cualquier momento sin previo aviso. Se recomienda revisarla periódicamente para estar al tanto de cualquier cambio.",
+    "contact_title": "Contacto",
+    "contact_description": "Para consultas, puede escribirnos al correo oficial: <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. Atenderemos las solicitudes en un plazo razonable, conforme a la normativa vigente en protección de datos y atención de reclamos.",
+    "legal_note": "Esta Política de Privacidad se rige por las leyes vigentes y se interpreta de acuerdo con ellas."
+  },
+  "terms": {
+  "title": "Términos y Condiciones",
+  "subtitle": "TÉRMINOS Y CONDICIONES",
+  "breadcrumbs": "INICIO / TÉRMINOS Y CONDICIONES",
+  "intro_1": "Estos Términos y Condiciones (“T&C”) regulan el acceso y uso del sitio web de <strong>New Point Asesores SAC</strong> (en adelante, la “Empresa”), así como la contratación de los servicios ofrecidos a través del mismo, los cuales comprenden asesoría legal, asesoría comercial y servicios de corretaje.",
+  "intro_2": "Al acceder, navegar o utilizar la Plataforma acepta expresa e incondicionalmente los presentes T&C, así como todas las leyes y regulaciones aplicables. El uso de la Plataforma implica que usted ha leído, entendido y aceptado obligarse por estos T&C sin limitación o excepción alguna. De no estar de acuerdo con ellos, le solicitamos abstenerse de utilizar la Plataforma o contratar nuestros servicios.",
+  "section_1_title": "1. Requisitos de Acceso y Uso",
+  "section_1_p1": "El uso de la Plataforma y la contratación de los servicios ofrecidos están dirigidos a personas que tengan la mayoría de edad, y cuenten con plena capacidad legal para contratar, conforme a la legislación aplicable. Al utilizar la Plataforma, usted declara y garantiza que cumple con este requisito.",
+  "section_1_p2": "El usuario se compromete a proporcionar información veraz, actualizada y completa al momento de registrarse, solicitar un servicio o comunicarse con nosotros. Nos reservamos el derecho de suspender o cancelar el acceso a la Plataforma y/o los servicios si se detecta el uso de información falsa o inexacta.",
+  "section_2_title": "2. Servicios Ofrecidos",
+  "section_2_p1": "<strong>Asesoría legal:</strong> asesoramiento legal en distintas ramas del derecho para personas naturales y jurídicas, que pueden incluir consultas, revisión de documentos, asistencia en procedimientos administrativos, notariales y judiciales, conforme a lo acordado.",
+  "section_2_p2": "<strong>Servicios comerciales:</strong> consultorías en estrategias comerciales, posicionamiento de marca, marketing digital y desarrollo de negocios.",
+  "section_2_p3": "<strong>Servicios de corretaje:</strong> intermediación en operaciones comerciales, incluyendo conexión entre oferentes y demandantes, y gestión de reuniones. Pueden estar sujetos a comisiones u otros términos específicos.",
+  "section_2_note": "Nota importante: La información en la Plataforma es referencial. No constituye asesoramiento personalizado ni genera una relación contractual automática.",
+  "section_3_title": "3. Modalidades de contratación",
+  "section_3_p1": "La contratación se realiza previa coordinación mediante la Plataforma, canales oficiales o reuniones. El servicio comienza tras la aceptación de una propuesta formal y, cuando corresponda, la firma de un contrato específico.",
+  "section_4_title": "4. Propiedad intelectual",
+  "section_4_p1": "Todo el contenido de la Plataforma es propiedad de la Empresa y está protegido por leyes de propiedad intelectual. El uso no autorizado podrá ser sancionado conforme a la ley.",
+  "section_5_title": "5. Limitación de responsabilidad",
+  "section_5_p1": "La Empresa no se hace responsable por daños derivados del uso o imposibilidad de uso de la Plataforma ni por el contenido de enlaces externos.",
+  "section_6_title": "6. Modificaciones a los T&C",
+  "section_6_p1": "La Empresa puede modificar estos T&C sin previo aviso, salvo que la ley indique lo contrario. El uso continuado de la Plataforma implica aceptación de los cambios.",
+  "section_7_title": "7. Ley aplicable y jurisdicción",
+  "section_7_p1": "Estos T&C se rigen por la legislación peruana. Cualquier disputa será resuelta por los tribunales peruanos competentes.",
+  "section_8_title": "8. Contacto",
+  "section_8_p1": "Para consultas, escríbanos a <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. La Empresa responderá dentro de un plazo razonable y conforme a la normativa vigente."
+}
 }
