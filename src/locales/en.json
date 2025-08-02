@@ -506,5 +506,57 @@
     "visitDevcorp": "Visit us at Devcorp",
     "designedBy": "Designed and developed by:",
     "logoAlt": "New Point Asesores Icon"
-  }
+  },
+  "policy": {
+  "title": "Privacy Policy",
+  "subtitle": "PRIVACY POLICY",
+  "company_intro": "<strong>New Point Asesores S.A.C.</strong> (Hereinafter, “The Company”) guarantees respect for users' privacy and the proper handling of their personal data, in compliance with Law No. 29733 - Personal Data Protection Law, and its regulations (Supreme Decree No. 003-2013-JUS).",
+  "description": "This Privacy Policy describes how we collect, use, and protect the personal information you provide when using our website and services. By using our website, you accept everything stipulated in this Privacy Policy.",
+  "info_title": "Information We Collect:",
+  "info_items": [
+    "<strong>Personal information:</strong> such as full name, email address, phone number, address, and other data provided when you register or make a transaction.",
+    "<strong>Registration and usage information:</strong> such as IP address, browser type, pages visited, session duration, and browsing patterns."
+  ],
+    "purpose_title": "Purpose and Use of Information",
+    "purpose_description_1": "The processing of personal data is limited to purposes related to the Company's activities: handling inquiries, managing requests, providing services, and complying with legal or contractual obligations.",
+    "purpose_description_2": "It is also used to personalize the user experience, improve services, and, with your consent, send newsletters, updates, and promotions. We may use anonymized data for statistical and analytical purposes.",
+    "security_title": "Confidentiality and Security",
+    "security_description": "The Company implements legal, technical, and organizational measures to protect personal data against loss, alteration, misuse, unauthorized access, or other improper processing, in accordance with current regulations.",
+    "transfer_title": "Transfer and Processing Assignments",
+    "transfer_description": "The Company will not share personal data with third parties except when necessary to fulfill the stated purposes, when there is a legal obligation, or when the user gives express consent.",
+    "rights_title": "Rights of the Data Subject",
+    "rights_description": "You have the right to access, rectify, update, or delete your personal data. To exercise these rights, you can contact us through the channels indicated at the end of this Privacy Policy.",
+    "changes_title": "Changes to This Privacy Policy",
+    "changes_description": "The Company reserves the right to update or modify this Policy at any time without prior notice. It is recommended to review it periodically to stay informed of any changes.",
+    "contact_title": "Contact",
+    "contact_description": "For inquiries, you can write to our official email: <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. We will respond to requests within a reasonable timeframe, in accordance with current data protection regulations and claims handling procedures.",
+    "legal_note": "This Privacy Policy is governed by current laws and is interpreted in accordance with them."
+  },
+  "terms": {
+  "title": "Terms and Conditions",
+  "subtitle": "TERMS AND CONDITIONS",
+  "breadcrumbs": "HOME / TERMS AND CONDITIONS",
+  "intro_1": "These Terms and Conditions (“T&C”) govern access to and use of the website of <strong>New Point Asesores SAC</strong> (hereinafter, the “Company”), as well as the contracting of services offered through it, which include legal advice, business consulting, and brokerage services.",
+  "intro_2": "By accessing, browsing, or using the Platform, you expressly and unconditionally accept these T&C, as well as all applicable laws and regulations. Use of the Platform implies that you have read, understood, and agreed to be bound by these T&C without limitation or exception. If you do not agree with them, please refrain from using the Platform or contracting our services.",
+  "section_1_title": "1. Access and Use Requirements",
+  "section_1_p1": "Use of the Platform and contracting of the services offered are intended for persons of legal age who have full legal capacity to contract, in accordance with applicable legislation. By using the Platform, you declare and guarantee that you meet this requirement.",
+  "section_1_p2": "The user undertakes to provide truthful, updated, and complete information when registering, requesting a service, or communicating with us. We reserve the right to suspend or cancel access to the Platform and/or services if the use of false or inaccurate information is detected.",
+  "section_2_title": "2. Services Offered",
+  "section_2_p1": "<strong>Legal advice:</strong> legal counseling in various branches of law for individuals and legal entities, which may include consultations, document review, assistance in administrative, notarial, and judicial procedures, as agreed.",
+  "section_2_p2": "<strong>Business services:</strong> consulting on business strategies, brand positioning, digital marketing, and business development.",
+  "section_2_p3": "<strong>Brokerage services:</strong> intermediation in business operations, including connecting suppliers and demanders and managing meetings. These may be subject to commissions or other specific terms.",
+  "section_2_note": "Important note: The information on the Platform is referential. It does not constitute personalized advice nor does it automatically create a contractual relationship.",
+  "section_3_title": "3. Contracting Modalities",
+  "section_3_p1": "Contracting is carried out after coordination through the Platform, official channels, or meetings. The service begins after acceptance of a formal proposal and, when applicable, the signing of a specific contract.",
+  "section_4_title": "4. Intellectual Property",
+  "section_4_p1": "All content on the Platform is the property of the Company and is protected by intellectual property laws. Unauthorized use may be sanctioned according to the law.",
+  "section_5_title": "5. Limitation of Liability",
+  "section_5_p1": "The Company is not responsible for damages arising from the use or inability to use the Platform nor for the content of external links.",
+  "section_6_title": "6. Amendments to the T&C",
+  "section_6_p1": "The Company may amend these T&C without prior notice, unless otherwise required by law. Continued use of the Platform implies acceptance of the changes.",
+  "section_7_title": "7. Applicable Law and Jurisdiction",
+  "section_7_p1": "These T&C are governed by Peruvian law. Any dispute will be resolved by the competent Peruvian courts.",
+  "section_8_title": "8. Contact",
+  "section_8_p1": "For inquiries, write to <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. The Company will respond within a reasonable time and in accordance with current regulations."
+}
 }
