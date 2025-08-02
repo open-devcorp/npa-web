@@ -5,7 +5,7 @@
     isVisible
       ? [animationClass, 'opacity-100 pointer-events-auto']
       : ['opacity-0 pointer-events-none'],
-  ]">
+  ]">›
     <div>
       <div class="mb-3 md:mb-4">
         <span :class="[

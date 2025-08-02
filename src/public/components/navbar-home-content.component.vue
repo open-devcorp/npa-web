@@ -6,23 +6,28 @@
             <ul class="hidden lg:flex gap-8">
                 <li>
                     <router-link to="/"
-                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{ $t("navHome.0.title") }}</router-link>
+                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{
+                            $t("navHome.0.title") }}</router-link>
                 </li>
                 <li>
                     <router-link to="/nosotros"
-                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{ $t("navHome.1.title") }}</router-link>
+                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{
+                            $t("navHome.1.title") }}</router-link>
                 </li>
                 <li>
                     <router-link to="/servicios"
-                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{ $t("navHome.2.title") }}</router-link>
+                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{
+                            $t("navHome.2.title") }}</router-link>
                 </li>
                 <li>
                     <router-link to="/por-que-elegirnos"
-                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{ $t("navHome.3.title") }}</router-link>
+                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{
+                            $t("navHome.3.title") }}</router-link>
                 </li>
                 <li>
                     <router-link to="/equipo"
-                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{ $t("navHome.4.title") }}</router-link>
+                        class="text-tertiary hover:text-primary transition-colors cursor-pointer text-shadow-xs font-mont-heavy whitespace-nowrap">{{
+                            $t("navHome.4.title") }}</router-link>
                 </li>
             </ul>
 

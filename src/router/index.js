@@ -6,6 +6,7 @@ import HomeComponent from "../home/pages/home.component.vue";
 import AboutComponent from "../about-us/pages/about.component.vue";
 import ServicesComponent from "../services/pages/services.componet.vue";
 import WhyChooseUsComponent from "../why-choose-us/pages/why-choose-us.component.vue";
+import ContactUsComponent from "../contact-us/pages/contact-us.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -37,6 +38,11 @@ const router = createRouter({
       component: TeamView,
     },
     {
+      path: "/contacto",
+      name: "contact-us",
+      component: ContactUsComponent,
+    },
+    {
       path: "/politica-de-privacidad",
       name: "PrivacyPolicy",
       component: PrivacyPolicyView,
@@ -46,7 +52,7 @@ const router = createRouter({
       name: "TermsAndConditions",
       component: TermsAndConditionsView,
     },
-    { path: "/", redirect: "/home" },
+    { path: "/", redirect: "/" },
   ],
 });
 
