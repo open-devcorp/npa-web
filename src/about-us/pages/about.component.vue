@@ -5,8 +5,13 @@
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h1 class="font-mont-heavy text-4xl md:text-7xl mb-6">{{ t('about.title') }}</h1>
         <p class="font-public-sans font-black text-sm">
-          <span class="text-secondary font-public-sans font-black">{{ t('homeTitle') }}</span> / {{ t('about.subtitle') }}
-        </p>
+        <span class="text-secondary font-public-sans font-black">
+          <router-link to="/" class="hover:underline">
+            {{ t('homeTitle') }}
+          </router-link>
+          </span>
+          / {{ t('about.subtitle') }}     
+          </p>
       </div>
     </section>
 
@@ -26,7 +31,7 @@
                 {{ t('about.mainTitle.part3') }}
               </p>
               <div class="flex items-end justify-end mt-4">
-                <router-link to="" class="btn btn-primary flex items-center justify-center">
+                <router-link to="/contacto" class="btn btn-primary flex items-center justify-center">
                   <span>{{ t('about.buttonContact') }}</span>
                   <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                     class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
@@ -39,9 +44,8 @@
     </section>
 
     <!-- Cards Section -->
-<section class="max-w-screen-xl mx-auto md:px-4 pb-24">
+  <section class="max-w-screen-xl mx-auto px-4 xl:px-0 pb-20">
   <img src="../../assets/backgrounds/about-meet.jpg" alt="Nuestros Valores" class="w-full" />
-
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-6 -mt-12 lg:-mt-24 z-10 px-4">
     <AboutCard 
       :title="t('about.cards.first.title')"
@@ -91,7 +95,7 @@
               <br />
               <span class="font-mont-heavy whitespace-nowrap">{{t('about.values.title.part2')}}</span>
             </h2>
-            <router-link to="" class="btn btn-secondary mt-20">
+            <router-link to="/contacto" class="btn btn-secondary mt-20">
               <p>{{t('about.buttonMore')}}</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />

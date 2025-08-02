@@ -10,6 +10,15 @@ import ContactUsComponent from "../contact-us/pages/contact-us.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
+  scrollBehavior(to, from, savedPosition) {
+    if(to.hash) {
+      return { el: to.hash, behavior: 'smooth' };
+    }
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { top: 0 };
+  },
   routes: [
     {
       path: "/",
