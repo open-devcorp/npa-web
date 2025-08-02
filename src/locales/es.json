@@ -211,8 +211,39 @@
       "third": {
         "title": "Acceso Estratégico",
         "description": "Perú es una tierra de oportunidades con estabilidad económica y crecimiento sostenido. Te ayudamos a acceder de manera estratégica a este mercado emergente lleno de posibilidades."
+        }
+      },
+      "secondSubtitle": "NUESTROS PRINCIPIOS",
+      "values": {
+        "title": {
+          "part1": "Nuestro",
+          "part2": "Objetivo y Horizonte"
+        },
+        "mission":{
+          "title": "Nuestra misión",
+          "description": "Crear conexiones entre personas, empresas e inversiones, ofreciendo asesoría estratégica legal, técnica y comercial que simplifica procesos y convierte ideas en proyectos exitosos a nivel nacional e internacional."
+        },
+        "vision":{
+          "title": "Nuestra visión",
+          "description": "En realidades sólidas, construyendo conexiones que impulsen negocios, inversiones y proyectos de vida a nivel nacional e internacional."
+        }
+
+      },
+      "buttonMore": "SABER MÁS",
+      "finalTile":{
+        "part1": "Escuchamos, entendemos y construimos",
+        "part2": "relaciones de largo plazo",
+        "part3": "basadas en la",
+        "part4": "confianza y el compromiso"
+      },
+       "infoCard":{
+        "first":"Conexión genuina",
+        "second":"Excelencia colaborativa",
+        "third":"Innovación consciente",
+        "fourth":"Transparencia activa",
+        "fifth":"Difusión del conocimiento"
       }
-    }
+
   },
   "team": {
     "title": "Nuestro equipo",
