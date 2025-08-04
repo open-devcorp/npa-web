@@ -483,7 +483,7 @@
     "mainTitle": "Conectemos",
     "description": "Conecta con nosotros y encuentra la estrategia ideal para ti.",
     "form": {
-      "name": {
+      "names": {
         "label": "Nombres",
         "placeholder": "Ingresa tus nombres"
       },

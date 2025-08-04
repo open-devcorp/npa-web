@@ -452,7 +452,7 @@
     "mainTitle": "Let's Connect",
     "description": "Connect with us and find the ideal strategy for you.",
     "form": {
-      "name": {
+      "names": {
         "label": "Names",
         "placeholder": "Enter your names"
       },
