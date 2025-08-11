@@ -114,8 +114,8 @@
     },
     "descriptions": {
       "commercialAdvisory": "Servicios de estudios de mercado y viabilidad para detectar oportunidades de crecimiento, complementados con estrategias de negocio, marca y planes digitales para fortalecer la presencia y competitividad empresarial.",
-      "legalAdvisory": "Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.",
-      "commercialBrokerage": "Servicio que facilita la conexión entre inversores y proveedores, promoviendo exportaciones e inversiones. También gestionamos búsqueda y selección de oportunidades comerciales, contribuyendo al crecimiento y éxito de empresas en diversos mercados."
+      "legalAdvisory": "Servicios en derecho inmobiliario y gestión de propiedades, con soporte jurídico integral para operaciones inmobiliarias y empresariales. Incluye planificación y desarrollo de proyectos arquitectónicos y urbanísticos, asegurando cumplimiento normativo y viabilidad legal desde el inicio hasta la ejecución.",
+      "commercialBrokerage": "Servicio  que facilita la conexión entre inversores y proveedores, promoviendo activamente exportaciones e inversiones. Además, nos encargamos de la búsqueda y selección de oportunidades comerciales, contribuyendo al crecimiento y éxito de su empresa en diversos mercados."
     },
     "cards": {
       "foreignCompany": {
@@ -188,7 +188,47 @@
           ]
         }
       }
+    },
+    "alliances": {
+    "tag": "Alianzas",
+    "subtitle": "Departamento de Negocios Internacionales",
+    "section": {
+      "title": "NUESTRAS ALIANZAS",
+      "main_content": {
+        "left_column": {
+          "heading": "Alianzas",
+          "button_text": "NPA"
+        },
+        "right_column": {
+          "heading": "Departamento de Negocios Internacionales",
+          "paragraph_part1": "En virtud de una alianza estratégica, los miembros de New Point constituyen el",
+          "paragraph_part2": "Departamento de Derecho Comercial y Negocios Internacionales de la Cámara de Comercio y Cultura de Bélgica y Luxemburgo en Perú,",
+          "paragraph_part3": "lo que nos permite tender puentes sólidos entre América Latina y Europa."
+        }
+      },
+      "benefits": [
+        {
+          "title": "Beneficios"
+        },
+        {
+          "title": "Red internacional",
+          "description": "de contactos en Europa y América Latina"
+        },
+        {
+          "title": "Simplificación",
+          "description": "de procesos legales y comerciales"
+        },
+        {
+          "title": "Verdadera apertura",
+          "description": "de mercados internacionales sin explorar"
+        },
+        {
+          "title": "Networking",
+          "description": "con empresas e instituciones internacionales"
+        }
+      ]
     }
+  }
   },
   "about": {
     "title": "Nosotros",
@@ -202,11 +242,11 @@
     "cards": {
       "first": {
         "title": "Equipo Interdisciplinario",
-        "description": "Contamos con un equipo interdisciplinario de abogados, arquitectos, economistas y especialistas en marketing que trabajan de manera coordinada para ofrecer soluciones integrales."
+        "description": "Contamos con un equipo interdisciplinario de abogados, arquitectos, comunicadores y consultores comprometidos en conectar ideas, personas y mercados, creando oportunidades reales."
       },
       "second": {
         "title": "Catalizadores del éxito",
-        "description": "Ofrecemos asesoría legal en Derecho Inmobiliario, Corporativo y Comercial, complementada con estrategias de marketing y comunicación para potenciar el crecimiento de nuestros clientes."
+        "description": "Ofrecemos asesoría legal en Derecho Inmobiliario, Civil y Empresarial, junto con consultoría en marketing y corretaje comercial, actuando como impulsores del éxito."
       },
       "third": {
         "title": "Acceso Estratégico",
@@ -243,7 +283,6 @@
         "fourth":"Transparencia activa",
         "fifth":"Difusión del conocimiento"
       }
-
   },
   "team": {
     "title": "Nuestro equipo",

@@ -281,21 +281,21 @@ export default {
       ],
       [
         {
-          title: t('team.members.member4.data.0.title'),
-          subtitle: t('team.members.member4.description'),
-          extra: t('team.members.member4.data.0.description'),
+          title: t('team.members.member6.data.0.title'),
+          subtitle: t('team.members.member6.description'),
+          extra: t('team.members.member6.data.0.description'),
         },
         {
-          title: t('team.members.member4.data.1.title'),
-          extra: t('team.members.member4.data.1.description'),
+          title: t('team.members.member6.data.1.title'),
+          extra: t('team.members.member6.data.1.description'),
         },
         {
-          title: t('team.members.member4.data.2.title'),
-          extra: t('team.members.member4.data.2.description'),
+          title: t('team.members.member6.data.2.title'),
+          extra: t('team.members.member6.data.2.description'),
         },
         {
-          title: t('team.members.member4.data.3.title'),
-          extra: t('team.members.member4.data.3.description'),
+          title: t('team.members.member6.data.3.title'),
+          extra: t('team.members.member6.data.3.description'),
         },
       ],
     ]);

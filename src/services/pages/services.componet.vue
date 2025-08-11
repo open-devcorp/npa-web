@@ -37,7 +37,7 @@
       </div>
 
       <!-- Client Segment Cards -->
-      <div class="py-20">
+      <div class="mt-20">
         <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
           <SectionTitle :title="t('services.clientSegmentTitle')" textColor="text-tertiary" />
           <div class="flex flex-col lg:flex-row justify-between lg:gap-10 gap-5">
@@ -123,6 +123,81 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative overflow-hidden bg-white">
+      <!-- Imagen de fondo -->
+      <img src="../../assets/images/services-bg.png" alt="Servicios Background"
+        class="absolute inset-0 w-full h-full object-cover" />
+
+      <SectionTitle :title="t('services.alliances.section.title')" textColor="text-white"
+        class="relative text-lg md:text-xl font-mont-black text-white py-4 max-w-screen-xl mx-auto px-4  mt-10" />
+
+      <div class="relative max-w-7xl mx-auto px-4 pt-20">
+
+        <!-- Contenido principal -->
+        <div class="relative z-10 pb-16 flex flex-col lg:flex-row gap-12">
+          <!-- Columna izquierda -->
+          <div class="lg:w-1/3 text-center lg:text-left">
+            <h2 class="text-white font-mont-regular text-4xl md:text-6xl mb-6">{{ t('services.alliances.tag') }}</h2>
+            <button class="bg-primary text-white text-xl md:text-4xl px-8 py-4 rounded-full border-2 border-black w-64">
+              NPA
+            </button>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="lg:w-2/3">
+            <h3 class="text-2xl md:text-4xl text-tertiary mb-6 text-center lg:text-left font-public-sans-regular">
+              {{ t('services.alliances.section.main_content.right_column.heading') }}
+            </h3>
+            <p class="text-tertiary text-sm md:text-xl text-justify font-mont-light">
+              {{ t('services.alliances.section.main_content.right_column.paragraph_part1') }}
+              <strong class="font-mont-semibold">
+                {{ t('services.alliances.section.main_content.right_column.paragraph_part2') }}
+              </strong>
+                 {{ t('services.alliances.section.main_content.right_column.paragraph_part3') }}
+
+            </p>
+          </div>
+        </div>
+
+        <!-- Caja de Beneficios -->
+        <div class="relative bottom-10 left-1/2 transform -translate-x-1/2 w-full z-20 mt-10">
+          <!-- Notch decorativo -->
+          <div class="relative h-24 py-4 hidden md:block">
+            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 1293 90" xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none">
+              <path
+                d="M447.5 90C459.926 90 471.031 82.314 475.264 70.5557L475.703 69.3371C480.307 56.5277 492.416 48 506.126 48H786.874C800.584 48 812.693 56.5277 817.297 69.3371L817.736 70.5557C821.969 82.314 833.074 90 845.5 90H447.5Z"
+                fill="white" />
+            </svg>
+            <div class="absolute top-[69px] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
+              <span class="text-lg lg:text-xl text-primary font-semibold">{{ t('services.alliances.section.benefits.0.title') }}</span>
+            </div>
+          </div>
+
+          <!-- Contenedor de beneficios -->
+          <div class="bg-white/60 backdrop-blur-sm rounded-xl px-4 py-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center text-tertiary">
+              <div class="py-4 lg:border-r border-gray-400 px-4">
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.1.title') }}</p>
+                <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.1.description') }}</p>
+              </div>
+              <div class="py-4 lg:border-r border-gray-400 px-4">
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.2.title') }}</p>
+                <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.2.description') }}</p>
+              </div>
+              <div class="py-4 lg:border-r border-gray-400 px-4">
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.3.title') }}</p>
+                <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.3.description') }}</p>
+              </div>
+              <div class="py-4 px-4">
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.4.title') }}</p>
+                <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.4.description') }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

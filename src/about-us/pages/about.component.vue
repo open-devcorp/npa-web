@@ -51,17 +51,17 @@
     <section class="max-w-screen-xl mx-auto px-4 xl:px-0 pb-20">
       <img src="../../assets/backgrounds/about-meet.jpg" alt="Nuestros Valores" class="w-full" />
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-6 -mt-12 lg:-mt-24 z-10 px-4">
-        <AboutCard :title="t('about.cards.first.title')" :description="t('about.cards.first.description')"
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-6 -mt-12 lg:-mt-24 z-10 px-4">
+        <AboutCard class="h-full" :title="t('about.cards.first.title')" :description="t('about.cards.first.description')"
           background-color="bg-tertiary" icon-background-color="bg-[#D5E745]" icon-color="text-[#10284D]"
           animation-class="animate-slide-left delay-100" :card-index="0" :iconPath="'./src/assets/icons/think.svg'" />
 
-        <AboutCard :title="t('about.cards.second.title')" :description="t('about.cards.second.description')"
+        <AboutCard class="h-full" :title="t('about.cards.second.title')" :description="t('about.cards.second.description')"
           background-color="bg-noise-blue" icon-background-color="bg-secondary" icon-color="text-primary"
           animation-class="animate-slide-up delay-200" :card-index="1" :iconPath="'./src/assets/icons/brain.svg'" />
 
-        <div class="sm:col-span-2 lg:col-span-1 justify-self-center">
-          <AboutCard :title="t('about.cards.third.title')" :description="t('about.cards.third.description')"
+        <div class="sm:col-span-2 lg:col-span-1 justify-self-center h-full">
+          <AboutCard class="h-full" :title="t('about.cards.third.title')" :description="t('about.cards.third.description')"
             background-color="bg-tertiary" icon-background-color="bg-secondary" icon-color="text-[#10284D]"
             animation-class="animate-slide-right delay-300" :card-index="2" :iconPath="'./src/assets/icons/book.svg'" />
         </div>
@@ -104,27 +104,28 @@
       </div>
     </section>
 
-    <section class="relative w-full">
-      <img src="../../assets/images/about-business-woman.png" alt="business woman"
-        class="absolute inset-0 w-full h-full object-cover z-0" />
+<section class="relative w-full min-h-screen flex items-center justify-center text-center">
+  <img src="../../assets/images/about-business-woman.png" alt="business woman"
+    class="absolute inset-0 w-full h-full object-cover z-0" />
 
-      <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
-        <h2
-          class="text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-12 mt-6 md:mt-10">
-          {{ t('about.finalTile.part1') }}<br />
-          <span class="font-mont-heavy">{{ t('about.finalTile.part2') }}</span> {{ t('about.finalTile.part3') }}<br />
-          <span class="font-mont-heavy">{{ t('about.finalTile.part4') }}</span>
-        </h2>
+  <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
+    <h2
+      class=" text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-32 mt-6 md:mt-10 leading-tight md:leading-snug">
+      {{ t('about.finalTile.part1') }}<br />
+      <span class="font-mont-heavy">{{ t('about.finalTile.part2') }}</span> {{ t('about.finalTile.part3') }}<br />
+      <span class="font-mont-heavy">{{ t('about.finalTile.part4') }}</span>
+    </h2>
 
-        <div class="flex flex-wrap justify-center gap-4 md:gap-6 ">
-          <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'" />
-          <InfoCard :title="t('about.infoCard.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
-          <InfoCard :title="t('about.infoCard.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
-          <InfoCard :title="t('about.infoCard.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-          <InfoCard :title="t('about.infoCard.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
-        </div>
-      </div>
-    </section>
+    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+      <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'" />
+      <InfoCard :title="t('about.infoCard.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
+      <InfoCard :title="t('about.infoCard.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
+      <InfoCard :title="t('about.infoCard.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
+      <InfoCard :title="t('about.infoCard.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
+    </div>
+  </div>
+</section>
+
   </div>
 </template>
 

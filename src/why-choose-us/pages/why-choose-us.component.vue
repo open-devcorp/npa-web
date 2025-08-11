@@ -166,7 +166,6 @@
         <InfoCard :title="t('why.infoCards.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
         <InfoCard :title="t('why.infoCards.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
         <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-        <InfoCard :title="t('why.infoCards.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
         <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
       </div>
 

@@ -88,7 +88,7 @@
               </router-link>
             </div>
             <div>
-              <router-link @click="isOpen = false" to="/contacto"
+              <router-link @click="isOpen = false" to="/equipo"
                 class="text-tertiary hover:text-primary font-mont-heavy text-base sm:text-lg block py-2 transition-colors">
                 {{ $t("navHome.4.title") }}
               </router-link>
