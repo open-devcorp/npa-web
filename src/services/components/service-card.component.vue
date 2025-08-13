@@ -1,25 +1,36 @@
 <template>
-  <div ref="cardRef" :class="[
-    'xl:w-[399px] lg:w-[310px] transition-all duration-300 ease-out',
-    isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-  ]">
+  <div 
+    ref="cardRef"
+    :class="[
+      'xl:w-[399px] lg:w-[310px] transition-all duration-300 ease-out flex flex-col h-full', 
+      isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+    ]"
+  >
+    <!-- Imagen -->
     <div class="w-full xl:h-[360px] lg:h-[250px] md:h-[500px] h-[265px]">
       <img :src="resolveImagePath(imageSrc)" :alt="imageAlt" class="w-full h-full object-cover" />
     </div>
 
+    <!-- Tags -->
     <div class="flex lg:gap-1 xl:gap-3 md:gap-5 gap-2 my-4 w-full">
-      <span v-for="(tag, index) in tags" :key="index"
-        class="bg-secondary font-mont-regular px-2 py-1 rounded-full flex-1 text-center h-6 flex items-center justify-center text-xs">
+      <span
+        v-for="(tag, index) in tags"
+        :key="index"
+        class="bg-secondary font-mont-regular px-2 py-1 rounded-full flex-1 text-center h-6 flex items-center justify-center text-xs"
+      >
         {{ tag }}
       </span>
     </div>
 
-    <h3 class="text-xl md:text-2xl xl:text-4xl font-mont-heavy mb-2 text-tertiar text-nowrap">
-      {{ title }}
-    </h3>
-    <p class="font-public-sans-regular text-justify text-gray-500 lg:text-base md:text-sm text-xs">
-      {{ description }}
-    </p>
+    <!-- Contenido textual -->
+    <div class="flex flex-col flex-1">
+      <h3 class="text-xl md:text-2xl xl:text-4xl font-mont-heavy mb-2 text-tertiar text-nowrap">
+        {{ title }}
+      </h3>
+      <p class="font-public-sans-regular text-justify text-gray-500 lg:text-base md:text-sm text-xs">
+        {{ description }}
+      </p>
+    </div>
   </div>
 </template>
 

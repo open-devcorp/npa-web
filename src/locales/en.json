@@ -23,7 +23,6 @@
   "services": {
     "title": "Services",
     "subtitle": "SERVICES",
-
     "titlesServices": {
       "legalAdvisory": "Legal Advisory",
       "commercialBrokerage": "Commercial Brokerage",
@@ -126,7 +125,48 @@
           ]
         }
       }
+    },
+    "alliances": {
+    "tag": "Alliances",
+    "subtitle": "International Business Department",
+    "section": {
+      "title": "OUR ALLIANCES",
+      "main_content": {
+        "left_column": {
+          "heading": "Alliances",
+          "button_text": "NPA"
+        },
+        "right_column": {
+          "heading": "International Business Department",
+          "paragraph_part1": "By virtue of a strategic alliance, the members of New Point constitute the",
+          "paragraph_part2": "Department of Commercial Law and International Business of the Chamber of Commerce and Culture of Belgium and Luxembourg in Peru,",
+          "paragraph_part3": "which allows us to build strong bridges between Latin America and Europe."
+        }
+      },
+      "benefits": [
+        {
+          "title": "Benefits"
+        },
+        {
+          "title": "International network",
+          "description": "of contacts in Europe and Latin America"
+        },
+        {
+          "title": "Simplification",
+          "description": "of legal and commercial processes"
+        },
+        {
+          "title": "Real opening",
+          "description": "of unexplored international markets"
+        },
+        {
+          "title": "Networking",
+          "description": "with international companies and institutions"
+        }
+      ]
     }
+  }
+
   },
   "about": {
     "title": "About Us",
@@ -139,30 +179,30 @@
     "buttonContact": "CONTACT US",
     "cards": {
       "first": {
-        "title": "Expert Team",
-        "description": "We have an interdisciplinary team of lawyers, architects, economists, and marketing specialists who work in a coordinated manner to deliver comprehensive solutions."
+        "title": "Interdisciplinary Team",
+        "description": "We have an interdisciplinary team of lawyers, architects, communicators, and consultants committed to connecting ideas, people, and markets, creating real opportunities."
       },
       "second": {
-        "title": "Catalysts",
-        "description": "We provide legal advice in Real Estate, Corporate, and Commercial Law, complemented by marketing and communication strategies to drive our clients' growth."
+        "title": "Success Catalysts",
+        "description": "We provide legal advice in Real Estate, Civil, and Corporate Law, along with consulting in marketing and commercial brokerage, acting as drivers of success."
       },
       "third": {
         "title": "Strategic Access",
         "description": "Peru is a land of opportunities, with economic stability and sustained growth. We help you access this emerging market full of possibilities in a strategic way."
       }
     },
-    "secondSubtitle": "OUR VALUES",
+    "secondSubtitle": "OUR PRINCIPLES",
     "values": {
       "title": {
         "part1": "Our",
         "part2": "Goal and Horizon"
       },
       "mission": {
-        "title": "Mission",
-        "description": "To create connections between people, businesses, and investments by providing strategic legal, technical, and commercial advice that simplifies processes and transforms ideas into successful projects at both national and international levels."
+        "title": "Our Mission",
+        "description": "To create connections between people, companies, and investments, offering strategic legal, technical, and commercial advice that simplifies processes and turns ideas into successful projects at the national and international levels."
       },
       "vision": {
-        "title": "Vision",
+        "title": "Our Vision",
         "description": "To be the preferred strategic partner in Peru for those seeking to transform opportunities into solid realities, building connections that drive business, investments, and life projects nationally and internationally."
       }
     },
@@ -178,7 +218,7 @@
       "second": "Collaborative Excellence",
       "third": "Conscious Innovation",
       "fourth": "Active Transparency",
-      "fifth": "Democratization of Information"
+      "fifth": "Knowledge Sharing"
     }
   },
   "team": {
@@ -373,7 +413,7 @@
       "first": "Commercial openness",
       "second": "Strategic location",
       "third": "Macroeconomic strength",
-      "fourth": "Global exports",
+      "fourth": "Global export potential",
       "fifth": "Cultural richness",
       "sixth": "Diversification and resilience"
     }

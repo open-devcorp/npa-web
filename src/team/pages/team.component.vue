@@ -146,37 +146,37 @@ export default {
 
     const cards = computed(() => [
       {
-        img: '/src/assets/images/narem.png',
+        img: '/src/assets/images/narem.webp',
         alt: 'NAREM',
         overlayTitle: t('team.members.member1.name'),
         overlaySubtitle: t('team.members.member1.role'),
       },
       {
-        img: '/src/assets/images/claudia.png',
+        img: '/src/assets/images/claudia.webp',
         alt: 'CLAUDIA',
         overlayTitle: t('team.members.member2.name'),
         overlaySubtitle: t('team.members.member2.role'),
       },
       {
-        img: '/src/assets/images/carlos.png',
+        img: '/src/assets/images/carlos.webp',
         alt: 'CARLOS',
         overlayTitle: t('team.members.member3.name'),
         overlaySubtitle: t('team.members.member3.role'),
       },
       {
-        img: '/src/assets/images/eliana.png',
+        img: '/src/assets/images/eliana.webp',
         alt: 'ELIANA',
         overlayTitle: t('team.members.member4.name'),
         overlaySubtitle: t('team.members.member4.role'),
       },
       {
-        img: '/src/assets/images/veronika.png',
+        img: '/src/assets/images/veronika.webp',
         alt: 'VERONIKA',
         overlayTitle: t('team.members.member5.name'),
         overlaySubtitle: t('team.members.member5.role'),
       },
       {
-        img: '/src/assets/images/celia.png',
+        img: '/src/assets/images/celia.webp',
         alt: 'CELIA',
         overlayTitle: t('team.members.member6.name'),
         overlaySubtitle: t('team.members.member6.role'),
@@ -281,21 +281,21 @@ export default {
       ],
       [
         {
-          title: t('team.members.member4.data.0.title'),
-          subtitle: t('team.members.member4.description'),
-          extra: t('team.members.member4.data.0.description'),
+          title: t('team.members.member6.data.0.title'),
+          subtitle: t('team.members.member6.description'),
+          extra: t('team.members.member6.data.0.description'),
         },
         {
-          title: t('team.members.member4.data.1.title'),
-          extra: t('team.members.member4.data.1.description'),
+          title: t('team.members.member6.data.1.title'),
+          extra: t('team.members.member6.data.1.description'),
         },
         {
-          title: t('team.members.member4.data.2.title'),
-          extra: t('team.members.member4.data.2.description'),
+          title: t('team.members.member6.data.2.title'),
+          extra: t('team.members.member6.data.2.description'),
         },
         {
-          title: t('team.members.member4.data.3.title'),
-          extra: t('team.members.member4.data.3.description'),
+          title: t('team.members.member6.data.3.title'),
+          extra: t('team.members.member6.data.3.description'),
         },
       ],
     ]);

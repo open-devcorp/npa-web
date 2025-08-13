@@ -129,7 +129,7 @@
   <!-- ¿Por qué invertir en Perú? -->
   <section class="relative overflow-hidden xl:h-[900px] md:h-[1000px]">
     <!-- Fondo -->
-    <img src="../../assets/backgrounds/lima-plaza.jpg" alt="Lima Plaza"
+    <img src="../../assets/backgrounds/lima-plaza.webp" alt="Lima Plaza"
       class="absolute inset-0 w-full h-full object-cover" />
 
     <!-- Contenido principal -->
@@ -166,7 +166,6 @@
         <InfoCard :title="t('why.infoCards.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
         <InfoCard :title="t('why.infoCards.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
         <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-        <InfoCard :title="t('why.infoCards.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
         <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
       </div>
 
