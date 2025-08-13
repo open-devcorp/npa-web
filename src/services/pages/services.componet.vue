@@ -129,7 +129,7 @@
     </section>
     <section class="relative overflow-hidden bg-white">
       <!-- Imagen de fondo -->
-      <img src="../../assets/images/services-bg.png" alt="Servicios Background"
+      <img src="../../assets/images/services-bg.webp" alt="Servicios Background"
         class="absolute inset-0 w-full h-full object-cover" />
 
       <SectionTitle :title="t('services.alliances.section.title')" textColor="text-white"
@@ -234,14 +234,14 @@ export default {
         description: t('services.descriptions.commercialAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-2.jpg',
+        imageSrc: '../../assets/images/service-2.webp',
         imageAlt: 'Imagen 2',
         tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
         title: t('services.titlesServices.legalAdvisory'),
         description: t('services.descriptions.legalAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-3.jpg',
+        imageSrc: '../../assets/images/service-3.webp',
         imageAlt: 'Imagen 3',
         tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
         title: t('services.titlesServices.commercialBrokerage'),
@@ -251,7 +251,7 @@ export default {
 
     const cards = computed(() => [
       {
-        img: '/src/assets/images/foreign-company.jpg',
+        img: '/src/assets/images/foreign-company.webp',
         alt: t('services.cards.foreignCompany.alt'),
         overlayTitle: t('services.cards.foreignCompany.overlayTitle'),
         overlaySubtitle: t('services.cards.foreignCompany.overlaySubtitle'),
@@ -300,7 +300,7 @@ export default {
         }
       },
       {
-        img: '/src/assets/images/person-company.avif',
+        img: '/src/assets/images/person-company.webp',
         alt: t('services.cards.personCompany.alt'),
         overlayTitle: t('services.cards.personCompany.overlayTitle'),
         overlaySubtitle: t('services.cards.personCompany.overlaySubtitle'),

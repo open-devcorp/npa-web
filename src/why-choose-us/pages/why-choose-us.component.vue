@@ -129,7 +129,7 @@
   <!-- ¿Por qué invertir en Perú? -->
   <section class="relative overflow-hidden xl:h-[900px] md:h-[1000px]">
     <!-- Fondo -->
-    <img src="../../assets/backgrounds/lima-plaza.jpg" alt="Lima Plaza"
+    <img src="../../assets/backgrounds/lima-plaza.webp" alt="Lima Plaza"
       class="absolute inset-0 w-full h-full object-cover" />
 
     <!-- Contenido principal -->

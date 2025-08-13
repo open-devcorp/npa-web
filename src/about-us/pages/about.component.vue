@@ -49,7 +49,7 @@
 
     <!-- Cards Section -->
     <section class="max-w-screen-xl mx-auto px-4 xl:px-0 pb-20">
-      <img src="../../assets/backgrounds/about-meet.jpg" alt="Nuestros Valores" class="w-full" />
+      <img src="../../assets/backgrounds/about-meet.webp" alt="Nuestros Valores" class="w-full" />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-6 -mt-12 lg:-mt-24 z-10 px-4">
         <AboutCard class="h-full" :title="t('about.cards.first.title')" :description="t('about.cards.first.description')"
@@ -68,63 +68,62 @@
       </div>
     </section>
 
-    <section class="bg-tertiary py-20">
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+    
+    <section class="bg-tertiary py-20 relative">
+      <!-- Estrella decorativa grande abajo a la izquierda -->
+      <div class="absolute bottom-0 left-0">
+        <img src="/src/assets/images/star-secondary.svg" alt="Star decoration"
+          class="h-40 xl:h-72 lg:h-60 md:h-50 object-contain -scale-x-100" />
+      </div>
 
+      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
         <div class="flex flex-col lg:flex-row gap-15">
           <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
-
             <SectionTitle :title="t('about.secondSubtitle')" textColor="text-secondary" />
-
 
             <div class="text-3xl md:text-5xl xl:text-7xl text-white">
               <div class="font-mont-regular">{{ t('about.values.title.part1') }}</div>
-
               <div class="font-mont-heavy whitespace-nowrap">{{ t('about.values.title.part2') }}</div>
             </div>
 
-            <router-link to="/por-que-elegirnos" class="btn btn-secondary ">
+            <router-link to="/por-que-elegirnos" class="btn btn-secondary">
               <p>{{ t('about.buttonMore') }}</p>
               <img src="/src/assets/icons/arrow.svg" alt="Arrow"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
             </router-link>
-
           </div>
-
 
           <div class="flex flex-col md:flex-row lg:flex-col gap-6 md:gap-8">
             <ObjectiveCard :title="t('about.values.mission.title')" :description="t('about.values.mission.description')"
               :iconSrc="'../../assets/icons/think.svg'" iconBackground="bg-secondary" />
-
             <ObjectiveCard :title="t('about.values.vision.title')" :description="t('about.values.vision.description')"
               :iconSrc="'../../assets/icons/brain.svg'" iconBackground="bg-secondary" />
           </div>
-
         </div>
       </div>
     </section>
 
-<section class="relative w-full min-h-screen flex items-center justify-center text-center">
-  <img src="../../assets/images/about-business-woman.png" alt="business woman"
-    class="absolute inset-0 w-full h-full object-cover z-0" />
+    <section class="relative w-full min-h-screen flex items-center justify-center text-center">
+      <img src="../../assets/images/about-business-woman.webp" alt="business woman"
+        class="absolute inset-0 w-full h-full object-cover z-0" />
 
-  <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
-    <h2
-      class=" text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-32 mt-6 md:mt-10 leading-tight md:leading-snug">
-      {{ t('about.finalTile.part1') }}<br />
-      <span class="font-mont-heavy">{{ t('about.finalTile.part2') }}</span> {{ t('about.finalTile.part3') }}<br />
-      <span class="font-mont-heavy">{{ t('about.finalTile.part4') }}</span>
-    </h2>
+      <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
+        <h2
+          class=" text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-32 mt-6 md:mt-10 leading-tight md:leading-snug">
+          {{ t('about.finalTile.part1') }}<br />
+          <span class="font-mont-heavy">{{ t('about.finalTile.part2') }}</span> {{ t('about.finalTile.part3') }}<br />
+          <span class="font-mont-heavy">{{ t('about.finalTile.part4') }}</span>
+        </h2>
 
-    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-      <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'" />
-      <InfoCard :title="t('about.infoCard.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
-      <InfoCard :title="t('about.infoCard.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
-      <InfoCard :title="t('about.infoCard.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-      <InfoCard :title="t('about.infoCard.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
-    </div>
-  </div>
-</section>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+          <InfoCard :title="t('about.infoCard.first')" :iconSrc="'./src/assets/icons/users.svg'" />
+          <InfoCard :title="t('about.infoCard.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
+          <InfoCard :title="t('about.infoCard.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
+          <InfoCard :title="t('about.infoCard.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
+          <InfoCard :title="t('about.infoCard.fifth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
+        </div>
+      </div>
+    </section>
 
   </div>
 </template>

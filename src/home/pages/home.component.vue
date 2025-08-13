@@ -3,7 +3,7 @@
   <section>
     <!-- Imagen de fondo -->
     <div class="w-full">
-      <img src="/src/assets/backgrounds/bg-home.png" alt="Background"
+      <img src="/src/assets/backgrounds/bg-home.webp" alt="Background"
         class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
     </div>
 
@@ -135,7 +135,7 @@
   <section class="relative">
     <!-- Imagen de fondo -->
     <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-      <img src="/src/assets/backgrounds/computer-coffee.png" alt="Background"
+      <img src="/src/assets/backgrounds/computer-coffee.webp" alt="Background"
         class="w-full h-full object-cover -scale-x-100" />
     </div>
 
@@ -244,14 +244,14 @@ export default {
         description: t('services.descriptions.commercialAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-2.jpg',
+        imageSrc: '../../assets/images/service-2.webp',
         imageAlt: 'Imagen 2',
         tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
         title: t('services.titlesServices.legalAdvisory'),
         description: t('services.descriptions.legalAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-3.jpg',
+        imageSrc: '../../assets/images/service-3.webp',
         imageAlt: 'Imagen 3',
         tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
         title: t('services.titlesServices.commercialBrokerage'),
