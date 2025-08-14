@@ -62,7 +62,7 @@
                     <div class="flex justify-start">
                         <button type="submit" class="btn btn-primary">
                             <p class="">{{ $t('contact.form.submitButton') }}</p>
-                            <img src="/src/assets/icons/arrow.svg" :alt="$t('contact.altTexts.arrow')"
+                            <img :src="arrowIcon" :alt="$t('contact.altTexts.arrow')"
                                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 " />
                         </button>
                     </div>
@@ -90,20 +90,20 @@
                     </div>
                     <div class="flex flex-col gap-5">
                         <div class="flex flex-row items-center gap-3">
-                            <img src="../../assets/icons/phone-icon.svg" :alt="$t('contact.altTexts.phoneIcon')"
+                            <img :src="phoneIcon" :alt="$t('contact.altTexts.phoneIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
                             <p class="font-public-sans font-black lg:text-xl text-base">
                                 {{ $t('contact.contactInfo.phone') }}
                             </p>
                         </div>
                         <div class="flex flex-row items-center gap-3">
-                            <img src="../../assets/icons/email-icon.svg" :alt="$t('contact.altTexts.emailIcon')"
+                            <img :src="emailIcon" :alt="$t('contact.altTexts.emailIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
                             <p class="font-public-sans font-black lg:text-xl text-base">{{
                                 $t('contact.contactInfo.email') }}</p>
                         </div>
                         <div class="flex flex-row items-center gap-3">
-                            <img src="../../assets/icons/marker-icon.svg" :alt="$t('contact.altTexts.locationIcon')"
+                            <img :src="markerIcon" :alt="$t('contact.altTexts.locationIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
                             <p class="font-public-sans font-black lg:text-xl text-base">{{
                                 $t('contact.contactInfo.address') }}</p>
@@ -128,6 +128,12 @@
 import SectionTitle from "../../public/components/section-title.component.vue";
 import emailjs from 'emailjs-com';
 
+// Importar assets
+import arrowIcon from '../../assets/icons/arrow.svg';
+import phoneIcon from '../../assets/icons/phone-icon.svg';
+import emailIcon from '../../assets/icons/email-icon.svg';
+import markerIcon from '../../assets/icons/marker-icon.svg';
+
 export default {
     name: "contact-us",
     components: {
@@ -144,7 +150,12 @@ export default {
             showSuccess: false,
             showError: false,
             // Estado de envío (puedes usarlo para deshabilitar el botón mientras se envía)
-            sending: false
+            sending: false,
+            // Assets
+            arrowIcon,
+            phoneIcon,
+            emailIcon,
+            markerIcon
         };
     },
     methods: {

@@ -133,6 +133,14 @@ import { ref, computed, onMounted } from 'vue';
 import SectionTitle from '../../public/components/section-title.component.vue';
 import { useI18n } from 'vue-i18n';
 
+// Importar assets de imágenes del team
+import naremImg from '../../assets/images/narem.webp';
+import claudiaImg from '../../assets/images/claudia.webp';
+import carlosImg from '../../assets/images/carlos.webp';
+import elianaImg from '../../assets/images/eliana.webp';
+import veronikaImg from '../../assets/images/veronika.webp';
+import celiaImg from '../../assets/images/celia.webp';
+
 export default {
   name: 'team',
   components: {
@@ -146,37 +154,37 @@ export default {
 
     const cards = computed(() => [
       {
-        img: '/src/assets/images/narem.webp',
+        img: naremImg,
         alt: 'NAREM',
         overlayTitle: t('team.members.member1.name'),
         overlaySubtitle: t('team.members.member1.role'),
       },
       {
-        img: '/src/assets/images/claudia.webp',
+        img: claudiaImg,
         alt: 'CLAUDIA',
         overlayTitle: t('team.members.member2.name'),
         overlaySubtitle: t('team.members.member2.role'),
       },
       {
-        img: '/src/assets/images/carlos.webp',
+        img: carlosImg,
         alt: 'CARLOS',
         overlayTitle: t('team.members.member3.name'),
         overlaySubtitle: t('team.members.member3.role'),
       },
       {
-        img: '/src/assets/images/eliana.webp',
+        img: elianaImg,
         alt: 'ELIANA',
         overlayTitle: t('team.members.member4.name'),
         overlaySubtitle: t('team.members.member4.role'),
       },
       {
-        img: '/src/assets/images/veronika.webp',
+        img: veronikaImg,
         alt: 'VERONIKA',
         overlayTitle: t('team.members.member5.name'),
         overlaySubtitle: t('team.members.member5.role'),
       },
       {
-        img: '/src/assets/images/celia.webp',
+        img: celiaImg,
         alt: 'CELIA',
         overlayTitle: t('team.members.member6.name'),
         overlaySubtitle: t('team.members.member6.role'),

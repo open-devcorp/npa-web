@@ -8,9 +8,9 @@
           <router-link to="/" class="hover:underline">
             {{ t('homeTitle') }}
           </router-link>
-          </span>
-          / {{ t('why.subtitle') }}
-        </p>
+        </span>
+        / {{ t('why.subtitle') }}
+      </p>
     </div>
   </section>
 
@@ -162,11 +162,11 @@
       <!-- Tarjetas -->
       <div class="flex flex-wrap justify-center md:items-center gap-4 md:gap-6 mt-16 xl:mt-32">
 
-        <InfoCard :title="t('why.infoCards.first')" :iconSrc="'./src/assets/icons/users.svg'" />
-        <InfoCard :title="t('why.infoCards.second')" :iconSrc="'./src/assets/icons/persons.svg'" />
-        <InfoCard :title="t('why.infoCards.third')" :iconSrc="'./src/assets/icons/cohete.svg'" />
-        <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="'./src/assets/icons/search.svg'" />
-        <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="'./src/assets/icons/conversation.svg'" />
+        <InfoCard :title="t('why.infoCards.first')" :iconSrc="usersIcon" />
+        <InfoCard :title="t('why.infoCards.second')" :iconSrc="personsIcon" />
+        <InfoCard :title="t('why.infoCards.third')" :iconSrc="coheteIcon" />
+        <InfoCard :title="t('why.infoCards.fourth')" :iconSrc="searchIcon" />
+        <InfoCard :title="t('why.infoCards.sixth')" :iconSrc="conversationIcon" />
       </div>
 
       <!-- Etiquetas flotantes (opcional) -->
@@ -183,6 +183,14 @@
 import SectionTitle from '../../public/components/section-title.component.vue';
 import InfoCard from '../../about-us/components/info-card.component.vue';
 import { useI18n } from 'vue-i18n';
+
+// Importar assets
+import usersIcon from '../../assets/icons/users.svg';
+import personsIcon from '../../assets/icons/persons.svg';
+import coheteIcon from '../../assets/icons/cohete.svg';
+import searchIcon from '../../assets/icons/search.svg';
+import conversationIcon from '../../assets/icons/conversation.svg';
+
 export default {
   name: "why-choose-us",
   components: {
@@ -192,7 +200,16 @@ export default {
   },
   setup() {
     const { t } = useI18n();
-    return { t };
+
+    return {
+      t,
+      // Assets
+      usersIcon,
+      personsIcon,
+      coheteIcon,
+      searchIcon,
+      conversationIcon
+    };
   }
 };
 </script>

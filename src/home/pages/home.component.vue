@@ -3,7 +3,7 @@
   <section>
     <!-- Imagen de fondo -->
     <div class="w-full">
-      <img src="/src/assets/backgrounds/bg-home.webp" alt="Background"
+      <img :src="bgHome" alt="Background"
         class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
     </div>
 
@@ -42,35 +42,42 @@
 
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
-                  <img src="/src/assets/icons/book.svg" alt="Asesoría"
+                  <img :src="bookIcon" alt="Asesoría"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.0.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.0.part2") }}</p>
               </div>
 
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
-                  <img src="/src/assets/icons/brain.svg" alt="Marketing"
+                  <img :src="brainIcon" alt="Marketing"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.1.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.1.part2") }}</p>
               </div>
 
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
-                  <img src="/src/assets/icons/think.svg" alt="Corretaje"
+                  <img :src="thinkIcon" alt="Corretaje"
                     class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.2.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
+                  t("home.services.2.part2") }}</p>
               </div>
             </div>
 
-            <router-link to="/contacto" class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
+            <router-link to="/contacto"
+              class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
               <span class="">{{ t("home.meetButton") }}</span>
-              <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+              <img :src="arrowIcon" alt="Arrow"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
 
@@ -108,7 +115,7 @@
         <div class="flex justify-end">
           <router-link to="/contacto" class="btn btn-primary whitespace-nowrap items-center">
             <p>{{ t("home.learnButton") }}</p>
-            <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+            <img :src="arrowIcon" alt="Arrow"
               class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1" />
           </router-link>
         </div>
@@ -117,15 +124,8 @@
       <!-- cards -->
       <div class="flex flex-col lg:flex-row justify-between items-start mt-15 gap-y-10 lg:gap-y-0">
 
-        <ServiceCard 
-          v-for="(service, index) in services" 
-          :key="index"
-          :imageSrc="service.imageSrc" 
-          :imageAlt="service.imageAlt" 
-          :tags="service.tags" 
-          :title="service.title" 
-          :description="service.description" 
-        />
+        <ServiceCard v-for="(service, index) in services" :key="index" :imageSrc="service.imageSrc"
+          :imageAlt="service.imageAlt" :tags="service.tags" :title="service.title" :description="service.description" />
       </div>
 
     </div>
@@ -135,8 +135,7 @@
   <section class="relative">
     <!-- Imagen de fondo -->
     <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-      <img src="/src/assets/backgrounds/computer-coffee.webp" alt="Background"
-        class="w-full h-full object-cover -scale-x-100" />
+      <img :src="computerCoffee" alt="Background" class="w-full h-full object-cover -scale-x-100" />
     </div>
 
     <!-- Contenido superpuesto -->
@@ -157,12 +156,12 @@
 
         <!-- Estrella decorativa posicionada en la esquina -->
         <div class="absolute bottom-0 right-0">
-          <img src="/src/assets/images/star-secondary.svg" alt="Star decoration" class="h-13 md:h-30 object-contain" />
+          <img :src="starSecondary" alt="Star decoration" class="h-13 md:h-30 object-contain" />
         </div>
 
         <router-link to="/contacto" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
           <p>{{ t('home.contactButton') }}</p>
-          <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+          <img :src="arrowIcon" alt="Arrow"
             class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
         </router-link>
       </div>
@@ -175,13 +174,14 @@
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
         <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">
-         {{ t('home.testimonialsTitle.0.part1') }} <span class="font-mont-heavy">{{ t('home.testimonialsTitle.0.part2') }}</span>
+          {{ t('home.testimonialsTitle.0.part1') }} <span class="font-mont-heavy">{{ t('home.testimonialsTitle.0.part2')
+            }}</span>
         </p>
       </div>
       <div class="mt-15 justify-center flex">
         <TestimonyCard name="Elaine Ford" role="Fundadora de Democracia digital"
           testimony="Excelente servicio. El equipo de New Point es profesional, cercano y siempre estuvo ahí para resolver mis dudas. Me dieron soluciones claras y efectivas, y lo mejor es que lograron los resultados que necesitaba. ¡Totalmente recomendados!"
-          image="/src/assets/images/about-business-woman.png" :rating="5" />
+          :image="aboutBusinessWoman" :rating="5" />
 
       </div>
     </div>
@@ -192,7 +192,7 @@
       <div class="bg-tertiary p-5 pb-20 md:p-8 lg:p-9 xl:p-15 relative rounded-2xl ">
         <!-- Estrella decorativa posicionada en la esquina -->
         <div class="absolute bottom-0 left-0">
-          <img src="/src/assets/images/star-secondary.svg" alt="Star decoration"
+          <img :src="starSecondary" alt="Star decoration"
             class="h-25 xl:h-50 lg:h-40 md:h-30 object-contain -scale-x-100" />
         </div>
         <div class="flex flex-col xl:pl-60 md:pl-40">
@@ -205,7 +205,7 @@
           <div class="flex md:justify-end justify-center">
             <router-link to="/contacto" class="btn btn-secondary mt-3 md:mt-0 flex items-center">
               <p>{{ t('home.startButton') }}</p>
-              <img src="/src/assets/icons/arrow.svg" alt="Arrow"
+              <img :src="arrowIcon" alt="Arrow"
                 class="w-[11px] h-[11px] md:w-[12px] md:h-[12px] lg:w-[14px] lg:h-[14px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
           </div>
@@ -225,6 +225,19 @@ import TestimonyCard from '../../home/components/testimony-card.component.vue';
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 
+// Importar assets
+import bgHome from '../../assets/backgrounds/bg-home.webp';
+import computerCoffee from '../../assets/backgrounds/computer-coffee.webp';
+import bookIcon from '../../assets/icons/book.svg';
+import brainIcon from '../../assets/icons/brain.svg';
+import thinkIcon from '../../assets/icons/think.svg';
+import arrowIcon from '../../assets/icons/arrow.svg';
+import starSecondary from '../../assets/images/star-secondary.svg';
+import aboutBusinessWoman from '../../assets/images/about-business-woman.webp';
+import service1 from '../../assets/images/service-1.webp';
+import service2 from '../../assets/images/service-2.webp';
+import service3 from '../../assets/images/service-3.webp';
+
 export default {
   name: "home",
   components: {
@@ -237,21 +250,21 @@ export default {
 
     const services = computed(() => [
       {
-        imageSrc: '../../assets/images/service-1.webp',
+        imageSrc: service1,
         imageAlt: 'Imagen 1',
         tags: [t('services.tags.market'), t('services.tags.brand'), t('services.tags.content')],
         title: t('services.titlesServices.commercialAdvisory'),
         description: t('services.descriptions.commercialAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-2.webp',
+        imageSrc: service2,
         imageAlt: 'Imagen 2',
         tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
         title: t('services.titlesServices.legalAdvisory'),
         description: t('services.descriptions.legalAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-3.webp',
+        imageSrc: service3,
         imageAlt: 'Imagen 3',
         tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
         title: t('services.titlesServices.commercialBrokerage'),
@@ -259,7 +272,19 @@ export default {
       }
     ]);
 
-    return { t, services };
+    return {
+      t,
+      services,
+      // Assets
+      bgHome,
+      computerCoffee,
+      bookIcon,
+      brainIcon,
+      thinkIcon,
+      arrowIcon,
+      starSecondary,
+      aboutBusinessWoman
+    };
   }
 }
 </script>

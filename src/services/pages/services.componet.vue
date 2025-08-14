@@ -6,10 +6,10 @@
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h1 class="font-mont-heavy text-4xl md:text-5xl lg:text-7xl mb-6">{{ t('services.title') }}</h1>
         <p class="font-public-sans font-black text-sm">
-        <span class="text-secondary font-public-sans font-black">
-          <router-link to="/" class="hover:underline">
-            {{ t('homeTitle') }}
-          </router-link>
+          <span class="text-secondary font-public-sans font-black">
+            <router-link to="/" class="hover:underline">
+              {{ t('homeTitle') }}
+            </router-link>
           </span>
           / {{ t('services.subtitle') }}
         </p>
@@ -95,7 +95,7 @@
               <!-- Body -->
               <div class="w-full lg:w-1/2 text-justify flex flex-col justify-start">
                 <div class="flex items-center gap-2 mb-4">
-                  <img src="/src/assets/icons/star.svg" class="h-8 w-8" />
+                  <img :src="starIcon" class="h-8 w-8" />
                   <p class="text-lg md:text-xl font-mont-black text-tertiary">
                     {{ selectedContent.title }}
                   </p>
@@ -127,9 +127,11 @@
         </div>
       </div>
     </section>
+
+
     <section class="relative overflow-hidden bg-white">
       <!-- Imagen de fondo -->
-      <img src="../../assets/images/services-bg.webp" alt="Servicios Background"
+      <img :src="servicesBg" alt="Servicios Background"
         class="absolute inset-0 w-full h-full object-cover" />
 
       <SectionTitle :title="t('services.alliances.section.title')" textColor="text-white"
@@ -157,7 +159,7 @@
               <strong class="font-mont-semibold">
                 {{ t('services.alliances.section.main_content.right_column.paragraph_part2') }}
               </strong>
-                 {{ t('services.alliances.section.main_content.right_column.paragraph_part3') }}
+              {{ t('services.alliances.section.main_content.right_column.paragraph_part3') }}
 
             </p>
           </div>
@@ -174,7 +176,8 @@
                 fill="white" />
             </svg>
             <div class="absolute top-[69px] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
-              <span class="text-lg lg:text-xl text-primary font-semibold">{{ t('services.alliances.section.benefits.0.title') }}</span>
+              <span class="text-lg lg:text-xl text-primary font-semibold">{{
+                t('services.alliances.section.benefits.0.title') }}</span>
             </div>
           </div>
 
@@ -182,19 +185,23 @@
           <div class="bg-white/60 backdrop-blur-sm rounded-xl px-4 py-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center text-tertiary">
               <div class="py-4 lg:border-r border-gray-400 px-4">
-                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.1.title') }}</p>
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.1.title') }}
+                </p>
                 <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.1.description') }}</p>
               </div>
               <div class="py-4 lg:border-r border-gray-400 px-4">
-                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.2.title') }}</p>
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.2.title') }}
+                </p>
                 <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.2.description') }}</p>
               </div>
               <div class="py-4 lg:border-r border-gray-400 px-4">
-                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.3.title') }}</p>
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.3.title') }}
+                </p>
                 <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.3.description') }}</p>
               </div>
               <div class="py-4 px-4">
-                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.4.title') }}</p>
+                <p class="text-xl font-bold text-primary mb-2">{{ t('services.alliances.section.benefits.4.title') }}
+                </p>
                 <p class="text-lg text-tertiary">{{ t('services.alliances.section.benefits.4.description') }}</p>
               </div>
             </div>
@@ -210,6 +217,16 @@ import { ref, computed, onMounted } from 'vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
 import SectionTitle from '../../public/components/section-title.component.vue';
 import { useI18n } from 'vue-i18n';
+
+// Importar assets
+import starIcon from '../../assets/icons/star.svg';
+import service1 from '../../assets/images/service-1.webp';
+import service2 from '../../assets/images/service-2.webp';
+import service3 from '../../assets/images/service-3.webp';
+import foreignCompany from '../../assets/images/foreign-company.webp';
+import nationalCompany from '../../assets/images/national-company.webp';
+import personCompany from '../../assets/images/person-company.webp';
+import servicesBg from '../../assets/images/services-bg.webp';
 
 export default {
   name: "services",
@@ -227,21 +244,21 @@ export default {
     // Servicios (traducidos y reactivos)
     const services = computed(() => [
       {
-        imageSrc: '../../assets/images/service-1.webp',
+        imageSrc: service1,
         imageAlt: 'Imagen 1',
         tags: [t('services.tags.market'), t('services.tags.brand'), t('services.tags.content')],
         title: t('services.titlesServices.commercialAdvisory'),
         description: t('services.descriptions.commercialAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-2.webp',
+        imageSrc: service2,
         imageAlt: 'Imagen 2',
         tags: [t('services.tags.realEstate'), t('services.tags.business'), t('services.tags.architectural')],
         title: t('services.titlesServices.legalAdvisory'),
         description: t('services.descriptions.legalAdvisory'),
       },
       {
-        imageSrc: '../../assets/images/service-3.webp',
+        imageSrc: service3,
         imageAlt: 'Imagen 3',
         tags: [t('services.tags.investors'), t('services.tags.providers'), t('services.tags.exports')],
         title: t('services.titlesServices.commercialBrokerage'),
@@ -251,7 +268,7 @@ export default {
 
     const cards = computed(() => [
       {
-        img: '/src/assets/images/foreign-company.webp',
+        img: foreignCompany,
         alt: t('services.cards.foreignCompany.alt'),
         overlayTitle: t('services.cards.foreignCompany.overlayTitle'),
         overlaySubtitle: t('services.cards.foreignCompany.overlaySubtitle'),
@@ -276,7 +293,7 @@ export default {
         }
       },
       {
-        img: '/src/assets/images/national-company.webp',
+        img: nationalCompany,
         alt: t('services.cards.nationalCompany.alt'),
         overlayTitle: t('services.cards.nationalCompany.overlayTitle'),
         overlaySubtitle: t('services.cards.nationalCompany.overlaySubtitle'),
@@ -300,7 +317,7 @@ export default {
         }
       },
       {
-        img: '/src/assets/images/person-company.webp',
+        img: personCompany,
         alt: t('services.cards.personCompany.alt'),
         overlayTitle: t('services.cards.personCompany.overlayTitle'),
         overlaySubtitle: t('services.cards.personCompany.overlaySubtitle'),
@@ -374,7 +391,10 @@ export default {
       selectedContent,
       isMobile,
       infoSection,
-      t
+      t,
+      // Assets
+      starIcon,
+      servicesBg
     };
   }
 };

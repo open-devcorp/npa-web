@@ -7,7 +7,6 @@
         <div class="flex flex-col md:flex-row gap-10">
 
           <!-- Logo -->
-
           <div class="flex flex-col items-start">
             <router-link to="/">
               <div class="flex items-center mb-4">
@@ -102,22 +101,22 @@
       </div>
     </div>
 
-    <div class="bg-background bg-noise-white py-4 md:py-6 px-4">
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0 flex flex-col lg:flex-row items-center justify-between">
-        <p class="text-center lg:text-left font-mont-regular">
-          {{ $t('footer.professionalWeb') }} <a href="https://devcorp.pe" target="_blank" rel="noopener"
-            class="underline font-semibold">{{ $t('footer.visitDevcorp') }}</a>
+  </footer>
+  <div class="bg-background bg-noise-white py-4 md:py-6 px-4">
+    <div class="mx-auto px-4 xl:px-10 flex flex-col lg:flex-row items-center justify-between">
+      <p class="text-center lg:text-left font-mont-regular">
+        {{ $t('footer.professionalWeb') }} <a href="https://devcorp.pe" target="_blank" rel="noopener"
+          class="underline font-semibold">{{ $t('footer.visitDevcorp') }}</a>
 
-        </p>
-        <div class="flex flex-col lg:flex-row items-center gap-1 lg:gap-4 mt-2 lg:mt-0 font-mont-regular">
-          <span>{{ $t('footer.designedBy') }} </span>
-          <a href="https://devcorp.pe" target="_blank" rel="noopener">
-            <img src="../../assets/images/logo-devcorp.png" alt="Logo Devcorp" class="h-8 object-contain">
-          </a>
-        </div>
+      </p>
+      <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-4 mt-2 lg:mt-0 font-mont-regular">
+        <span>{{ $t('footer.designedBy') }} </span>
+        <a href="https://devcorp.pe" target="_blank" rel="noopener">
+          <img src="../../assets/images/logo-devcorp.png" alt="Logo Devcorp" class="h-8 object-contain">
+        </a>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
