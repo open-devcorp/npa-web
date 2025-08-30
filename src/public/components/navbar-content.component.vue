@@ -4,7 +4,7 @@
     <nav class="max-w-screen-xl mx-auto px-4 xl:px-0">
       <div class="flex justify-between items-center">
         <router-link to="/">
-          <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" class="w-25 md:w-35 lg:w-40 object-contain" />
+          <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" width="160" height="40" class="w-25 md:w-35 lg:w-40 object-contain" />
         </router-link>
 
         <ul class="hidden lg:flex gap-8">
@@ -51,11 +51,16 @@
 
         <!-- botón hamburguesa para móvil y tablet -->
         <div class="lg:hidden flex items-center justify-center">
-          <button @click="isOpen = !isOpen" class="focus:outline-none cursor-pointer">
-            <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="white" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+        <button 
+          @click="isOpen = !isOpen" 
+          class="focus:outline-none cursor-pointer"
+          aria-label="Abrir menú"
+        >
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="white" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
         </div>
       </div>
 

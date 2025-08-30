@@ -70,13 +70,16 @@ s="bg-noise-blue text-white py-4
 
       <div v-if="selected >= 0" class="mt-12 ">
         <div class="flex flex-col xl:flex-row gap-6 md:gap-8 md:mt-24 mb-4  xl:h-[600px]">
-
-          <!-- Image -->
           <div class="w-full xl:w-1/2 flex justify-center md:min-h-[480px]">
-            <img :src="cards[selected]?.img" :alt="cards[selected]?.alt"
-              class="w-full md:max-w-md xl:max-w-full object-cover" />
-          </div>
-
+            <!-- Image -->
+            <img 
+              :src="cards[selected]?.img" 
+              :alt="cards[selected]?.alt"
+              class="w-full md:max-w-md xl:max-w-full object-cover"
+              width="300" 
+              height="200"
+            />
+        </div>
           <!-- Text -->
           <div class="w-full xl:w-1/2 text-justify flex flex-col md:min-h-[480px]">
             <div>

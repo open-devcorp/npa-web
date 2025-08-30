@@ -60,7 +60,7 @@
 
             <template v-if="card.img">
               <img :src="card.img" :alt="card.alt"
-                class="w-full h-full object-cover object-top transition-transform duration-300" />
+                class="w-full h-full object-cover object-top transition-transform duration-300"  width="800" height="450" />
             </template>
 
             <div v-if="selected !== index"
@@ -88,14 +88,14 @@
             <div class="flex flex-col lg:flex-row gap-6 md:gap-8 mt-12 md:mt-24 items-stretch">
               <!-- Image -->
               <div class="w-full lg:w-1/2 overflow-hidden">
-                <img :src="selectedContent.img" :alt="selectedContent.alt"
+                <img :src="selectedContent.img" :alt="selectedContent.alt" width="800" height="500" 
                   class="w-full h-auto md:h-full max-h-[300px] md:max-h-[600px] object-cover" />
               </div>
 
               <!-- Body -->
               <div class="w-full lg:w-1/2 text-justify flex flex-col justify-start">
                 <div class="flex items-center gap-2 mb-4">
-                  <img :src="starIcon" class="h-8 w-8" />
+                  <img :src="starIcon" class="h-8 w-8" width="32" height="32" />
                   <p class="text-lg md:text-xl font-mont-black text-tertiary">
                     {{ selectedContent.title }}
                   </p>

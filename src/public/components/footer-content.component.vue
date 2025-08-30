@@ -112,7 +112,9 @@
       <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-4 mt-2 lg:mt-0 font-mont-regular">
         <span>{{ $t('footer.designedBy') }} </span>
         <a href="https://devcorp.pe" target="_blank" rel="noopener">
-          <img src="../../assets/images/logo-devcorp.png" alt="Logo Devcorp" class="h-8 object-contain">
+        <img src="../../assets/images/logo-devcorp.webp" 
+            alt="Logo Devcorp"
+            class="h-8 object-contain">
         </a>
       </div>
     </div>

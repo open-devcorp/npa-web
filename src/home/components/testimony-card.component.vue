@@ -1,5 +1,5 @@
 <template>
-    <div class="relative bg-noise-white px-8 pt-8 pb-20 w-[600px]">
+    <div class="relative bg-noise-white px-8 pt-8 pb-20 w-[600px] h-[400px]">
         <div class="flex gap-1 mb-4">
             <img v-for="n in rating" :key="n" :src="starRateIcon" alt="star" class="w-5" />
         </div>
@@ -10,7 +10,7 @@
                 <div class="font-mont-light">{{ role }}</div>
             </div>
         </div>
-        <div class="mt-4 text-base font-mont-regular">
+        <div class="mt-4 text-base font-mont-regular text-justify">
             <p>{{ testimony }}</p>
         </div>
         <img :src="starTestimonyIcon" alt="decorative star" class="absolute bottom-0 right-0 w-24" />

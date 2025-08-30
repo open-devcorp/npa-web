@@ -35,54 +35,57 @@
 
         <!-- Services Section -->
         <div class="bg-tertiary/60 rounded-3xl xl:mt-25 lg:mt-16 md:mt-12 mt-8 xl:p-8 lg:p-7 md:p-6 p-6">
-          <div
-            class="md:justify-between md:items-center md:space-y-0 space-y-6 lg:space-y-0 flex flex-col md:flex-row items-center">
+          <div class="md:justify-between md:items-center md:space-y-0 space-y-6 lg:space-y-0 flex flex-col md:flex-row items-center">
             <!-- Service Cards -->
             <div class="flex justify-center md:gap-9 xl:gap-20 lg:gap-15 gap-6">
 
+              <!-- Book Icon Card -->
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
                   <img :src="bookIcon" alt="Asesoría"
-                    class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                      width="100" height="100"
+                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.0.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.0.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part2") }}</p>
               </div>
 
+              <!-- Brain Icon Card -->
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
                   <img :src="brainIcon" alt="Marketing"
-                    class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                      width="100" height="100"
+                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.1.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.1.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part2") }}</p>
               </div>
 
+              <!-- Think Icon Card -->
               <div class="text-center lg:flex-none">
                 <div class="flex justify-center mb-4 lg:mb-4">
                   <img :src="thinkIcon" alt="Corretaje"
-                    class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                      width="100" height="100"
+                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.2.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{
-                  t("home.services.2.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part2") }}</p>
               </div>
+
             </div>
 
+            <!-- Button -->
             <router-link to="/contacto"
-              class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
-              <span class="">{{ t("home.meetButton") }}</span>
+                        class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
+              <span>{{ t("home.meetButton") }}</span>
               <img :src="arrowIcon" alt="Arrow"
-                class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
+                  width="14" height="14"
+                  class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
 
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -135,7 +138,7 @@
   <section class="relative">
     <!-- Imagen de fondo -->
     <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-      <img :src="computerCoffee" alt="Background" class="w-full h-full object-cover -scale-x-100" />
+      <img :src="computerCoffee" alt="Background"   width="1200" height="800" class="w-full h-full object-cover -scale-x-100" />
     </div>
 
     <!-- Contenido superpuesto -->
@@ -178,12 +181,38 @@
             }}</span>
         </p>
       </div>
-      <div class="mt-15 justify-center flex">
-        <TestimonyCard name="Elaine Ford" role="Fundadora de Democracia digital"
-          testimony="Excelente servicio. El equipo de New Point es profesional, cercano y siempre estuvo ahí para resolver mis dudas. Me dieron soluciones claras y efectivas, y lo mejor es que lograron los resultados que necesitaba. ¡Totalmente recomendados!"
-          :image="aboutBusinessWoman" :rating="5" />
-
+    
+    <div class="overflow-x-auto py-6 ">
+      <div class="flex gap-6 w-max px-4 h-[340px] items-stretch">
+        <TestimonyCard
+          class="flex-none w-[400px] h-full"
+          name="Ana Quinto"
+          role="Gerente General de N&F Multiservicios Quinto"
+          testimony="Nuestra empresa enfrenta diversos retos legales a diario y, gracias a New Point, hemos logrado resolverlos de manera rápida y eficaz. Destacamos su profesionalismo, enfoque innovador y compromiso, por lo que estamos muy agradecidos por sus excelentes servicios."
+          :image="aboutBusinessWoman"
+          :rating="5"
+        />
+        <TestimonyCard
+          class="flex-none w-[400px] h-full"
+          name="Bruno Caballero"
+          role="Gerente General de SEGUMAX PRO"
+          testimony="Al iniciar nuestra empresa enfrentamos varios retos legales y necesitábamos agilizar procedimientos sin cometer errores. Gracias a la asesoría de New Point, pudimos cumplir nuestros primeros objetivos. Valoramos su eficacia, profesionalismo y trabajo en equipo."
+          :image="aboutBusinessWoman"
+          :rating="5"
+        />
+        <TestimonyCard
+          class="flex-none w-[400px] h-full"
+          name="Familia Torres"
+          role=""
+          testimony="Gracias a su gestión, logramos rectificar nombres e inscribir la sucesión, regularizando así la titularidad de nuestras propiedades sin contratiempos."
+          :image="aboutBusinessWoman"
+          :rating="5"
+        />
       </div>
+    </div>
+
+
+
     </div>
   </section>
 

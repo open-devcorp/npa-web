@@ -49,7 +49,7 @@
 
     <!-- Cards Section -->
     <section class="max-w-screen-xl mx-auto px-4 xl:px-0 pb-20">
-      <img :src="aboutMeetBg" alt="Nuestros Valores" class="w-full" />
+      <img :src="aboutMeetBg" alt="Nuestros Valores"  width="1200"  height="800"  class="w-full" />
 
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-6 -mt-12 lg:-mt-24 z-10 px-4">
@@ -108,7 +108,7 @@
     </section>
 
     <section class="relative w-full min-h-screen flex items-center justify-center text-center">
-      <img :src="aboutBusinessWoman" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
+      <img :src="aboutBusinessWoman" width="1200" height="800" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
 
       <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
         <h2

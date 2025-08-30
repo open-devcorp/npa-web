@@ -3,46 +3,64 @@
 @font-face {
   font-family: "Heavy";
   src: url("/src/assets/fonts/Mont-Heavy.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Bold";
   src: url("/src/assets/fonts/Mont-Bold.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "semiBold";
   src: url("/src/assets/fonts/Mont-SemiBold.ttf") format("truetype");
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Black";
   src: url("/src/assets/fonts/Mont-Black.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Regular";
   src: url("/src/assets/fonts/Mont-Regular.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Light";
   src: url("/src/assets/fonts/Mont-Light.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "PublicSans";
   src: url("/src/assets/fonts/PublicSans-VariableFont_wght.ttf")
     format("truetype");
-}
+  font-display: swap;
+
+  }
 @font-face {
   font-family: "PublicSans";
   font-weight: 300;
   src: url("/src/assets/fonts/PublicSans-Light.ttf") format("truetype");
+  font-display: swap;
+
 }
 @font-face {
   font-family: "PublicSans-Regular";
   font-weight: 400;
   src: url("/src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
+  font-display: swap;
+
 }
 
 @theme {
@@ -71,7 +89,7 @@
 @layer base {
   body {
     background-color: #2628d8;
-    background-image: url("/src/assets/backgrounds/background-blue.png");
+    background-image: url("/src/assets/backgrounds/background-blue.webp");
     background-repeat: repeat;
     background-size: auto;
     background-blend-mode: multiply;
@@ -80,20 +98,20 @@
 
 /* Componentes personalizados */
 @layer components {
-  .bg-noise-white {
-    background-color: #f0f2f2;
-    background-image: url("/src/assets/backgrounds/background-white.png");
-    background-repeat: repeat;
-    background-size: auto;
-    background-blend-mode: multiply;
-  }
+.bg-noise-white {
+  background-color: #f0f2f2;
+  background-image: url("/src/assets/backgrounds/background-white.webp");
+  background-repeat: repeat; 
+  background-size: auto; 
+  background-blend-mode: multiply; 
+}
 
   .bg-noise-blue {
     background-color: #2628d8;
-    background-image: url("/src/assets/backgrounds/background-blue.png");
+    background-image: url("/src/assets/backgrounds/background-blue.webp");
     background-repeat: repeat;
     background-size: auto;
-    background-blend-mode: multiply;
+     background-blend-mode: multiply; 
   }
 
   .btn {

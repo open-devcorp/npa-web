@@ -13,9 +13,16 @@ const changeLocale = (event) => {
 
 <template>
   <div class="relative inline-block">
-    <select :value="locale" @change="changeLocale"
-      class="bg-primary text-white uppercase font-public-sans px-4 py-2 pr-10 rounded focus:outline-none appearance-none cursor-pointer">
-      <option v-for="lang in languages" :value="lang.code" :key="lang.code">{{ lang.label }}</option>
+    <label for="locale-select" class="sr-only">Selecciona idioma</label>
+    <select 
+      id="locale-select"
+      :value="locale" 
+      @change="changeLocale"
+      class="bg-primary text-white uppercase font-public-sans px-4 py-2 pr-10 rounded focus:outline-none appearance-none cursor-pointer"
+    >
+      <option v-for="lang in languages" :value="lang.code" :key="lang.code">
+        {{ lang.label }}
+      </option>
     </select>
     <!-- Flecha personalizada -->
     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
