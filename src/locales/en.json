@@ -571,6 +571,8 @@
     "contact_title": "Contact",
   "contact_description": "For inquiries, you can write to our official email: <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. We will respond to requests within a reasonable timeframe, in accordance with current data protection regulations and claims handling procedures.",
     "legal_note": "This Privacy Policy is governed by current laws and is interpreted in accordance with them."
+  ,
+  "last_update": "Last updated: 14/07/2025"
   },
   "terms": {
   "title": "Terms and Conditions",
@@ -598,5 +600,7 @@
   "section_7_p1": "These T&C are governed by Peruvian law. Any dispute will be resolved by the competent Peruvian courts.",
   "section_8_title": "8. Contact",
   "section_8_p1": "For inquiries, write to <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. The Company will respond within a reasonable time and in accordance with current regulations."
+  ,
+  "last_update": "Last updated: 14/07/2025"
 }
 }

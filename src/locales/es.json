@@ -601,6 +601,8 @@
     "contact_title": "Contacto",
   "contact_description": "Para consultas, puede escribirnos al correo oficial: <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. Atenderemos las solicitudes en un plazo razonable, conforme a la normativa vigente en protección de datos y atención de reclamos.",
     "legal_note": "Esta Política de Privacidad se rige por las leyes vigentes y se interpreta de acuerdo con ellas."
+    ,
+    "last_update": "Última actualización: 14/07/2025"
   },
   "terms": {
   "title": "Términos y Condiciones",
@@ -628,5 +630,7 @@
   "section_7_p1": "Estos T&C se rigen por la legislación peruana. Cualquier disputa será resuelta por los tribunales peruanos competentes.",
   "section_8_title": "8. Contacto",
   "section_8_p1": "Para consultas, escríbanos a <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. La Empresa responderá dentro de un plazo razonable y conforme a la normativa vigente."
+  ,
+  "last_update": "Última actualización: 14/07/2025"
 }
 }

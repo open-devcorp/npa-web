@@ -40,6 +40,7 @@
       <p class="mb-4 text-justify" v-html="t('policy.contact_description')"></p>
 
       <p class="text-sm italic">{{ t('policy.legal_note') }}</p>
+  <p class="mt-6 text-sm text-gray-600">{{ t('policy.last_update') }}</p>
     </section>
 
   </div>

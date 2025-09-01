@@ -48,6 +48,7 @@
 
       <h2 class="text-xl font-semibold mt-8 mb-2">{{ t('terms.section_8_title') }}</h2>
       <p class="mb-4" v-html="t('terms.section_8_p1')"></p>
+  <p class="mt-8 text-sm text-gray-600">{{ t('terms.last_update') }}</p>
     </section>
 
   </div>
