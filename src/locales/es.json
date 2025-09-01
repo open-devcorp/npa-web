@@ -542,7 +542,7 @@
     },
     "contactInfo": {
       "phone": "+51 959 790 654",
-      "email": "newpoint.asesores@gmail.com",
+  "email": "newpoint.asesores&#64;gmail.com",
       "address": "Av. Las azucenas, Santiago de Surco"
     },
     "altTexts": {
@@ -599,7 +599,7 @@
     "changes_title": "Cambios a esta Política de Privacidad",
     "changes_description": "La Empresa se reserva el derecho de actualizar o modificar esta Política en cualquier momento sin previo aviso. Se recomienda revisarla periódicamente para estar al tanto de cualquier cambio.",
     "contact_title": "Contacto",
-    "contact_description": "Para consultas, puede escribirnos al correo oficial: <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. Atenderemos las solicitudes en un plazo razonable, conforme a la normativa vigente en protección de datos y atención de reclamos.",
+  "contact_description": "Para consultas, puede escribirnos al correo oficial: <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. Atenderemos las solicitudes en un plazo razonable, conforme a la normativa vigente en protección de datos y atención de reclamos.",
     "legal_note": "Esta Política de Privacidad se rige por las leyes vigentes y se interpreta de acuerdo con ellas."
   },
   "terms": {
@@ -627,6 +627,6 @@
   "section_7_title": "7. Ley aplicable y jurisdicción",
   "section_7_p1": "Estos T&C se rigen por la legislación peruana. Cualquier disputa será resuelta por los tribunales peruanos competentes.",
   "section_8_title": "8. Contacto",
-  "section_8_p1": "Para consultas, escríbanos a <a href=\"mailto:newpoint.asesores@gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores@gmail.com</a>. La Empresa responderá dentro de un plazo razonable y conforme a la normativa vigente."
+  "section_8_p1": "Para consultas, escríbanos a <a href=\"mailto:newpoint.asesores&#64;gmail.com\" class=\"text-blue-600 underline\">newpoint.asesores&#64;gmail.com</a>. La Empresa responderá dentro de un plazo razonable y conforme a la normativa vigente."
 }
 }

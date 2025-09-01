@@ -38,7 +38,7 @@
                 <form @submit.prevent="sendEmail" class="md:w-1/2 md:space-y-8 space-y-6">
                     <div>
                         <label for="names" class="form-label">{{ $t('contact.form.names.label') }}</label>
-                        <input id="names" type="text" v-model="name" maxlength="50" required class="form-input"
+                        <input id="names" type="text" v-model="names" maxlength="50" required class="form-input"
                             :placeholder="$t('contact.form.names.placeholder')" />
                     </div>
                     <div class="flex lg:gap-10 gap-5">
