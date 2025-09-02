@@ -1,6 +1,7 @@
 <template>
   <footer class="">
-    <div class="bg-background-dark text-white py-12 md:py-20">
+    <!-- Reservar altura para evitar CLS por carga de fuentes -->
+  <div class="bg-background-dark text-white py-12 md:py-20 min-h-[320px] md:min-h-[380px]" style="line-height:1; font-synthesis-weight:none;">
 
       <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
 
@@ -11,7 +12,7 @@
             <router-link to="/">
               <div class="flex items-center mb-4">
                 <!-- Icono estrella similar al de la imagen -->
-                <img src="../../assets/icons/icon-footer.svg" :alt="$t('footer.logoAlt')" class="w-15 h-15 mr-3">
+                <img src="../../assets/icons/icon-footer.svg" :alt="$t('footer.logoAlt')" width="60" height="60" decoding="async" loading="lazy" class="w-15 h-15 mr-3">
                 <div>
                   <h2 class="font-mont-black text-xl text-white">New Point</h2>
                   <p class="font-mont-regular text-sm text-white">Asesores</p>
@@ -82,7 +83,7 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="bg-background-dark py-4 md:py-6 px-4">
+  <div class="bg-background-dark py-4 md:py-6 px-4 min-h-[64px]" style="line-height:1; font-synthesis-weight:none;">
       <div class="max-w-screen-xl mx-auto px-4 xl:px-0 flex flex-col lg:flex-row items-center justify-between">
         <p class="text-center lg:text-left text-sm font-mont-regular text-white">
           {{ $t('footer.copyright') }}
@@ -111,11 +112,13 @@
       </p>
       <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-4 mt-2 lg:mt-0 font-mont-regular">
         <span>{{ $t('footer.designedBy') }} </span>
-        <a href="https://devcorp.pe" target="_blank" rel="noopener">
-        <img src="../../assets/images/logo-devcorp.webp" 
-            alt="Logo Devcorp"
-            class="h-8 object-contain">
-        </a>
+    <a href="https://devcorp.pe" target="_blank" rel="noopener">
+    <img src="../../assets/images/logo-devcorp.webp" 
+      alt="Logo Devcorp"
+      width="128" height="32"
+      decoding="async" loading="lazy"
+      class="h-8 object-contain">
+    </a>
       </div>
     </div>
   </div>

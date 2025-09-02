@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
-import TeamView from "../team/pages/team.component.vue";
-import PrivacyPolicyView from "../privacy-policy/pages/privacy-policy.component.vue";
-import TermsAndConditionsView from "../terms-and-conditions/pages/terms-and-conditions.component.vue";
+
+// Keep Home eager for best LCP; others remain lazy
 import HomeComponent from "../home/pages/home.component.vue";
-import AboutComponent from "../about-us/pages/about.component.vue";
-import ServicesComponent from "../services/pages/services.componet.vue";
-import WhyChooseUsComponent from "../why-choose-us/pages/why-choose-us.component.vue";
-import ContactUsComponent from "../contact-us/pages/contact-us.component.vue";
+const AboutComponent = () => import("../about-us/pages/about.component.vue");
+const ServicesComponent = () => import("../services/pages/services.componet.vue");
+const WhyChooseUsComponent = () => import("../why-choose-us/pages/why-choose-us.component.vue");
+const TeamView = () => import("../team/pages/team.component.vue");
+const ContactUsComponent = () => import("../contact-us/pages/contact-us.component.vue");
+const PrivacyPolicyView = () => import("../privacy-policy/pages/privacy-policy.component.vue");
+const TermsAndConditionsView = () => import("../terms-and-conditions/pages/terms-and-conditions.component.vue");
 
 const router = createRouter({
   history: createWebHistory(),

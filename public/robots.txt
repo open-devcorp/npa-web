@@ -1,0 +1,10 @@
+# robots.txt for New Point Asesores
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Disallow environment or build artifacts (none currently)
+# Disallow: /private/
+
+# Sitemaps (add when available)
+# Sitemap: https://www.newpointasesores.com/sitemap.xml
