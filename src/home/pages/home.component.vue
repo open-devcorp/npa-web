@@ -183,37 +183,20 @@
       </div>
     
     <div class="overflow-x-auto py-6 ">
-      <div class="flex gap-6 w-max px-4 h-[340px] items-stretch">
-        <TestimonyCard
-          class="flex-none w-[400px] h-full"
-          name="Ana Quinto"
-          role="Gerente General de N&F Multiservicios Quinto"
-          testimony="Nuestra empresa enfrenta diversos retos legales a diario y, gracias a New Point, hemos logrado resolverlos de manera rápida y eficaz. Destacamos su profesionalismo, enfoque innovador y compromiso, por lo que estamos muy agradecidos por sus excelentes servicios."
-          :image="aboutBusinessWoman"
-          :rating="5"
-        />
-        <TestimonyCard
-          class="flex-none w-[400px] h-full"
-          name="Bruno Caballero"
-          role="Gerente General de SEGUMAX PRO"
-          testimony="Al iniciar nuestra empresa enfrentamos varios retos legales y necesitábamos agilizar procedimientos sin cometer errores. Gracias a la asesoría de New Point, pudimos cumplir nuestros primeros objetivos. Valoramos su eficacia, profesionalismo y trabajo en equipo."
-          :image="aboutBusinessWoman"
-          :rating="5"
-        />
-        <TestimonyCard
-          class="flex-none w-[400px] h-full"
-          name="Familia Torres"
-          role=""
-          testimony="Gracias a su gestión, logramos rectificar nombres e inscribir la sucesión, regularizando así la titularidad de nuestras propiedades sin contratiempos."
-          :image="aboutBusinessWoman"
-          :rating="5"
-        />
+          <!-- Mobile -->
+        <div class="block lg:hidden">
+          <TestimonyCard />
+        </div>
+
+        <!-- Desktop -->
+        <div class="hidden lg:block">
+          <TestimonySwiper />
+        </div>
       </div>
     </div>
 
 
 
-    </div>
   </section>
 
   <section class="bg-noise-white">
@@ -250,7 +233,8 @@
 <script>
 import SectionTitle from '../../public/components/section-title.component.vue';
 import ServiceCard from '../../services/components/service-card.component.vue';
-import TestimonyCard from '../../home/components/testimony-card.component.vue';
+import TestimonyCard from '../components/testimony-card-mobile.component.vue';
+import TestimonySwiper from '../components/testimony-card-desktop.component.vue';
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 
@@ -272,7 +256,8 @@ export default {
   components: {
     SectionTitle,
     ServiceCard,
-    TestimonyCard
+    TestimonyCard,
+    TestimonySwiper
   },
   setup() {
     const { t } = useI18n();
@@ -312,7 +297,8 @@ export default {
       thinkIcon,
       arrowIcon,
       starSecondary,
-      aboutBusinessWoman
+      aboutBusinessWoman,
+      
     };
   }
 }
