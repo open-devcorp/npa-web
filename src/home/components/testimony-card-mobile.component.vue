@@ -66,9 +66,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
-import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 
 import starRateIcon from "../../assets/icons/star-rate.svg";
 import starTestimonyIcon from "../../assets/images/star-testimony.svg";
@@ -108,7 +106,7 @@ export default {
     };
   },
   setup() {
-    return { starRateIcon, starTestimonyIcon, Autoplay };
+    return { starRateIcon, starTestimonyIcon };
   },
 };
 </script>
