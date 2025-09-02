@@ -48,20 +48,6 @@
   font-display: optional;
 
   }
-@font-face {
-  font-family: "PublicSans";
-  font-weight: 300;
-  src: url("/src/assets/fonts/PublicSans-Light.ttf") format("truetype");
-  font-display: optional;
-
-}
-@font-face {
-  font-family: "PublicSans-Regular";
-  font-weight: 400;
-  src: url("/src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
-  font-display: optional;
-
-}
 
 @theme {
   --font-mont-heavy: "Heavy", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -71,8 +57,8 @@
   --font-mont-semibold: "semiBold", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --font-mont-light: "Light", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --font-public-sans: "PublicSans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --font-public-sans-light: "PublicSans-Light", sans-serif;
-  --font-public-sans-regular: "PublicSans-Regular", sans-serif;
+  --font-public-sans-light: "PublicSans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-public-sans-regular: "PublicSans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --font-public-sans-medium: "PublicSans-Medium", sans-serif;
   --font-public-sans-semibold: "PublicSans-SemiBold", sans-serif;
   --font-public-sans-bold: "PublicSans-Bold", sans-serif;

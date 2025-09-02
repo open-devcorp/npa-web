@@ -66,7 +66,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
+import "swiper/css";
 
 import starRateIcon from "../../assets/icons/star-rate.svg";
 import starTestimonyIcon from "../../assets/images/star-testimony.svg";
