@@ -2,7 +2,6 @@
   <div class="w-full max-w-7xl mx-auto px-4">
     <swiper
       ref="swiperRef"
-      :modules="[]"
       :loop="true"
       :centered-slides="true"
       :slides-per-view="1"
@@ -68,7 +67,7 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper-bundle.css";
-import { ref } from "vue";
+import { ref, nextTick } from "vue";
 
 import starRateIcon from "../../assets/icons/star-rate.svg";
 import starTestimonyIcon from "../../assets/images/star-testimony.svg";
@@ -107,7 +106,14 @@ export default {
       },
     ];
 
-    const onSwiperInit = (swiper) => {
+    const onSwiperInit = async (swiper) => {
+      // Esperamos a que Vue renderice el DOM
+      await nextTick();
+
+      // Recalcula tamaños y duplicados del loop
+      swiper.update();
+
+      // Inicia en la segunda card (índice 1)
       swiper.slideToLoop(1, 0);
     };
 
