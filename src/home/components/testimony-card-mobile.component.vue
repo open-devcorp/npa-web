@@ -43,7 +43,7 @@
                   {{ card.name || card.title }}
                 </div>
                 <div class="font-mont-light text-xs sm:text-sm">
-                  {{ card.role || "Desarrollador" }}
+                  {{ card.role || "" }}
                 </div>
               </div>
             </div>

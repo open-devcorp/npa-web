@@ -1,28 +1,28 @@
 <template>
   <div class="w-full max-w-7xl mx-auto px-4">
     <swiper
-        ref="swiperRef"
-        :modules="[]"
-        :loop="true"
-        :centered-slides="true"
-        :slides-per-view="1"
-        :space-between="16"
-        :breakpoints="{
-            1024: { slidesPerView: 'auto', spaceBetween: 32 }
-        }"
-        :initial-slide="2" 
-        class="hero-swiper">
+      ref="swiperRef"
+      :modules="[]"
+      :loop="true"
+      :centered-slides="true"
+      :slides-per-view="1"
+      :space-between="16"
+      :breakpoints="{ 1024: { slidesPerView: 'auto', spaceBetween: 32 } }"
+      class="hero-swiper"
+      @swiper="onSwiperInit"
+    >
       <swiper-slide
         v-for="(card, idx) in cards"
         :key="idx"
         class="flex justify-center"
       >
         <div
-          class="relative bg-white  overflow-hidden 
+          class="relative bg-white overflow-hidden 
                  w-[90%] sm:w-[90%] lg:w-[700px] 
                  h-[240px] sm:h-[260px] lg:h-[300px] flex flex-col"
         >
           <div class="relative bg-noise-white px-8 pt-6 pb-14 w-full h-full">
+            <!-- Rating -->
             <div class="flex gap-1 mb-3 mt-2">
               <img
                 v-for="n in card.rating"
@@ -32,6 +32,7 @@
                 class="w-4 sm:w-5"
               />
             </div>
+            <!-- Header -->
             <div class="flex items-center gap-3 mb-2">
               <img
                 :src="card.image"
@@ -47,9 +48,11 @@
                 </div>
               </div>
             </div>
-            <div class="mt-4 text-xs sm:text-sm font-mont-regular text-justify ">
+            <!-- Testimonio -->
+            <div class="mt-4 text-xs sm:text-sm font-mont-regular text-justify">
               <p>{{ card.testimony }}</p>
             </div>
+            <!-- Estrella decorativa -->
             <img
               :src="starTestimonyIcon"
               alt="decorative star"
@@ -65,7 +68,8 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper-bundle.css";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
+
 import starRateIcon from "../../assets/icons/star-rate.svg";
 import starTestimonyIcon from "../../assets/images/star-testimony.svg";
 import userImg from "../../assets/images/user.webp";
@@ -77,7 +81,7 @@ export default {
     const swiperRef = ref(null);
 
     const cards = [
-             {
+      {
         name: "Familia Torres",
         role: "",
         testimony:
@@ -101,19 +105,13 @@ export default {
         image: userImg,
         rating: 5,
       },
- 
     ];
 
-    onMounted(() => {
-      setTimeout(() => {
-        if (swiperRef.value && swiperRef.value.swiper) {
-          const middleIndex = Math.floor(cards.length / 2);
-          swiperRef.value.swiper.slideToLoop(middleIndex, 0); 
-        }
-      });
-    });
+    const onSwiperInit = (swiper) => {
+      swiper.slideToLoop(1, 0);
+    };
 
-    return { cards, swiperRef, starRateIcon, starTestimonyIcon };
+    return { cards, swiperRef, starRateIcon, starTestimonyIcon, onSwiperInit };
   },
 };
 </script>
@@ -123,12 +121,14 @@ export default {
   width: 100%;
   padding: 20px 0;
 }
+
 .swiper-slide {
   transition: transform 0.4s ease, opacity 0.4s ease;
   opacity: 0.5;
   transform: scale(0.9);
   width: auto !important;
 }
+
 .swiper-slide-active {
   opacity: 1;
   transform: scale(1);
