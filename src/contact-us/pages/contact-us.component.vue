@@ -99,8 +99,8 @@
                         <div class="flex flex-row items-center gap-3">
                             <img :src="emailIcon" :alt="$t('contact.altTexts.emailIcon')"
                                 class="lg:h-15 h-10 w-10 lg:w-15">
-                            <p class="font-public-sans font-black lg:text-xl text-base">{{
-                                $t('contact.contactInfo.email') }}</p>
+                                <p class="font-public-sans font-black lg:text-xl text-base">{{
+                                    $t('contact.contactInfo.email', { email: 'newpoint.asesores@gmail.com' }) }}</p>
                         </div>
                         <div class="flex flex-row items-center gap-3">
                             <img :src="markerIcon" :alt="$t('contact.altTexts.locationIcon')"

@@ -36,8 +36,8 @@
       <h2 class="text-xl font-semibold mt-8 mb-2">{{ t('policy.changes_title') }}</h2>
       <p class="mb-4 text-justify">{{ t('policy.changes_description') }}</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">{{ t('policy.contact_title') }}</h2>
-      <p class="mb-4 text-justify" v-html="t('policy.contact_description')"></p>
+  <h2 class="text-xl font-semibold mt-8 mb-2">{{ t('policy.contact_title') }}</h2>
+  <p class="mb-4 text-justify" v-html="t('policy.contact_description', { email: 'newpoint.asesores@gmail.com' })"></p>
 
       <p class="text-sm italic">{{ t('policy.legal_note') }}</p>
   <p class="mt-6 text-sm text-gray-600">{{ t('policy.last_update') }}</p>
