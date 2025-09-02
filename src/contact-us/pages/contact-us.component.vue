@@ -126,7 +126,6 @@
 
 <script>
 import SectionTitle from "../../public/components/section-title.component.vue";
-import emailjs from 'emailjs-com';
 
 // Importar assets
 import arrowIcon from '../../assets/icons/arrow.svg';
@@ -166,6 +165,8 @@ export default {
             this.showSuccess = false;
             this.showError = false;
             try {
+                // Carga perezosa de emailjs (evita incluirlo en el bundle inicial)
+                const { default: emailjs } = await import('emailjs-com');
                 // Construye el objeto con los datos que espera tu plantilla de EmailJS
                 const params = {
                     names: this.names,

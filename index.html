@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/new-point.svg" />
-    <link rel="preload" as="image" href="/src/assets/backgrounds/background-white.webp">
-    <link rel="preload" as="font" href="/src/assets/fonts/Mont-Bold.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="/src/assets/backgrounds/background-white.webp">
+  <!-- Preload only critical hero fonts -->
+  <link rel="preload" as="font" href="/src/assets/fonts/Mont-Regular.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="/src/assets/fonts/Mont-Heavy.ttf" type="font/ttf" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="image" href="/src/assets/backgrounds/bg-home.webp">
+  <link rel="preload" as="image" href="/src/assets/backgrounds/bg-home.webp" imagesrcset="/src/assets/backgrounds/bg-home.webp 1200w" imagesizes="100vw" fetchpriority="high">
     <title>New Point Asesores</title>
   </head>
   <body>

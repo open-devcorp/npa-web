@@ -45,32 +45,32 @@
   font-family: "PublicSans";
   src: url("/src/assets/fonts/PublicSans-VariableFont_wght.ttf")
     format("truetype");
-  font-display: swap;
+  font-display: optional;
 
   }
 @font-face {
   font-family: "PublicSans";
   font-weight: 300;
   src: url("/src/assets/fonts/PublicSans-Light.ttf") format("truetype");
-  font-display: swap;
+  font-display: optional;
 
 }
 @font-face {
   font-family: "PublicSans-Regular";
   font-weight: 400;
   src: url("/src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
-  font-display: swap;
+  font-display: optional;
 
 }
 
 @theme {
-  --font-mont-heavy: "Heavy", sans-serif;
-  --font-mont-bold: "Bold", sans-serif;
-  --font-mont-black: "Black", sans-serif;
-  --font-mont-regular: "Regular", sans-serif;
-  --font-mont-semibold: "semiBold", sans-serif;
-  --font-mont-light: "Light", sans-serif;
-  --font-public-sans: "PublicSans", sans-serif;
+  --font-mont-heavy: "Heavy", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mont-bold: "Bold", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mont-black: "Black", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mont-regular: "Regular", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mont-semibold: "semiBold", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mont-light: "Light", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-public-sans: "PublicSans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --font-public-sans-light: "PublicSans-Light", sans-serif;
   --font-public-sans-regular: "PublicSans-Regular", sans-serif;
   --font-public-sans-medium: "PublicSans-Medium", sans-serif;
@@ -93,11 +93,15 @@
     background-repeat: repeat;
     background-size: auto;
     background-blend-mode: multiply;
+  font-family: var(--font-mont-regular);
+  line-height: 1.2;
+  font-size-adjust: 0.5;
   }
 }
 
 /* Componentes personalizados */
 @layer components {
+.cv-auto { content-visibility: auto; contain-intrinsic-size: 1px 1000px; }
 .bg-noise-white {
   background-color: #f0f2f2;
   background-image: url("/src/assets/backgrounds/background-white.webp");

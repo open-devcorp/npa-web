@@ -3,8 +3,7 @@
   <section>
     <!-- Imagen de fondo -->
     <div class="w-full">
-      <img :src="bgHome" alt="Background"
-        class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
+  <img :src="bgHome" alt="Background" width="1920" height="900" fetchpriority="high" decoding="async" :srcset="bgHome + ' 1200w'" sizes="100vw" class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
     </div>
 
     <!-- Contenido superpuesto en la imagen -->
@@ -91,7 +90,7 @@
   </section>
 
   <!-- lo que ofrecemos -->
-  <section class="bg-noise-white">
+  <section class="bg-noise-white cv-auto">
 
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
 
@@ -135,7 +134,7 @@
   </section>
 
   <!-- impulsemos proyectos -->
-  <section class="relative">
+  <section class="relative cv-auto">
     <!-- Imagen de fondo -->
     <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
       <img :src="computerCoffee" alt="Background"   width="1200" height="800" class="w-full h-full object-cover -scale-x-100" />
@@ -172,7 +171,7 @@
   </section>
 
   <!-- testimonios -->
-  <section class="bg-tertiary">
+  <section class="bg-tertiary cv-auto">
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
@@ -216,7 +215,7 @@
     </div>
   </section>
 
-  <section class="bg-noise-white">
+  <section class="bg-noise-white cv-auto">
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-25">
       <div class="bg-tertiary p-5 pb-20 md:p-8 lg:p-9 xl:p-15 relative rounded-2xl ">
         <!-- Estrella decorativa posicionada en la esquina -->

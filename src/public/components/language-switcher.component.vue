@@ -1,13 +1,15 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import { setLocale } from '../../i18n.js';
 const { locale } = useI18n();
 const languages = [
   { code: 'en', label: 'English' },
   { code: 'es', label: 'Español' }
 ];
 
-const changeLocale = (event) => {
-  locale.value = event.target.value;
+const changeLocale = async (event) => {
+  const code = event.target.value;
+  await setLocale(code);
 };
 </script>
 
