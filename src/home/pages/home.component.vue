@@ -3,7 +3,9 @@
   <section>
     <!-- Imagen de fondo -->
     <div class="w-full">
-  <img :src="bgHome" alt="Background" width="1920" height="900" fetchpriority="high" decoding="async" :srcset="bgHome + ' 1200w'" sizes="100vw" class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
+      <img :src="bgHome" alt="Background" width="1920" height="900" fetchpriority="high" decoding="async"
+        :srcset="bgHome + ' 1200w'" sizes="100vw"
+        class="w-full xl:h-[900px] lg:h-[700px] md:h-[600px] h-[500px] object-cover" />
     </div>
 
     <!-- Contenido superpuesto en la imagen -->
@@ -33,53 +35,55 @@
         </div>
 
         <!-- Services Section -->
-        <div class="bg-tertiary/60 rounded-3xl xl:mt-25 lg:mt-16 md:mt-12 mt-8 xl:p-8 lg:p-7 md:p-6 p-6">
-          <div class="md:justify-between md:items-center md:space-y-0 space-y-6 lg:space-y-0 flex flex-col md:flex-row items-center">
+        <div class="bg-tertiary/60 rounded-3xl xl:mt-25 lg:mt-16 md:mt-15 mt-15 xl:p-8 lg:p-7 md:p-6 p-6">
+          <div class="justify-between md:items-center flex flex-row items-center">
             <!-- Service Cards -->
-            <div class="flex justify-center md:gap-9 xl:gap-20 lg:gap-15 gap-6">
+            <div class="flex justify-center md:gap-9 xl:gap-20 lg:gap-15 gap-3">
 
               <!-- Book Icon Card -->
               <div class="text-center lg:flex-none">
-                <div class="flex justify-center mb-4 lg:mb-4">
+                <div class="flex justify-center mb-2 md:mb-4">
                   <img :src="bookIcon" alt="Asesoría"
-                      width="100" height="100"
-                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                    class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.0.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.0.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.0.part2") }}</p>
               </div>
 
               <!-- Brain Icon Card -->
               <div class="text-center lg:flex-none">
-                <div class="flex justify-center mb-4 lg:mb-4">
+                <div class="flex justify-center mb-2 md:mb-4">
                   <img :src="brainIcon" alt="Marketing"
-                      width="100" height="100"
-                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                    class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.1.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.1.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.1.part2") }}</p>
               </div>
 
               <!-- Think Icon Card -->
               <div class="text-center lg:flex-none">
-                <div class="flex justify-center mb-4 lg:mb-4">
+                <div class="flex justify-center mb-2 md:mb-4">
                   <img :src="thinkIcon" alt="Corretaje"
-                      width="100" height="100"
-                      class="xl:h-25 lg:h-15 md:h-14 h-13 brightness-0 saturate-200 invert" />
+                    class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-sm font-mont-regular">{{ t("home.services.2.part2") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.2.part1") }}</p>
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                  t("home.services.2.part2") }}</p>
               </div>
 
             </div>
 
             <!-- Button -->
             <router-link to="/contacto"
-                        class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors">
+              class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors lg:px-6 lg:py-4 py-2 px-3 md:py-3 md:px-5 ">
               <span>{{ t("home.meetButton") }}</span>
-              <img :src="arrowIcon" alt="Arrow"
-                  width="14" height="14"
-                  class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
+              <img :src="arrowIcon" alt="Arrow" width="14" height="14"
+                class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
             </router-link>
 
           </div>
@@ -137,7 +141,8 @@
   <section class="relative cv-auto">
     <!-- Imagen de fondo -->
     <div class="w-full h-[350px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-      <img :src="computerCoffee" alt="Background"   width="1200" height="800" class="w-full h-full object-cover -scale-x-100" />
+      <img :src="computerCoffee" alt="Background" width="1200" height="800"
+        class="w-full h-full object-cover -scale-x-100" />
     </div>
 
     <!-- Contenido superpuesto -->
@@ -177,12 +182,12 @@
         <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
         <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">
           {{ t('home.testimonialsTitle.0.part1') }} <span class="font-mont-heavy">{{ t('home.testimonialsTitle.0.part2')
-            }}</span>
+          }}</span>
         </p>
       </div>
-    
-    <div class="overflow-x-auto py-6 ">
-          <!-- Mobile -->
+
+      <div class="overflow-x-auto py-6 ">
+        <!-- Mobile -->
         <div class="block lg:hidden">
           <TestimonyCard />
         </div>
@@ -297,7 +302,7 @@ export default {
       arrowIcon,
       starSecondary,
       aboutBusinessWoman,
-      
+
     };
   }
 }
