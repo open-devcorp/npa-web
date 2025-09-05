@@ -8,7 +8,7 @@
           class="w-full md:max-w-md xl:max-w-full object-cover duration-100 mt-6"
           style="height: 340px; max-height: 340px;"
         />
-        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent px-6 py-4 text-white">
+        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent px-6 py-4 text-white">
           <h2 class="font-mont-heavy lg:text-lg xl:text-xl">{{ cards[selected].overlayTitle }}</h2>
           <p class="text-xs md:text-sm text-yellow-300 font-public-sans font-semibold">
             {{ cards[selected].overlaySubtitle }}
