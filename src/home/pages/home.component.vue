@@ -10,7 +10,7 @@
 
     <!-- Contenido superpuesto en la imagen -->
     <div class="absolute inset-0 xl:mt-55 lg:mt-40 md:mt-30 mt-20">
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+      <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
         <!-- Título -->
         <div class="text-center">
           <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-regular">
@@ -96,7 +96,7 @@
   <!-- lo que ofrecemos -->
   <section class="bg-noise-white cv-auto">
 
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
+    <div class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20">
 
       <!-- Titulo y boton -->
       <div class="flex flex-col md:flex-row md:items-end md:justify-between">
@@ -177,12 +177,12 @@
 
   <!-- testimonios -->
   <section class="bg-tertiary cv-auto">
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
+    <div class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20">
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('home.secondSubtitle')" textColor="text-white " />
         <p class="text-4xl md:text-5xl xl:text-7xl font-mont-regular text-white">
           {{ t('home.testimonialsTitle.0.part1') }} <span class="font-mont-heavy">{{ t('home.testimonialsTitle.0.part2')
-          }}</span>
+            }}</span>
         </p>
       </div>
 
@@ -204,7 +204,7 @@
   </section>
 
   <section class="bg-noise-white cv-auto">
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-25">
+    <div class="max-w-screen-xl mx-auto px-8 xl:px-0 py-25">
       <div class="bg-tertiary p-5 pb-20 md:p-8 lg:p-9 xl:p-15 relative rounded-2xl ">
         <!-- Estrella decorativa posicionada en la esquina -->
         <div class="absolute bottom-0 left-0">

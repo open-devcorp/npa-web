@@ -3,7 +3,7 @@
     <!-- Reservar altura para evitar CLS por carga de fuentes -->
   <div class="bg-background-dark text-white py-12 md:py-20 min-h-[320px] md:min-h-[380px]" style="line-height:1; font-synthesis-weight:none;">
 
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+      <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
 
         <div class="flex flex-col md:flex-row gap-10">
 
@@ -84,7 +84,7 @@
 
     <!-- Footer Bottom -->
   <div class="bg-background-dark py-4 md:py-6 px-4 min-h-[64px]" style="line-height:1; font-synthesis-weight:none;">
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0 flex flex-col lg:flex-row items-center justify-between">
+      <div class="max-w-screen-xl mx-auto px-8 xl:px-0 flex flex-col lg:flex-row items-center justify-between">
         <p class="text-center lg:text-left text-sm font-mont-regular text-white">
           {{ $t('footer.copyright') }}
         </p>

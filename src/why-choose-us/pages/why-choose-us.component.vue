@@ -16,7 +16,7 @@
 
   <!-- Creando puentes hacia el futuro -->
   <section class="bg-noise-white">
-    <div class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
+    <div class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20">
       <!-- titulo -->
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
         <SectionTitle :title="t('why.firstSubtitle')" textColor="text-tertiary" />
@@ -133,7 +133,7 @@
       class="absolute inset-0 w-full h-full object-cover" />
 
     <!-- Contenido principal -->
-    <div class="relative w-full max-w-screen-xl mx-auto px-4 xl:px-0 pt-20 pb-10">
+    <div class="relative w-full max-w-screen-xl mx-auto px-8 xl:px-0 pt-20 pb-10">
       <!-- Titulo y vineta -->
       <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-8 lg:gap-24">
         <!-- vineta -->

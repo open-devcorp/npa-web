@@ -16,7 +16,7 @@
       </div>
     </section>
 
-    <section class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
+    <section class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20">
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8 ">
         <SectionTitle :title="t('services.subtitle')" textColor="text-tertiary" />
 

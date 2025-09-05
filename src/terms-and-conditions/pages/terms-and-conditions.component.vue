@@ -17,7 +17,7 @@
       </div>
     </section>
 
-    <section class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20 text-justify">
+    <section class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20 text-justify">
       <p class="mb-4" v-html="t('terms.intro_1')"></p>
       <p class="mb-4">{{ t('terms.intro_2') }}</p>
 

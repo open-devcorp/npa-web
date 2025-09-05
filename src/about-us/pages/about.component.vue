@@ -17,7 +17,7 @@
 
     <!-- About Content -->
 
-    <section class="max-w-screen-xl mx-auto px-4 xl:px-0 py-20">
+    <section class="max-w-screen-xl mx-auto px-8 xl:px-0 py-20">
       <!-- Titulo -->
       <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
 
@@ -48,7 +48,7 @@
     </section>
 
     <!-- Cards Section -->
-    <section class="max-w-screen-xl mx-auto px-4 xl:px-0 pb-20">
+    <section class="max-w-screen-xl mx-auto px-8 xl:px-0 pb-20">
       <img :src="aboutMeetBg" alt="Nuestros Valores"  width="1200"  height="800"  class="w-full" />
 
       <div
@@ -73,14 +73,14 @@
     </section>
 
 
-    <section class="bg-tertiary py-20 relative">
+    <section class="bg-tertiary pt-20 pb-50 md:pb-60 lg:pb-20 relative">
       <!-- Estrella decorativa grande abajo a la izquierda -->
       <div class="absolute bottom-0 left-0">
         <img :src="starSecondary" alt="Star decoration"
           class="h-40 xl:h-72 lg:h-60 md:h-50 object-contain -scale-x-100" />
       </div>
 
-      <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
+      <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
         <div class="flex flex-col lg:flex-row gap-15">
           <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
             <SectionTitle :title="t('about.secondSubtitle')" textColor="text-secondary" />
@@ -110,7 +110,7 @@
     <section class="relative w-full min-h-screen flex items-center justify-center text-center">
       <img :src="aboutBusinessWoman" width="1200" height="800" alt="business woman" class="absolute inset-0 w-full h-full object-cover z-0" />
 
-      <div class="relative max-w-screen-xl mx-auto px-4 xl:px-0 py-16 md:py-24 z-10">
+      <div class="relative max-w-screen-xl mx-auto px-8 xl:px-0 py-16 md:py-24 z-10">
         <h2
           class=" text-white text-2xl md:text-4xl xl:text-5xl font-mont-regular text-center mb-8 md:mb-32 mt-6 md:mt-10 leading-tight md:leading-snug">
           {{ t('about.finalTile.part1') }}<br />

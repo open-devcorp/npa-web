@@ -1,5 +1,5 @@
 <template>
-    <nav class="max-w-screen-xl mx-auto px-4 xl:px-0 my-5 md:my-8 absolute top-0 left-0 right-0 z-50">
+    <nav class="max-w-screen-xl mx-auto px-8 xl:px-0 my-5 md:my-8 absolute top-0 left-0 right-0 z-50">
         <div class="flex justify-between items-center">
             <router-link to="/">
             <img src="/src/assets/icons/logo-home-npa.svg" 
