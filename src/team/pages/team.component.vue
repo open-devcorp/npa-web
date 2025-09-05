@@ -1,4 +1,3 @@
-s="bg-noise-blue text-white py-4
 <template>
   <div class="bg-noise-white">
     <section class="bg-noise-blue text-white py-15 md:py-20 lg:py-25">
@@ -28,25 +27,27 @@ s="bg-noise-blue text-white py-4
           </p>
         </div>
       </div>
-
-      <!-- Cards -->
+    <!-- Cards -->
+    <div class="hidden md:flex flex-col">
       <div class="flex flex-col md:flex-row md:h-[560px] mt-10" @mouseleave="selected = selected >= 0 ? selected : 0">
         <div v-for="(card, index) in cards" :key="index"
-          class="relative transition-all duration-300 md:h-full cursor-pointer w-full" :class="{
+          class="relative transition-all duration-300 md:h-full cursor-pointer w-full"
+          :class="{
             'md:w-[50%]': selected === index,
             'md:w-[25%]': selected !== index
-          }" @mouseenter="selected = index" @click="handleCardClick(index)">
+          }"
+          @mouseenter="selected = index"
+          @click="handleCardClick(index)">
           <template v-if="card.img">
-            <img :src="card.img" :alt="card.alt" class="w-full h-full object-cover transition-transform duration-300"
+            <img :src="card.img" :alt="card.alt"
+              class="w-full h-full object-cover transition-transform duration-300"
               :class="{
                 'scale-100': selected !== index,
-                'scale-90': selected === index,
               }" />
           </template>
           <div v-if="selected !== index"
             class="absolute inset-0 bg-tertiary/65 opacity-70 z-10 transition-opacity duration-300">
           </div>
-
           <div
             class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 to-transparent text-white px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 z-20 flex flex-col justify-end transition-all duration-300"
             :class="{
@@ -60,44 +61,36 @@ s="bg-noise-blue text-white py-4
               {{ card.overlaySubtitle }}
             </p>
           </div>
-
           <div v-if="selected !== index && isMobile"
             class="absolute inset-0 flex items-center justify-center text-white text-2xl font-mont-heavy z-30 text-center">
             {{ card.overlayTitle }}
           </div>
         </div>
       </div>
-
-      <div v-if="selected >= 0" class="mt-12 ">
-        <div class="flex flex-col xl:flex-row gap-6 md:gap-8 md:mt-24 mb-4  xl:h-[600px]">
+      <div v-if="selected >= 0" class="mt-12">
+        <div class="flex flex-col xl:flex-row gap-6 md:gap-8 md:mt-24 mb-4 xl:h-[600px]">
           <div class="w-full xl:w-1/2 flex justify-center md:min-h-[480px]">
-            <!-- Image -->
-            <img 
-              :src="cards[selected]?.img" 
+            <img
+              :src="cards[selected]?.img"
               :alt="cards[selected]?.alt"
               class="w-full md:max-w-md xl:max-w-full object-cover"
-              width="300" 
+              width="300"
               height="200"
             />
-        </div>
-          <!-- Text -->
+          </div>
           <div class="w-full xl:w-1/2 text-justify flex flex-col md:min-h-[480px]">
             <div>
               <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
                 <SectionTitle title="NEW POINT ASESORES" textColor="text-tertiary" />
                 <div class="flex flex-col lg:flex-row justify-between lg:gap-10 gap-5">
-
                   <p class="font-mont-heavy text-2xl lg:text-5xl text-start">
                     {{ cards[selected]?.overlayTitle }}
                   </p>
                 </div>
               </div>
-
-
               <p class="text-gray-600 font-public-sans-regular my-4">
                 {{ details[selected][0]?.subtitle }}
               </p>
-
               <ul class="space-y-3 md:space-y-4 text-black">
                 <li v-for="(item, itemIndex) in details[selected]" :key="itemIndex" class="flex gap-2">
                   <span class="md:text-lg mt-1">❯</span>
@@ -112,8 +105,6 @@ s="bg-noise-blue text-white py-4
                 </li>
               </ul>
             </div>
-
-            <!-- Role -->
             <div class="mt-10 lg:mt-auto pt-8 md:pt-0">
               <p class="font-mont-black md:text-lg">
                 {{ cards[selected]?.overlayTitle }}
@@ -125,9 +116,12 @@ s="bg-noise-blue text-white py-4
           </div>
         </div>
       </div>
-
-
-    </section>
+    </div>
+    <!-- TeamComponentMobile-->
+    <div class="block md:hidden">
+      <teamComponentMobile />
+    </div>
+  </section>
   </div>
 </template>
 
@@ -143,11 +137,12 @@ import carlosImg from '../../assets/images/carlos.webp';
 import elianaImg from '../../assets/images/eliana.webp';
 import veronikaImg from '../../assets/images/veronika.webp';
 import celiaImg from '../../assets/images/celia.webp';
-
+import teamComponentMobile from './team.component.mobile.vue';
 export default {
   name: 'team',
   components: {
     SectionTitle,
+    teamComponentMobile,  
   },
   setup() {
     const { t } = useI18n();
