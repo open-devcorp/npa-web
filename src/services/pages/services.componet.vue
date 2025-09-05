@@ -143,8 +143,8 @@
         <div class="relative z-10 pb-16 flex flex-col lg:flex-row gap-12">
           <!-- Columna izquierda -->
           <div class="lg:w-1/3 text-center lg:text-left">
-            <h2 class="text-white font-mont-regular text-4xl md:text-6xl mb-6">{{ t('services.alliances.tag') }}</h2>
-            <button class="bg-primary text-white text-xl md:text-4xl px-8 py-4 rounded-full border-2 border-black w-64">
+            <h2 class="text-white font-mont-regular text-7xl md:text-7xl mb-6">{{ t('services.alliances.tag') }}</h2>
+            <button class="bg-primary text-white text-2xl md:text-4xl px-4 py-2 rounded-full border-2 border-black w-64">
               NPA
             </button>
           </div>
