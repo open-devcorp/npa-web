@@ -1,20 +1,26 @@
 <template>
   <div class="max-w-3xl mx-auto p-2">
     <div class="relative w-full flex flex-col items-center">
-      <div class="w-full relative">
-        <img
-          :src="cards[selected].img"
-          :alt="cards[selected].alt"
-          class="w-full md:max-w-md xl:max-w-full object-contain duration-100 mt-6"
-          style="height: 340px; max-height: 340px;"
-        />
-        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent px-6 py-4 text-white">
-          <h2 class="font-mont-heavy lg:text-lg xl:text-xl">{{ cards[selected].overlayTitle }}</h2>
-          <p class="text-xs md:text-sm text-yellow-300 font-public-sans font-semibold">
-            {{ cards[selected].overlaySubtitle }}
-          </p>
-        </div>
+    <div class="w-full relative h-[340px]">
+      <img
+        :src="cards[selected].img"
+        :alt="cards[selected].alt"
+        class="w-full h-full object-contain object-bottom duration-100"
+      />
+      <div
+        class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent px-6 py-4 text-white"
+      >
+        <h2 class="font-mont-heavy lg:text-lg xl:text-xl">
+          {{ cards[selected].overlayTitle }}
+        </h2>
+        <p
+          class="text-xs md:text-sm text-yellow-300 font-public-sans font-semibold"
+        >
+          {{ cards[selected].overlaySubtitle }}
+        </p>
       </div>
+    </div>
+
       <!-- Flechas debajo de la foto grande -->
       <div class="flex items-center justify-center mt-4 gap-8">
         <button
