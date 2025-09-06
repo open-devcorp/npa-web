@@ -5,7 +5,7 @@
         <img
           :src="cards[selected].img"
           :alt="cards[selected].alt"
-          class="w-full md:max-w-md xl:max-w-full object-cover duration-100 mt-6"
+          class="w-full md:max-w-md xl:max-w-full object-contain duration-100 mt-6"
           style="height: 340px; max-height: 340px;"
         />
         <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent px-6 py-4 text-white">
