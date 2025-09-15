@@ -9,14 +9,14 @@
     </div>
 
     <!-- Contenido superpuesto en la imagen -->
-    <div class="absolute inset-0 xl:mt-55 lg:mt-40 md:mt-30 mt-20">
+    <div class="absolute inset-0 xl:mt-60 lg:mt-45 md:mt-33 mt-30">
       <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
         <!-- Título -->
         <div class="text-center">
-          <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-regular">
+          <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-regular leading-none">
             {{ t("home.title.part1") }}
           </p>
-          <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-heavy text-background-dark mt-1">
+          <p class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-mont-heavy text-background-dark leading-none">
             {{ t("home.title.part2") }}
           </p>
         </div>
@@ -35,10 +35,10 @@
         </div>
 
         <!-- Services Section -->
-        <div class="bg-tertiary/60 rounded-3xl xl:mt-25 lg:mt-16 md:mt-15 mt-15 xl:p-8 lg:p-7 md:p-6 p-6">
+        <div class="bg-tertiary/60 rounded-3xl xl:mt-25 lg:mt-16 md:mt-15 mt-15 xl:p-8 lg:p-7 md:p-6 p-3">
           <div class="justify-between md:items-center flex flex-row items-center">
             <!-- Service Cards -->
-            <div class="flex justify-center md:gap-9 xl:gap-20 lg:gap-15 gap-3">
+            <div class="flex justify-center md:gap-9 xl:gap-20 lg:gap-15 gap-5">
 
               <!-- Book Icon Card -->
               <div class="text-center lg:flex-none">
@@ -46,9 +46,9 @@
                   <img :src="bookIcon" alt="Asesoría"
                     class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.0.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.0.part2") }}</p>
               </div>
 
@@ -58,9 +58,9 @@
                   <img :src="brainIcon" alt="Marketing"
                     class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.1.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.1.part2") }}</p>
               </div>
 
@@ -70,9 +70,9 @@
                   <img :src="thinkIcon" alt="Corretaje"
                     class="xl:h-15 lg:h-12 md:h-10 h-7 brightness-0 saturate-200 invert" />
                 </div>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.2.part1") }}</p>
-                <p class="text-white xl:text-base lg:text-base md:text-sm text-[10px] font-mont-regular">{{
+                <p class="text-white xl:text-base lg:text-base md:text-sm text-[9px] font-mont-regular">{{
                   t("home.services.2.part2") }}</p>
               </div>
 
@@ -80,7 +80,7 @@
 
             <!-- Button -->
             <router-link to="/contacto"
-              class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors lg:px-6 lg:py-4 py-2 px-3 md:py-3 md:px-5 ">
+              class="btn btn-tertiary border-2 border-black hover:border-secondary transition-colors lg:px-6 lg:py-4 py-2 px-2 md:py-3 md:px-5 ">
               <span>{{ t("home.meetButton") }}</span>
               <img :src="arrowIcon" alt="Arrow" width="14" height="14"
                 class="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px] ml-2 mb-0.5 md:mb-1 invert" />
