@@ -83,7 +83,7 @@
       <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
         <div class="flex flex-col lg:flex-row gap-15">
           <div class="flex flex-col md:gap-6 gap-4 lg:gap-8">
-            <SectionTitle :title="t('about.secondSubtitle')" textColor="text-secondary" />
+            <SectionTitle :title="t('about.secondSubtitle')" textColor="text-white" />
 
             <div class="text-3xl md:text-5xl xl:text-7xl text-white">
               <div class="font-mont-regular">{{ t('about.values.title.part1') }}</div>
@@ -143,9 +143,9 @@ import arrowIcon from '../../assets/icons/arrow.svg';
 import aboutMeetBg from '../../assets/backgrounds/about-meet.webp';
 import starSecondary from '../../assets/images/star-secondary.svg';
 import aboutBusinessWoman from '../../assets/images/about-business-woman.webp';
-import thinkIcon from '../../assets/icons/think.svg';
-import brainIcon from '../../assets/icons/brain.svg';
-import bookIcon from '../../assets/icons/book.svg';
+import thinkIcon from '../../assets/icons/think.webp';
+import brainIcon from '../../assets/icons/brain.webp';
+import bookIcon from '../../assets/icons/book.webp';
 import usersIcon from '../../assets/icons/users.svg';
 import personsIcon from '../../assets/icons/persons.svg';
 import coheteIcon from '../../assets/icons/cohete.svg';

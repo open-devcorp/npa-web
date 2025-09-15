@@ -12,7 +12,7 @@
             <router-link to="/">
               <div class="flex items-center mb-4">
                 <!-- Icono estrella similar al de la imagen -->
-                <img src="../../assets/icons/icon-footer.svg" :alt="$t('footer.logoAlt')" width="60" height="60" decoding="async" loading="lazy" class="w-15 h-15 mr-3">
+                <img src="../../assets/icons/icon-footer.webp" :alt="$t('footer.logoAlt')" width="60" height="60" decoding="async" loading="lazy" class="w-15 h-15 mr-3">
                 <div>
                   <h2 class="font-mont-black text-xl text-white">New Point</h2>
                   <p class="font-mont-regular text-sm text-white">Asesores</p>

@@ -9,7 +9,7 @@
     </div>
 
     <!-- Contenido superpuesto en la imagen -->
-    <div class="absolute inset-0 xl:mt-60 lg:mt-45 md:mt-33 mt-30">
+    <div class="absolute inset-0 xl:mt-60 lg:mt-45 md:mt-33 mt-35">
       <div class="max-w-screen-xl mx-auto px-8 xl:px-0">
         <!-- Título -->
         <div class="text-center">
@@ -245,9 +245,9 @@ import { computed } from 'vue';
 // Importar assets
 import bgHome from '../../assets/backgrounds/bg-home.webp';
 import computerCoffee from '../../assets/backgrounds/computer-coffee.webp';
-import bookIcon from '../../assets/icons/book.svg';
-import brainIcon from '../../assets/icons/brain.svg';
-import thinkIcon from '../../assets/icons/think.svg';
+import bookIcon from '../../assets/icons/book.webp';
+import brainIcon from '../../assets/icons/brain.webp';
+import thinkIcon from '../../assets/icons/think.webp';
 import arrowIcon from '../../assets/icons/arrow.svg';
 import starSecondary from '../../assets/images/star-secondary.svg';
 import aboutBusinessWoman from '../../assets/images/about-business-woman.webp';

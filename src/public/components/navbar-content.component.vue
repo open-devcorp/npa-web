@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-noise-blue py-5">
+  <div class="bg-noise-blue">
 
-    <nav class="max-w-screen-xl mx-auto px-8 xl:px-0">
+    <nav class="max-w-screen-xl mx-auto px-8 xl:px-0 pt-8">
       <div class="flex justify-between items-center">
         <router-link to="/">
-          <img src="/src/assets/icons/logo-primary.svg" alt="Logo NPA" width="160" height="40" class="w-25 md:w-35 lg:w-40 object-contain" />
+          <img src="/src/assets/icons/logo-primary.webp" alt="Logo NPA" class="w-30 md:w-35 lg:w-40 object-contain" />
         </router-link>
 
         <ul class="hidden lg:flex gap-8">

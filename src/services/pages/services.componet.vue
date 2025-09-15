@@ -219,7 +219,7 @@ import SectionTitle from '../../public/components/section-title.component.vue';
 import { useI18n } from 'vue-i18n';
 
 // Importar assets
-import starIcon from '../../assets/icons/star.svg';
+import starIcon from '../../assets/icons/logo-tertiary.webp';
 import service1 from '../../assets/images/service-1.webp';
 import service2 from '../../assets/images/service-2.webp';
 import service3 from '../../assets/images/service-3.webp';

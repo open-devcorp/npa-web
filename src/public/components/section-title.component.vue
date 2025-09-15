@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center">
-    <img src="../../assets/icons/logo-tertiary.svg" alt="new point" class="xl:w-9 h-6 xl:h-9 w-6" />
+    <img src="../../assets/icons/logo-tertiary.webp" alt="new point" class="xl:w-9 h-6 xl:h-9 w-6" />
     <p :class="['text-base md:text-[18px] xl:text-xl font-mont-black uppercase md:ml-3 ml-2', textColor]">
       {{ title }}
     </p>
